@@ -1,6 +1,6 @@
 # Quick Start Guide
 
-Get up and running with storage benchmarks in 3 steps!
+Get up and running with storage benchmarks in 4 steps!
 
 ## Step 1: Setup (30 seconds)
 
@@ -38,6 +38,25 @@ cat results/fio_results.csv
 # Or open in Excel/LibreOffice
 libreoffice results/fio_results.csv
 ```
+
+## Step 4: Visualize (Optional)
+
+```bash
+# Install plotting dependencies (first time only)
+pip install -r requirements.txt
+
+# Generate plots
+./plotting/plot_fio_results.py results/fio_results.csv
+
+# View generated plots
+ls -lh fio_*.png
+```
+
+**Generated plots:**
+- `fio_total_time.png` - Complete file read times
+- `fio_bandwidth.png` - Bandwidth comparison
+- `fio_iops.png` - IOPS performance
+- `fio_nfs_comparison.png` - NFS direct vs buffered
 
 ## Common Tasks
 
@@ -120,7 +139,10 @@ sudo chown $USER:$USER /tmp/local-ssd /tmp/remote-pure-nfs
 
 1. Run benchmarks on all your storage systems
 2. Compare results using the validation tool
-3. Upload your plotting script for visualization
+3. Generate plots to visualize performance differences
 4. Tune storage based on findings
+5. Share plots in reports and presentations
 
-For detailed documentation, see [README.md](README.md)
+For detailed documentation, see:
+- [README.md](README.md) - Full documentation
+- [plotting/README.md](plotting/README.md) - Plotting guide

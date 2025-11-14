@@ -7,6 +7,7 @@ Comprehensive storage performance testing suite for comparing different storage 
 - **FIO Benchmarks**: Advanced I/O testing with customizable parameters
 - **DD Benchmarks**: Simple sequential read/write tests
 - **Validation Tools**: Automated result validation and anomaly detection
+- **Visualization**: Professional plotting of benchmark results
 - **Easy Configuration**: JSON-based configuration for storage locations and test parameters
 - **CSV Output**: Easy-to-analyze results format
 
@@ -52,6 +53,18 @@ Edit `config.json` to match your storage setup:
 cat results/fio_results.csv
 ```
 
+### 5. Visualize Results
+
+```bash
+# Install plotting dependencies (first time only)
+pip install -r requirements.txt
+
+# Generate plots
+./plotting/plot_fio_results.py results/fio_results.csv
+
+# View generated plots: fio_total_time.png, fio_bandwidth.png, fio_iops.png, fio_nfs_comparison.png
+```
+
 ## Directory Structure
 
 ```
@@ -62,13 +75,17 @@ storage-benchmarks/
 │   ├── dd/                     # DD benchmarks
 │   │   └── dd_benchmark.sh     # Simple DD sequential test
 │   └── iozone/                 # IOZone benchmarks (future)
+├── plotting/                   # Visualization tools
+│   ├── plot_fio_results.py     # Plot FIO results
+│   └── README.md               # Plotting documentation
 ├── utils/                      # Utility scripts
 │   ├── setup_environment.sh    # Environment setup
 │   ├── cleanup.sh              # Clean test files
 │   └── validate_results.py     # Result validation
 ├── results/                    # Benchmark results (CSV)
 ├── logs/                       # Log files
-└── config.json                 # Configuration file
+├── config.json                 # Configuration file
+└── requirements.txt            # Python dependencies
 ```
 
 ## FIO Benchmark
@@ -188,6 +205,76 @@ The validator checks for:
 - Suspiciously low bandwidth
 - Summary statistics by storage type and file size
 
+## Plotting Results
+
+Visualize benchmark results with professional-quality plots.
+
+### Installation
+
+First time only, install plotting dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Or with conda:
+
+```bash
+conda install pandas matplotlib numpy
+```
+
+### Generate Plots
+
+```bash
+# Basic usage
+./plotting/plot_fio_results.py results/fio_results.csv
+
+# Custom output prefix
+./plotting/plot_fio_results.py results/fio_results.csv --output-prefix mytest_
+
+# Save to specific directory
+./plotting/plot_fio_results.py results/fio_results.csv --output-prefix results/plots_
+```
+
+### Generated Plots
+
+Four plots are automatically generated:
+
+1. **fio_total_time.png**: Total time to read complete files
+   - Compares both storage types side-by-side
+   - Shows impact of queue depth on read time
+   - Logarithmic scales for clarity
+
+2. **fio_bandwidth.png**: Bandwidth (MB/s) across file sizes
+   - Identifies peak throughput capabilities
+   - Shows how bandwidth scales with file size
+   - Compares different I/O modes and queue depths
+
+3. **fio_iops.png**: I/O operations per second
+   - Important for small I/O workloads
+   - Shows parallelism benefits
+   - Queue depth impact visualization
+
+4. **fio_nfs_comparison.png**: NFS direct vs buffered I/O
+   - Bar chart comparing I/O modes
+   - Side-by-side: Time, Bandwidth, IOPS
+   - Only generated when NFS data with both modes exists
+
+### Example Workflow
+
+```bash
+# Run benchmark and immediately plot
+./fio/fio_benchmark.py -o results/test.csv && \
+./plotting/plot_fio_results.py results/test.csv
+
+# Batch process multiple results
+for csv in results/*.csv; do
+    ./plotting/plot_fio_results.py "$csv" --output-prefix "${csv%.csv}_"
+done
+```
+
+For detailed plotting documentation, see [plotting/README.md](plotting/README.md).
+
 ## Configuration
 
 Edit `config.json` to customize:
@@ -214,6 +301,8 @@ Edit `config.json` to customize:
 
 ## Requirements
 
+### Core Requirements
+
 - **FIO**: Flexible I/O Tester
   ```bash
   sudo apt-get install fio  # Ubuntu/Debian
@@ -223,6 +312,19 @@ Edit `config.json` to customize:
 - **Python 3**: For FIO benchmark and validation scripts
 
 - **Standard Unix tools**: dd, bash, coreutils
+
+### Plotting Requirements (Optional)
+
+For visualization features:
+
+```bash
+pip install -r requirements.txt
+```
+
+This installs:
+- pandas (≥1.3.0) - CSV data analysis
+- matplotlib (≥3.4.0) - Plot generation
+- numpy (≥1.21.0) - Numerical operations
 
 ## Tips & Best Practices
 
@@ -262,6 +364,7 @@ This implementation improves upon the original script:
    - Result validation tool
    - DD benchmark for comparison
    - Configuration file support
+   - Professional plotting scripts with matplotlib
 
 4. **Better Usability**:
    - Separated stdout (data) and stderr (logs)
@@ -298,10 +401,11 @@ sudo apt-get update && sudo apt-get install fio
 
 After running benchmarks:
 
-1. **Upload your plotting script** - Let me know when you're ready!
+1. **Visualize Results**: Generate plots to see performance comparisons
 2. **Analyze Results**: Use the validation tool to check for anomalies
 3. **Compare Storage**: Look at bandwidth differences between storage types
 4. **Tune Parameters**: Adjust block sizes, queue depths based on workload
+5. **Share Findings**: Use generated plots in reports and presentations
 
 ## Contributing
 

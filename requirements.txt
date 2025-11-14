@@ -1,9 +1,15 @@
 # Python requirements for Storage Benchmarks
-#
-# All required modules are part of Python standard library
-# No external packages needed for core functionality
 
-# Future optional dependencies:
-# pandas>=1.3.0          # For advanced result analysis
-# matplotlib>=3.4.0      # For plotting (user will provide custom script)
-# numpy>=1.21.0          # For statistical analysis
+# Core benchmark dependencies (Python standard library only)
+# No external packages needed for FIO benchmark and validation
+
+# Plotting dependencies (required for plot_fio_results.py)
+pandas>=1.3.0          # For CSV data analysis
+matplotlib>=3.4.0      # For generating plots
+numpy>=1.21.0          # For numerical operations
+
+# Installation:
+# pip install -r requirements.txt
+#
+# Or for conda:
+# conda install pandas matplotlib numpy
