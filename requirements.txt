@@ -1,0 +1,9 @@
+# Python requirements for Storage Benchmarks
+#
+# All required modules are part of Python standard library
+# No external packages needed for core functionality
+
+# Future optional dependencies:
+# pandas>=1.3.0          # For advanced result analysis
+# matplotlib>=3.4.0      # For plotting (user will provide custom script)
+# numpy>=1.21.0          # For statistical analysis
