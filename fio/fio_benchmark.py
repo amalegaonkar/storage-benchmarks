@@ -153,6 +153,10 @@ def run_benchmark_suite(storage_locations=None, file_sizes=None, io_depths=None,
 
     # Prepare output
     if output_file:
+        # Create parent directory if it doesn't exist
+        output_dir = os.path.dirname(output_file)
+        if output_dir:
+            os.makedirs(output_dir, exist_ok=True)
         output_handle = open(output_file, 'w')
     else:
         output_handle = sys.stdout
