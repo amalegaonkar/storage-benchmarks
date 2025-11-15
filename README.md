@@ -6,6 +6,8 @@ Comprehensive storage performance testing suite for comparing different storage 
 
 - **FIO Benchmarks**: Advanced I/O testing with customizable parameters
 - **DD Benchmarks**: Simple sequential read/write tests
+- **Device Discovery**: Automatic detection of underlying storage devices (NVMe, SATA, NFS)
+- **Performance Expectations**: Hypothesis-based testing with device-specific performance predictions
 - **Validation Tools**: Automated result validation and anomaly detection
 - **Visualization**: Professional plotting of benchmark results
 - **Easy Configuration**: JSON-based configuration for storage locations and test parameters
@@ -69,23 +71,28 @@ pip install -r requirements.txt
 
 ```
 storage-benchmarks/
-├── fio/                        # FIO benchmark scripts
-│   └── fio_benchmark.py        # Main FIO benchmark
+├── fio/                                  # FIO benchmark scripts
+│   ├── fio_benchmark.py                  # Main FIO benchmark
+│   └── fio_benchmark_with_validation.py  # Integrated benchmark with device discovery
 ├── benchmarks/
-│   ├── dd/                     # DD benchmarks
-│   │   └── dd_benchmark.sh     # Simple DD sequential test
-│   └── iozone/                 # IOZone benchmarks (future)
-├── plotting/                   # Visualization tools
-│   ├── plot_fio_results.py     # Plot FIO results
-│   └── README.md               # Plotting documentation
-├── utils/                      # Utility scripts
-│   ├── setup_environment.sh    # Environment setup
-│   ├── cleanup.sh              # Clean test files
-│   └── validate_results.py     # Result validation
-├── results/                    # Benchmark results (CSV)
-├── logs/                       # Log files
-├── config.json                 # Configuration file
-└── requirements.txt            # Python dependencies
+│   ├── dd/                               # DD benchmarks
+│   │   └── dd_benchmark.sh               # Simple DD sequential test
+│   └── iozone/                           # IOZone benchmarks (future)
+├── plotting/                             # Visualization tools
+│   ├── plot_fio_results.py               # Plot FIO results
+│   └── README.md                         # Plotting documentation
+├── utils/                                # Utility scripts
+│   ├── setup_environment.sh              # Environment setup
+│   ├── cleanup.sh                        # Clean test files
+│   ├── validate_results.py               # Result validation
+│   ├── device_info.py                    # Device discovery and information
+│   └── performance_expectations.py       # Performance hypothesis generation
+├── docs/                                 # Documentation
+│   └── DEVICE_DISCOVERY.md               # Device discovery guide
+├── results/                              # Benchmark results (CSV)
+├── logs/                                 # Log files
+├── config.json                           # Configuration file
+└── requirements.txt                      # Python dependencies
 ```
 
 ## FIO Benchmark
@@ -275,6 +282,107 @@ done
 
 For detailed plotting documentation, see [plotting/README.md](plotting/README.md).
 
+## Device Discovery & Performance Expectations
+
+Automatically discover storage devices and generate performance hypotheses based on device characteristics.
+
+### Discover Device Information
+
+```bash
+# Basic device discovery
+./utils/device_info.py /tmp/local-ssd
+
+# Verbose output with all details
+./utils/device_info.py /mnt/nfs --verbose
+
+# JSON output for programmatic use
+./utils/device_info.py /dev/nvme0n1 --json
+```
+
+**Detects:**
+- NVMe devices (model, firmware, temperature, wear level)
+- SATA/SAS devices (SSD vs HDD, rotation rate, SMART health)
+- Network storage (NFS server, mount options, reachability)
+- Filesystem usage and block sizes
+
+### Generate Performance Expectations
+
+```bash
+# Show expected performance for a device
+./utils/performance_expectations.py /tmp/local-ssd
+
+# For random I/O workloads
+./utils/performance_expectations.py /tmp/local-ssd --io-pattern random
+
+# Validate benchmark results
+./utils/performance_expectations.py /tmp/local-ssd --validate results.json
+```
+
+**Features:**
+- Automatic profile detection (Consumer Gen3/Gen4, Enterprise, SATA SSD, HDD, NFS)
+- Expected bandwidth, IOPS, and latency ranges
+- Confidence levels based on device identification
+- Result validation against expectations
+
+### Example: Device Discovery
+
+```
+======================================================================
+Device Information
+======================================================================
+
+Path:         /tmp/local-ssd
+Mount Point:  /tmp
+Device:       /dev/nvme0n1
+Device Type:  nvme
+
+Model:        Samsung SSD 980 PRO 1TB
+Serial:       S5GXNX0R123456
+Firmware:     5B2QGXA7
+Temperature:  35°C
+Wear Level:   1%
+
+Filesystem:
+  Total Size:   931.51 GB
+  Free Space:   850.23 GB
+  Used:         8.7%
+======================================================================
+```
+
+### Example: Performance Expectations
+
+```
+======================================================================
+Performance Expectations
+======================================================================
+
+Device:       /dev/nvme0n1
+Profile:      consumer_gen4
+Interface:    PCIe Gen4 x4
+
+Expected Performance (sequential):
+----------------------------------------------------------------------
+  Sequential Read Bandwidth:
+    Typical:  7000 MB/s
+    Range:    5000 - 7400 MB/s
+    Confidence: high
+
+  Average Latency:
+    Typical:  60 μs
+    Range:    30 - 100 μs
+    Confidence: high
+======================================================================
+```
+
+### Use Cases
+
+1. **Verify New Hardware**: Check if new storage meets specifications
+2. **Troubleshoot Performance**: Compare actual vs expected performance
+3. **Infrastructure Documentation**: Generate device inventory
+4. **Capacity Planning**: Understand storage capabilities
+
+For detailed documentation, see [docs/DEVICE_DISCOVERY.md](docs/DEVICE_DISCOVERY.md).
+
 ## Configuration
 
 Edit `config.json` to customize:
@@ -325,6 +433,26 @@ This installs:
 - pandas (≥1.3.0) - CSV data analysis
 - matplotlib (≥3.4.0) - Plot generation
 - numpy (≥1.21.0) - Numerical operations
+
+### Device Discovery Requirements (Optional)
+
+For automatic device detection and performance expectations:
+
+```bash
+# NVMe devices
+sudo apt-get install nvme-cli
+
+# SATA/SAS devices
+sudo apt-get install hdparm smartmontools
+
+# Network storage
+sudo apt-get install nfs-common
+
+# All of the above
+sudo apt-get install nvme-cli hdparm smartmontools nfs-common
+```
+
+**Note**: Some device operations require sudo access. See [docs/DEVICE_DISCOVERY.md](docs/DEVICE_DISCOVERY.md) for details.
 
 ## Tips & Best Practices
 

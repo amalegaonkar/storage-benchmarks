@@ -73,6 +73,19 @@ ls -lh fio_*.png
 ./fio/fio_benchmark.py -b 4k -o results/iops.csv
 ```
 
+### Device Discovery
+
+```bash
+# Discover what device is backing a filesystem path
+./utils/device_info.py /tmp/local-ssd
+
+# Show expected performance for the device
+./utils/performance_expectations.py /tmp/local-ssd
+
+# Combine both: discover device and show expectations
+./fio/fio_benchmark_with_validation.py --path /tmp/local-ssd --expect-only
+```
+
 ### Cleanup
 
 ```bash
