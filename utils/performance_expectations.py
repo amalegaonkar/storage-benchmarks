@@ -152,8 +152,40 @@ def identify_device_profile(device_info: Dict) -> Tuple[Optional[str], Optional[
     device_type = device_info.get('device_type', '').lower()
     model = device_info.get('model', '').lower()
 
+    # LVM devices - use underlying physical device info
+    if device_type == 'lvm':
+        # LVM inherits characteristics from underlying physical device
+        # Check if we have physical device info
+        if 'model' in device_info:
+            # Recursively identify based on physical characteristics
+            # We can check media_type to determine if it's SSD or HDD
+            media_type = device_info.get('media_type', '').upper()
+
+            if media_type == 'SSD':
+                # Could be NVMe or SATA SSD - check if we have nvme in physical device
+                if any('nvme' in str(v).lower() for v in device_info.get('underlying_devices', [])):
+                    # It's on NVMe, use NVMe profile logic
+                    # Default to consumer Gen3 for LVM on NVMe
+                    if any(x in model for x in ['980 pro', '990 pro', 'sn850', 'sn850x', 'p5 plus', 'firecuda 530']):
+                        return "consumer_gen4", DevicePerformanceProfile.NVME_PROFILES["consumer_gen4"]
+                    elif any(x in model for x in ['optane', 'p4800', 'p5800', 'pm1733', 'pm9a3']):
+                        return "enterprise_gen4", DevicePerformanceProfile.NVME_PROFILES["enterprise_gen4"]
+                    else:
+                        return "consumer_gen3", DevicePerformanceProfile.NVME_PROFILES["consumer_gen3"]
+                else:
+                    # SATA SSD
+                    return "sata_ssd", DevicePerformanceProfile.SATA_SSD_PROFILES["sata_ssd"]
+            elif media_type == 'HDD':
+                rotation = device_info.get('physical_rotation_rate', device_info.get('rotation_rate', '')).lower()
+                if '10000' in rotation or '10k' in rotation:
+                    return "hdd_10000rpm", DevicePerformanceProfile.HDD_PROFILES["hdd_10000rpm"]
+                else:
+                    return "hdd_7200rpm", DevicePerformanceProfile.HDD_PROFILES["hdd_7200rpm"]
+        # If no physical info, can't determine profile
+        return None, None
+
     # NVMe devices
-    if device_type == 'nvme':
+    elif device_type == 'nvme':
         # Try to determine generation from model or interface
         if any(x in model for x in ['980 pro', '990 pro', 'sn850', 'sn850x', 'p5 plus', 'firecuda 530']):
             return "consumer_gen4", DevicePerformanceProfile.NVME_PROFILES["consumer_gen4"]

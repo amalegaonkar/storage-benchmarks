@@ -105,6 +105,48 @@ def get_device_type(device: str) -> str:
         return "unknown"
 
 
+def get_underlying_devices(device: str) -> list:
+    """
+    Get underlying physical devices for virtual devices (LVM, RAID, etc.)
+
+    Args:
+        device: Device path (e.g., /dev/dm-0)
+
+    Returns:
+        List of underlying device paths
+    """
+    underlying = []
+
+    # Try lsblk to get the device hierarchy
+    out = run_cmd(["lsblk", "-no", "NAME,TYPE", device], check=False)
+    if out.returncode == 0:
+        lines = out.stdout.strip().split('\n')
+        for line in lines:
+            parts = line.split()
+            if len(parts) >= 2:
+                name, dev_type = parts[0], parts[1]
+                # Look for physical devices (disk, part)
+                if dev_type in ['disk', 'part'] and name not in os.path.basename(device):
+                    # Clean up the name (remove tree characters)
+                    clean_name = name.replace('├─', '').replace('└─', '').replace('│', '').strip()
+                    underlying.append(f'/dev/{clean_name}')
+
+    # If lsblk didn't work, try dmsetup for LVM
+    if not underlying and device.startswith('/dev/dm-'):
+        out = run_cmd(["sudo", "dmsetup", "deps", "-o", "devname", device], check=False)
+        if out.returncode == 0:
+            # Parse output like: 1 dependencies	: (sda1)
+            for line in out.stdout.splitlines():
+                if 'dependencies' in line and ':' in line:
+                    deps_part = line.split(':', 1)[1]
+                    # Extract device names from parentheses
+                    matches = re.findall(r'\(([^)]+)\)', deps_part)
+                    for match in matches:
+                        underlying.append(f'/dev/{match}')
+
+    return underlying
+
+
 def get_base_device(device: str) -> str:
     """Get base device (remove partition number)"""
     # For NVMe: /dev/nvme0n1p1 -> /dev/nvme0n1
@@ -294,6 +336,58 @@ def get_network_info(device: str, mount_point: str) -> Dict:
     return info
 
 
+def get_lvm_info(device: str) -> Dict:
+    """Get LVM/device mapper information"""
+    info = {
+        "device": device,
+        "type": "lvm",
+        "interface": "LVM/Device Mapper"
+    }
+
+    # Get LVM volume info
+    out = run_cmd(["sudo", "lvdisplay", device], check=False)
+    if out.returncode == 0:
+        for line in out.stdout.splitlines():
+            line = line.strip()
+            if line.startswith("LV Name"):
+                info["lv_name"] = line.split(None, 2)[2] if len(line.split(None, 2)) > 2 else ""
+            elif line.startswith("VG Name"):
+                info["vg_name"] = line.split(None, 2)[2] if len(line.split(None, 2)) > 2 else ""
+            elif line.startswith("LV Size"):
+                info["capacity"] = line.split(None, 2)[2] if len(line.split(None, 2)) > 2 else ""
+
+    # Get underlying devices
+    underlying = get_underlying_devices(device)
+    if underlying:
+        info["underlying_devices"] = underlying
+        info["num_underlying"] = len(underlying)
+
+        # Try to get info from first underlying device
+        if len(underlying) > 0:
+            base_dev = get_base_device(underlying[0])
+            base_type = get_device_type(base_dev)
+
+            if base_type == "nvme":
+                physical_info = get_nvme_info(base_dev)
+            elif base_type == "scsi":
+                physical_info = get_scsi_info(base_dev)
+            else:
+                physical_info = {}
+
+            # Add physical device info with prefix
+            for key, value in physical_info.items():
+                if key not in ["device", "type", "interface"]:
+                    info[f"physical_{key}"] = value
+
+            # Copy important fields directly
+            if "model" in physical_info:
+                info["model"] = physical_info["model"]
+            if "media_type" in physical_info:
+                info["media_type"] = physical_info["media_type"]
+
+    return info
+
+
 def get_device_info(path: str) -> Dict:
     """
     Get comprehensive device information for a filesystem path
@@ -333,6 +427,8 @@ def get_device_info(path: str) -> Dict:
     elif dev_type == "scsi":
         base_device = get_base_device(device)
         result.update(get_scsi_info(base_device))
+    elif dev_type == "lvm":
+        result.update(get_lvm_info(device))
     elif dev_type == "network":
         result.update(get_network_info(device, mount_point))
     else:
@@ -391,6 +487,25 @@ def print_device_info(info: Dict, verbose: bool = False):
             print(f"Wear Level:   {info['wear']}")
         if "health" in info:
             print(f"Health:       {info['health']}")
+
+    elif info.get('device_type') == 'lvm':
+        if "lv_name" in info:
+            print(f"LV Name:      {info['lv_name']}")
+        if "vg_name" in info:
+            print(f"VG Name:      {info['vg_name']}")
+        if "capacity" in info:
+            print(f"Capacity:     {info['capacity']}")
+        if "underlying_devices" in info:
+            print(f"Physical Devs: {', '.join(info['underlying_devices'])}")
+        print()
+        if "model" in info:
+            print(f"Physical Model:     {info['model']}")
+        if "media_type" in info:
+            print(f"Physical Type:      {info['media_type']}")
+        if "physical_temperature" in info:
+            print(f"Physical Temp:      {info['physical_temperature']}")
+        if "physical_health" in info:
+            print(f"Physical Health:    {info['physical_health']}")
 
     elif info.get('device_type') == 'network':
         if "protocol" in info:
