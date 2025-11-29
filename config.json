@@ -1,9 +1,29 @@
 {
   "storage_locations": {
-    "Local_SSD": "/tmp/local-ssd/",
+    "Local_SSD": "/tmp/nvme_raid0/",
     "NFS_Mount": "/tmp/remote-pure-nfs/"
   },
   "file_sizes": [
+    {
+      "name": "1K",
+      "bytes": 1024,
+      "filename": "test_1K.bin"
+    },
+    {
+      "name": "4K",
+      "bytes": 4096,
+      "filename": "test_4K.bin"
+    },
+    {
+      "name": "10K",
+      "bytes": 10240,
+      "filename": "test_10K.bin"
+    },
+    {
+      "name": "100K",
+      "bytes": 102400,
+      "filename": "test_100K.bin"
+    },
     {
       "name": "1MB",
       "bytes": 1048576,
@@ -23,6 +43,11 @@
       "name": "1GB",
       "bytes": 1073741824,
       "filename": "test_1GB.bin"
+    },
+    {
+      "name": "10GB",
+      "bytes": 10737418240,
+      "filename": "test_10GB.bin"
     }
   ],
   "fio_settings": {

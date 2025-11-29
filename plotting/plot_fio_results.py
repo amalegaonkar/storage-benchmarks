@@ -48,22 +48,68 @@ def plot_total_time_comparison(df, output_prefix=""):
                        marker='o', linewidth=2, markersize=8, label=label)
 
         ax.set_xlabel('File Size', fontsize=12, fontweight='bold')
-        ax.set_ylabel('Total Time to Read File (seconds)', fontsize=12, fontweight='bold')
+        
+        # Determine best time unit based on data range
+        # Prefer milliseconds/microseconds over seconds for better readability
+        time_values = storage_df['TotalTime_s'].values
+        max_time = np.max(time_values)
+        min_time = np.min(time_values[time_values > 0])
+        
+        if max_time < 0.001:  # All times < 1ms, use microseconds
+            time_unit = 'microseconds'
+            time_multiplier = 1e6
+            ax.set_ylabel('Total Time to Read File (μs)', fontsize=12, fontweight='bold')
+            
+            def format_time(x, pos):
+                """Format y-axis in microseconds"""
+                if x == 0:
+                    return '0'
+                val = x * time_multiplier
+                if val >= 1000:
+                    return f'{val/1000:.1f}ms'
+                elif val >= 100:
+                    return f'{val:.0f}μs'
+                elif val >= 10:
+                    return f'{val:.1f}μs'
+                else:
+                    return f'{val:.2f}μs'
+        elif max_time < 10:  # Times < 10s, use milliseconds (preferred)
+            time_unit = 'milliseconds'
+            time_multiplier = 1e3
+            ax.set_ylabel('Total Time to Read File (ms)', fontsize=12, fontweight='bold')
+            
+            def format_time(x, pos):
+                """Format y-axis in milliseconds"""
+                if x == 0:
+                    return '0'
+                val = x * time_multiplier
+                if val >= 1000:
+                    return f'{val/1000:.2f}s'
+                elif val >= 100:
+                    return f'{val:.0f}ms'
+                elif val >= 10:
+                    return f'{val:.1f}ms'
+                else:
+                    return f'{val:.2f}ms'
+        else:  # Very large times, use seconds but show ms for small values
+            time_unit = 'mixed'
+            ax.set_ylabel('Total Time to Read File', fontsize=12, fontweight='bold')
+            
+            def format_time(x, pos):
+                """Format y-axis with automatic unit selection"""
+                if x == 0:
+                    return '0'
+                if x >= 1:
+                    return f'{x:.1f}s'
+                elif x >= 0.001:
+                    return f'{x*1000:.0f}ms'
+                else:
+                    return f'{x*1e6:.0f}μs'
+        
         ax.set_title(f'{storage_type}: Time to Read Complete File', fontsize=14, fontweight='bold')
         ax.set_xscale('log')
         ax.set_yscale('log')
-
-        # FORMAT Y-AXIS TO SHOW ACTUAL SECONDS (NOT SCIENTIFIC NOTATION)
-        def format_seconds(x, pos):
-            """Format y-axis to show actual seconds"""
-            if x >= 1:
-                return f'{x:.0f}s'
-            elif x >= 0.1:
-                return f'{x:.1f}s'
-            else:
-                return f'{x:.2f}s'
-
-        ax.yaxis.set_major_formatter(FuncFormatter(format_seconds))
+        ax.yaxis.set_major_formatter(FuncFormatter(format_time))
 
         ax.grid(True, alpha=0.3, which='both', linestyle='--')
         ax.legend(fontsize=10, loc='best')
@@ -208,11 +254,32 @@ def plot_nfs_comparison_bars(df, output_prefix=""):
             buffered_bw.append(0)
             buffered_iops.append(0)
 
+    # Determine best time unit for bar chart
+    # Prefer milliseconds/microseconds over seconds
+    max_time = max(max(direct_time) if direct_time else 0, max(buffered_time) if buffered_time else 0)
+    min_time = min([t for t in direct_time + buffered_time if t > 0]) if any(direct_time + buffered_time) else 0
+    
+    if max_time < 0.001:  # All times < 1ms, use microseconds
+        time_multiplier = 1e6
+        time_unit_label = 'Total Time (μs)'
+        direct_time_display = [t * time_multiplier for t in direct_time]
+        buffered_time_display = [t * time_multiplier for t in buffered_time]
+    elif max_time < 10:  # Times < 10s, use milliseconds (preferred)
+        time_multiplier = 1e3
+        time_unit_label = 'Total Time (ms)'
+        direct_time_display = [t * time_multiplier for t in direct_time]
+        buffered_time_display = [t * time_multiplier for t in buffered_time]
+    else:  # Very large times, use seconds
+        time_multiplier = 1
+        time_unit_label = 'Total Time (seconds)'
+        direct_time_display = direct_time
+        buffered_time_display = buffered_time
+    
     # Plot 1: Total Time
-    axes[0].bar(x - width/2, direct_time, width, label='Direct I/O', color='#2E86AB')
-    axes[0].bar(x + width/2, buffered_time, width, label='Buffered (Cached)', color='#A23B72')
+    axes[0].bar(x - width/2, direct_time_display, width, label='Direct I/O', color='#2E86AB')
+    axes[0].bar(x + width/2, buffered_time_display, width, label='Buffered (Cached)', color='#A23B72')
     axes[0].set_xlabel('File Size', fontsize=12, fontweight='bold')
-    axes[0].set_ylabel('Total Time (seconds)', fontsize=12, fontweight='bold')
+    axes[0].set_ylabel(time_unit_label, fontsize=12, fontweight='bold')
     axes[0].set_title(f'NFS: Time to Read Complete File (qd={io_depth})', fontsize=13, fontweight='bold')
     axes[0].set_xticks(x)
     axes[0].set_xticklabels([convert_bytes_to_readable(s) for s in file_sizes], rotation=45, ha='right')

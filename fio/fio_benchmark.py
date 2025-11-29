@@ -13,10 +13,15 @@ from datetime import datetime
 
 # --- Default Configuration ---
 DEFAULT_FILE_SIZES = [
+    ("1K", 1024, "test_1K.bin"),
+    ("4K", 4 * 1024, "test_4K.bin"),
+    ("10K", 10 * 1024, "test_10K.bin"),
+    ("100K", 100 * 1024, "test_100K.bin"),
     ("1MB", 1024**2, "test_1MB.bin"),
     ("10MB", 10 * 1024**2, "test_10MB.bin"),
     ("100MB", 100 * 1024**2, "test_100MB.bin"),
     ("1GB", 1024**3, "test_1GB.bin"),
+    ("10GB", 10 * 1024**3, "test_10GB.bin"),
 ]
 
 DEFAULT_STORAGE_LOCATIONS = {
@@ -27,6 +32,45 @@ DEFAULT_STORAGE_LOCATIONS = {
 DEFAULT_BLOCK_SIZE = "1M"
 DEFAULT_IO_DEPTHS = [1, 128]
 DEFAULT_NUM_ITERATIONS = 3  # Read the file 3 times for average
+
+# Threshold for using file size as block size (files smaller than this)
+SMALL_FILE_THRESHOLD = 1024**2  # 1MB
+
+
+def get_block_size_for_file(size_bytes):
+    """
+    Determine appropriate block size for FIO based on file size.
+    For files smaller than 1MB, use file size as block size.
+    For files >= 1MB, use default 1MB block size.
+    
+    Returns:
+        str: Block size string for FIO (e.g., "1K", "4K", "1M")
+    """
+    if size_bytes < SMALL_FILE_THRESHOLD:
+        # For small files, use file size as block size
+        if size_bytes < 1024:
+            return f"{size_bytes}"
+        elif size_bytes < 1024**2:
+            return f"{size_bytes // 1024}K"
+        else:
+            return f"{size_bytes // (1024**2)}M"
+    else:
+        # For larger files, use default 1MB block size
+        return DEFAULT_BLOCK_SIZE
+
+
+def format_bytes_to_human(size_bytes):
+    """
+    Format bytes to human-readable string for display.
+    """
+    if size_bytes < 1024:
+        return f"{size_bytes}B"
+    elif size_bytes < 1024**2:
+        return f"{size_bytes / 1024:.1f} KB"
+    elif size_bytes < 1024**3:
+        return f"{size_bytes / (1024**2):.1f} MB"
+    else:
+        return f"{size_bytes / (1024**3):.1f} GB"
 
 
 def create_test_file(filepath, size_bytes, use_zero=True):
@@ -46,7 +90,7 @@ def create_test_file(filepath, size_bytes, use_zero=True):
             print(f"  WARNING: File exists but size mismatch ({file_size} vs {size_bytes}), recreating...",
                   file=sys.stderr)
 
-    print(f"  Creating: {filepath} ({size_bytes / (1024**2):.1f} MB)...", file=sys.stderr)
+    print(f"  Creating: {filepath} ({format_bytes_to_human(size_bytes)})...", file=sys.stderr)
 
     # Create directory if it doesn't exist
     os.makedirs(os.path.dirname(filepath), exist_ok=True)
@@ -54,9 +98,20 @@ def create_test_file(filepath, size_bytes, use_zero=True):
     source = '/dev/zero' if use_zero else '/dev/urandom'
 
     try:
+        # For small files (< 1MB), use file size as block size
+        # For larger files, use 1MB blocks
+        if size_bytes < SMALL_FILE_THRESHOLD:
+            # Use file size as block size for small files
+            bs = size_bytes
+            count = 1
+        else:
+            # Use 1MB blocks for larger files
+            bs = 1024**2  # 1MB
+            count = size_bytes // bs
+        
         subprocess.run([
             'dd', f'if={source}', f'of={filepath}',
-            f'bs=1M', f'count={size_bytes // (1024**2)}', 'status=none'
+            f'bs={bs}', f'count={count}', 'status=none'
         ], check=True, timeout=300)
         return True
     except subprocess.TimeoutExpired:
@@ -89,6 +144,12 @@ def run_fio_test(filepath, size_bytes, io_depth, direct, test_name, num_iteratio
         f'--loops={num_iterations}',  # Read file N times
         '--output-format=json',
         '--group_reporting',
+        '--fallocate=none',           # Don't pre-allocate (important for NFS)
+        '--randrepeat=0',             # Don't repeat random patterns
+        '--fsync_on_close=1',         # Ensure data integrity
+        '--zero_buffers',              # Use zero-filled buffers (for consistency with config_nfs)
+        '--buffer_compress_percentage=0',  # No compression
+        '--create_serialize=0',        # Allow parallel file creation
         # NO --time_based, so it reads the complete file
     ]
 
@@ -168,7 +229,8 @@ def run_benchmark_suite(storage_locations=None, file_sizes=None, io_depths=None,
     print(f"\n{'='*70}", file=sys.stderr)
     print(f"FIO Complete File Read Benchmark", file=sys.stderr)
     print(f"Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}", file=sys.stderr)
-    print(f"Reading entire file {num_iterations} times, block size {block_size}", file=sys.stderr)
+    print(f"Reading entire file {num_iterations} times", file=sys.stderr)
+    print(f"Block size: adaptive (file size for <1MB files, {block_size} for >=1MB files)", file=sys.stderr)
     print(f"{'='*70}\n", file=sys.stderr)
 
     test_count = 0
@@ -188,6 +250,9 @@ def run_benchmark_suite(storage_locations=None, file_sizes=None, io_depths=None,
                 print(f"  Skipping {file_name} - file creation failed", file=sys.stderr)
                 continue
 
+            # Determine block size for this file (use file size for files < 1MB)
+            file_block_size = get_block_size_for_file(size_bytes)
+
             for mode_name, direct in test_modes:
                 for io_depth in io_depths:
                     test_count += 1
@@ -197,7 +262,7 @@ def run_benchmark_suite(storage_locations=None, file_sizes=None, io_depths=None,
                           file=sys.stderr, end=' ')
 
                     results = run_fio_test(filepath, size_bytes, io_depth, direct, test_name,
-                                          num_iterations, block_size)
+                                          num_iterations, file_block_size)
 
                     if results:
                         success_count += 1

@@ -1,0 +1,155 @@
+================================================================================
+STORAGE BENCHMARK PERFORMANCE REPORT
+================================================================================
+Generated: 2025-11-27 23:58:53
+Total Tests: 54
+================================================================================
+
+EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+
+Storage Type         Avg Bandwidth        Peak Bandwidth       Avg IOPS       
+--------------------------------------------------------------------------------
+Local_SSD            1.72 GB/s            4.93 GB/s                   3,018
+NFS_Mount            3.28 GB/s            41.07 GB/s                  3,853
+
+KEY FINDINGS
+--------------------------------------------------------------------------------
+• NFS Peak Performance: 41.07 GB/s (10GB file, QD=128, direct I/O)
+  Read time: 249.30 ms
+• Local SSD Peak Performance: 4.93 GB/s (10GB file, QD=128)
+  Read time: 2.08 s
+
+================================================================================
+LOCAL_SSD PERFORMANCE
+================================================================================
+
+File Size    IO Mode      QD     Time            Bandwidth            IOPS         Latency        
+--------------------------------------------------------------------------------
+1K           direct       1      300 μs          2.9 MB/s                  3,000  0.09 ms
+1K           direct       128    300 μs          2.9 MB/s                  3,000  0.09 ms
+4K           direct       1      300 μs          11.7 MB/s                 3,000  0.09 ms
+4K           direct       128    300 μs          11.7 MB/s                 3,000  0.08 ms
+10K          direct       1      300 μs          29.3 MB/s                 3,000  0.19 ms
+10K          direct       128    300 μs          29.3 MB/s                 3,000  0.18 ms
+100K         direct       1      300 μs          293.0 MB/s                3,000  0.31 ms
+100K         direct       128    300 μs          293.0 MB/s                3,000  0.31 ms
+1MB          direct       1      700 μs          1.50 GB/s                 1,500  0.63 ms
+1MB          direct       128    700 μs          1.50 GB/s                 1,500  0.63 ms
+10MB         direct       1      5.00 ms         2.00 GB/s                 2,000  0.49 ms
+10MB         direct       128    2.70 ms         3.75 GB/s                 3,750  2.28 ms
+100MB        direct       1      44.30 ms        2.26 GB/s                 2,256  0.44 ms
+100MB        direct       128    20.70 ms        4.84 GB/s                 4,839  19.73 ms
+1GB          direct       1      450.70 ms       2.27 GB/s                 2,272  0.44 ms
+1GB          direct       128    208.00 ms       4.92 GB/s                 4,923  25.82 ms
+10GB         direct       1      4.36 s          2.35 GB/s                 2,351  0.43 ms
+10GB         direct       128    2.08 s          4.93 GB/s                 4,933  25.92 ms
+
+Performance Insights:
+  • 1K: QD=128 improves bandwidth by 0.0% (2.9 MB/s → 2.9 MB/s)
+  • 4K: QD=128 improves bandwidth by 0.0% (11.7 MB/s → 11.7 MB/s)
+  • 10K: QD=128 improves bandwidth by 0.0% (29.3 MB/s → 29.3 MB/s)
+  • 100K: QD=128 improves bandwidth by 0.0% (293.0 MB/s → 293.0 MB/s)
+  • 1MB: QD=128 improves bandwidth by 0.0% (1.50 GB/s → 1.50 GB/s)
+  • 10MB: QD=128 improves bandwidth by 87.5% (2.00 GB/s → 3.75 GB/s)
+  • 100MB: QD=128 improves bandwidth by 114.5% (2.26 GB/s → 4.84 GB/s)
+  • 1GB: QD=128 improves bandwidth by 116.7% (2.27 GB/s → 4.92 GB/s)
+  • 10GB: QD=128 improves bandwidth by 109.9% (2.35 GB/s → 4.93 GB/s)
+
+================================================================================
+NFS_MOUNT PERFORMANCE
+================================================================================
+
+File Size    IO Mode      QD     Time            Bandwidth            IOPS         Latency        
+--------------------------------------------------------------------------------
+1K           buffered     1      700 μs          1.5 MB/s                  1,500  0.34 ms
+1K           buffered     128    700 μs          1.5 MB/s                  1,500  0.36 ms
+1K           direct       1      1.30 ms         0.73 MB/s                   750  0.49 ms
+1K           direct       128    1.00 ms         0.98 MB/s                 1,000  0.49 ms
+4K           buffered     1      700 μs          5.9 MB/s                  1,500  0.34 ms
+4K           buffered     128    700 μs          5.9 MB/s                  1,500  0.32 ms
+4K           direct       1      700 μs          5.9 MB/s                  1,500  0.32 ms
+4K           direct       128    700 μs          5.9 MB/s                  1,500  0.28 ms
+10K          buffered     1      700 μs          14.7 MB/s                 1,500  0.34 ms
+10K          buffered     128    700 μs          14.7 MB/s                 1,500  0.35 ms
+10K          direct       1      700 μs          14.7 MB/s                 1,500  0.31 ms
+10K          direct       128    700 μs          14.7 MB/s                 1,500  0.31 ms
+100K         buffered     1      1.00 ms         97.7 MB/s                 1,000  0.50 ms
+100K         buffered     128    1.00 ms         97.7 MB/s                 1,000  0.46 ms
+100K         direct       1      700 μs          146.5 MB/s                1,500  0.42 ms
+100K         direct       128    1.00 ms         97.7 MB/s                 1,000  0.48 ms
+1MB          buffered     1      2.00 ms         500.0 MB/s                  500  1.67 ms
+1MB          buffered     128    2.30 ms         428.6 MB/s                  429  1.82 ms
+1MB          direct       1      1.30 ms         750.0 MB/s                  750  1.04 ms
+1MB          direct       128    1.30 ms         750.0 MB/s                  750  0.96 ms
+10MB         buffered     1      8.70 ms         1.15 GB/s                 1,154  0.81 ms
+10MB         buffered     128    8.00 ms         1.25 GB/s                 1,250  3.90 ms
+10MB         direct       1      8.70 ms         1.15 GB/s                 1,154  0.81 ms
+10MB         direct       128    1.70 ms         6.00 GB/s                 6,000  1.19 ms
+100MB        buffered     1      67.30 ms        1.49 GB/s                 1,485  0.66 ms
+100MB        buffered     128    70.00 ms        1.43 GB/s                 1,429  34.60 ms
+100MB        direct       1      65.70 ms        1.52 GB/s                 1,523  0.65 ms
+100MB        direct       128    5.70 ms         17.65 GB/s               17,647  4.05 ms
+1GB          buffered     1      680.70 ms       1.50 GB/s                 1,504  0.66 ms
+1GB          buffered     128    689.00 ms       1.49 GB/s                 1,486  79.53 ms
+1GB          direct       1      647.30 ms       1.58 GB/s                 1,582  0.63 ms
+1GB          direct       128    31.30 ms        32.68 GB/s               32,681  3.70 ms
+10GB         buffered     1      6.20 s          1.65 GB/s                 1,651  0.60 ms
+10GB         buffered     128    6.28 s          1.63 GB/s                 1,630  77.08 ms
+10GB         direct       1      5.72 s          1.79 GB/s                 1,790  0.56 ms
+10GB         direct       128    249.30 ms       41.07 GB/s               41,070  3.09 ms
+
+Performance Insights:
+  • 1K: QD=128 improves bandwidth by 34.2% (0.73 MB/s → 0.98 MB/s)
+  • 4K: QD=128 improves bandwidth by 0.0% (5.9 MB/s → 5.9 MB/s)
+  • 10K: QD=128 improves bandwidth by 0.0% (14.7 MB/s → 14.7 MB/s)
+  • 100K: QD=128 improves bandwidth by -33.3% (146.5 MB/s → 97.7 MB/s)
+  • 1MB: QD=128 improves bandwidth by 0.0% (750.0 MB/s → 750.0 MB/s)
+  • 10MB: QD=128 improves bandwidth by 420.0% (1.15 GB/s → 6.00 GB/s)
+  • 100MB: QD=128 improves bandwidth by 1058.8% (1.52 GB/s → 17.65 GB/s)
+  • 1GB: QD=128 improves bandwidth by 1966.0% (1.58 GB/s → 32.68 GB/s)
+  • 10GB: QD=128 improves bandwidth by 2194.0% (1.79 GB/s → 41.07 GB/s)
+
+================================================================================
+NFS: DIRECT I/O vs BUFFERED I/O COMPARISON
+================================================================================
+
+File Size    QD     Direct BW            Buffered BW          Winner         
+--------------------------------------------------------------------------------
+1K           1      0.73 MB/s            1.5 MB/s             Buffered       
+1K           128    0.98 MB/s            1.5 MB/s             Buffered       
+4K           1      5.9 MB/s             5.9 MB/s             Buffered       
+4K           128    5.9 MB/s             5.9 MB/s             Buffered       
+10K          1      14.7 MB/s            14.7 MB/s            Buffered       
+10K          128    14.7 MB/s            14.7 MB/s            Buffered       
+100K         1      146.5 MB/s           97.7 MB/s            Direct         
+100K         128    97.7 MB/s            97.7 MB/s            Buffered       
+1MB          1      750.0 MB/s           500.0 MB/s           Direct         
+1MB          128    750.0 MB/s           428.6 MB/s           Direct         
+10MB         1      1.15 GB/s            1.15 GB/s            Buffered       
+10MB         128    6.00 GB/s            1.25 GB/s            Direct         
+100MB        1      1.52 GB/s            1.49 GB/s            Direct         
+100MB        128    17.65 GB/s           1.43 GB/s            Direct         
+1GB          1      1.58 GB/s            1.50 GB/s            Direct         
+1GB          128    32.68 GB/s           1.49 GB/s            Direct         
+10GB         1      1.79 GB/s            1.65 GB/s            Direct         
+10GB         128    41.07 GB/s           1.63 GB/s            Direct         
+
+================================================================================
+RECOMMENDATIONS
+================================================================================
+
+Workload Matching:
+  • Small files (< 1MB): Use Local SSD for lower latency
+  • Single-threaded workloads: Use Local SSD (2-5 GB/s)
+  • Multi-threaded/high-concurrency: Use NFS with QD=128 (30+ GB/s)
+  • Large file transfers: Use NFS with Direct I/O and QD=128
+
+Configuration Tips:
+  • For NFS: Always use Direct I/O for high-concurrency workloads
+  • For Local SSD: QD=128 provides 2x improvement over QD=1
+  • Buffered I/O on NFS doesn't scale well with high queue depth
+
+================================================================================
+End of Report
+================================================================================
