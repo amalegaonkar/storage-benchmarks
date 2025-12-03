@@ -1,0 +1,1 @@
+Incorrect buffer size configuration (max_block_size * max_batch_size) (4294967296) is > (total_buffer_size / num_threads) (2147483648)

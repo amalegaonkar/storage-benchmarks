@@ -1,0 +1,11 @@
+=== nixlbench Processes ===
+root       27586  0.0  0.0  14656     0 pts/0    S+   22:27   0:00 sudo nixlbench/debug_gds_crash.sh
+root       27587  0.0  0.0  14656     0 pts/2    Ss   22:27   0:00 sudo nixlbench/debug_gds_crash.sh
+root       27588  0.0  0.0   7552     0 pts/2    S+   22:27   0:00 /bin/bash nixlbench/debug_gds_crash.sh
+root       27651  0.0  0.0   7552     0 pts/2    S+   22:27   0:00 /bin/bash nixlbench/debug_gds_crash.sh
+
+=== GPU Processes ===
+# gpu         pid   type     sm    mem    enc    dec    jpg    ofa    command 
+# Idx           #    C/G      %      %      %      %      %      %    name 
+    0          -     -      -      -      -      -      -      -    -              
+

@@ -52,7 +52,7 @@
   ],
   "fio_settings": {
     "block_size": "1M",
-    "io_depths": [1, 128],
+    "io_depths": [1, 64],
     "num_iterations": 3,
     "use_zero_device": true
   }

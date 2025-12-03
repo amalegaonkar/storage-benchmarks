@@ -1,0 +1,40 @@
+==================================
+GDS Crash Debug Summary
+Generated: Mon Dec  1 09:37:07 PM UTC 2025
+==================================
+
+Files collected:
+  ./debug_output/cpu_info_20251201_213706.txt (3.1K)
+  ./debug_output/crash_indicators_20251201_213706.txt (127)
+  ./debug_output/dmesg_20251201_213706.txt (109)
+  ./debug_output/gpu_info_20251201_213706.txt (2.2K)
+  ./debug_output/kernel_modules_20251201_213706.txt (440)
+  ./debug_output/limits_20251201_213706.txt (908)
+  ./debug_output/memory_info_20251201_213706.txt (937)
+  ./debug_output/processes_20251201_213706.txt (507)
+  ./debug_output/storage_info_20251201_213706.txt (2.3K)
+  ./debug_output/SUMMARY_20251201_213706.txt (155)
+  ./debug_output/system_info_20251201_213706.txt (215)
+  ./debug_output/system_logs_20251201_213706.txt (27K)
+
+=== Quick Status Check ===
+
+GPU Status:
+NVIDIA GH200 480GB, 97280 MiB, 30
+
+GDS Module:
+  [WARN] nvidia_fs module is NOT loaded
+
+Recent Errors (last 5):
+
+GPU Memory Usage:
+0 MiB, 97871 MiB
+
+=== Recommendations ===
+
+1. Load GDS module: sudo modprobe nvidia_fs
+2. Check dmesg_20251201_213706.txt for kernel errors
+3. Check crash_indicators_20251201_213706.txt for crash signatures
+4. Review gpu_info_20251201_213706.txt for GPU memory issues
+5. Check if system has enough GPU memory for test
+

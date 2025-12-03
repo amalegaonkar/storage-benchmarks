@@ -1,0 +1,37 @@
+=== CPU Information ===
+Architecture:                         aarch64
+CPU op-mode(s):                       64-bit
+Byte Order:                           Little Endian
+CPU(s):                               72
+On-line CPU(s) list:                  0-71
+Vendor ID:                            ARM
+Model name:                           Neoverse-V2
+Model:                                0
+Thread(s) per core:                   1
+Core(s) per socket:                   72
+Socket(s):                            1
+Stepping:                             r0p0
+Frequency boost:                      disabled
+CPU max MHz:                          3411.0000
+CPU min MHz:                          81.0000
+BogoMIPS:                             2000.00
+Flags:                                fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma lrcpc dcpop sha3 sm3 sm4 asimddp sha512 sve asimdfhm dit uscat ilrcpc flagm ssbs sb paca pacg dcpodp sve2 sveaes svepmull svebitperm svesha3 svesm4 flagm2 frint svei8mm svebf16 i8mm bf16 dgh bti
+L1d cache:                            4.5 MiB (72 instances)
+L1i cache:                            4.5 MiB (72 instances)
+L2 cache:                             72 MiB (72 instances)
+
+=== CPU Load ===
+ 22:28:15 up 47 min,  3 users,  load average: 0.13, 0.08, 0.08
+
+=== Top Processes ===
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ubuntu     21343  0.6  0.0 37213440 265472 ?     Sl   22:17   0:04 /home/ubuntu/.cursor-server/cli/servers/Stable-60d42bed27e5775c43ec0428d8c653c49e58e260/server/node --dns-result-order=ipv4first /home/ubuntu/.cursor-server/cli/servers/Stable-60d42bed27e5775c43ec0428d8c653c49e58e260/server/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+root        1611  0.0  0.0 188992 173824 ?       S<Ls 21:41   0:00 ovs-vswitchd unix:/var/run/openvswitch/db.sock -vconsole:emer -vsyslog:err -vfile:info --mlockall --no-chdir --log-file=/var/log/openvswitch/ovs-vswitchd.log --pidfile=/var/run/openvswitch/ovs-vswitchd.pid --detach
+root        2125  0.0  0.0 3947776 92160 ?       Sl   21:41   0:00 /usr/bin/dockerd -p /var/run/docker.pid
+root        2039  0.4  0.0 5644864 73728 ?       Ssl  21:41   0:12 /usr/local/bin/containerd
+root        3459  0.0  0.0 2977920 73728 ?       Sl   21:41   0:00 calico-node -monitor-token
+root        3463  0.3  0.0 4902912 73728 ?       Sl   21:41   0:10 calico-node -felix
+root        3466  0.0  0.0 3126016 73728 ?       Sl   21:41   0:00 calico-node -monitor-addresses
+ubuntu     21318  0.2  0.0 5246080 73088 ?       Sl   22:17   0:01 /home/ubuntu/.cursor-server/cli/servers/Stable-60d42bed27e5775c43ec0428d8c653c49e58e260/server/node /home/ubuntu/.cursor-server/cli/servers/Stable-60d42bed27e5775c43ec0428d8c653c49e58e260/server/out/server-main.js --connection-token=remotessh --accept-server-license-terms --start-server --enable-remote-auto-shutdown --socket-path=/tmp/cursor-a1c1d700-8204-4869-ad45-9cfc098f4f8f
+root        3461  0.0  0.0 3200064 64512 ?       Sl   21:41   0:00 calico-node -confd
+

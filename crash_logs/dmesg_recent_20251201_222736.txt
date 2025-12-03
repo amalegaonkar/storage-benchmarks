@@ -1,0 +1,202 @@
+=== Last 200 kernel messages ===
+[   11.808244] systemd[1]: Hostname set to <nbutme-gh200-1>.
+[   11.839895] block nvme2n1: the capability attribute has been deprecated.
+[   11.883643] systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+[   11.912745] systemd[1]: /lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.
+[   11.936104] systemd[1]: Configuration file /etc/systemd/system/containerd.service is marked executable. Please remove executable permission bits. Proceeding anyway.
+[   11.951147] systemd[1]: Configuration file /etc/systemd/system/containerd.service is marked world-writable. Please remove world writability permission bits. Proceeding anyway.
+[   11.986738] systemd[1]: Queued start job for default target Graphical Interface.
+[   12.001100] systemd[1]: Created slice Slice /system/modprobe.
+[   12.014492] systemd[1]: Created slice Slice /system/serial-getty.
+[   12.030478] systemd[1]: Created slice Slice /system/systemd-fsck.
+[   12.046429] systemd[1]: Created slice User and Session Slice.
+[   12.059189] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[   12.078403] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[   12.099201] systemd[1]: Reached target Slice Units.
+[   12.112140] systemd[1]: Reached target Mounting snaps.
+[   12.126139] systemd[1]: Reached target Swaps.
+[   12.136139] systemd[1]: Reached target Local Verity Protected Volumes.
+[   12.152195] systemd[1]: Listening on Device-mapper event daemon FIFOs.
+[   12.166211] systemd[1]: Listening on LVM2 poll daemon socket.
+[   12.179193] systemd[1]: Listening on multipathd control socket.
+[   12.207839] systemd[1]: Listening on RPCbind Server Activation Socket.
+[   12.222684] systemd[1]: Listening on Syslog Socket.
+[   12.236208] systemd[1]: Listening on fsck to fsckd communication Socket.
+[   12.251194] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[   12.265270] systemd[1]: Listening on Journal Audit Socket.
+[   12.278193] systemd[1]: Listening on Journal Socket (/dev/log).
+[   12.291202] systemd[1]: Listening on Journal Socket.
+[   12.302623] systemd[1]: Listening on Network Service Netlink Socket.
+[   12.319218] systemd[1]: Listening on udev Control Socket.
+[   12.331179] systemd[1]: Listening on udev Kernel Socket.
+[   12.349192] systemd[1]: Mounting Huge Pages File System...
+[   12.360752] systemd[1]: Mounting POSIX Message Queue File System...
+[   12.374730] systemd[1]: Mounting Kernel Debug File System...
+[   12.386694] systemd[1]: Mounting Kernel Trace File System...
+[   12.399566] systemd[1]: Starting Journal Service...
+[   12.410172] systemd[1]: Condition check resulted in Kernel Module supporting RPCSEC_GSS being skipped.
+[   12.420871] systemd[1]: Starting Set the console keyboard layout...
+[   12.434866] systemd[1]: Starting Create List of Static Device Nodes...
+[   12.448797] systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+[   12.467157] systemd[1]: Condition check resulted in LXD - agent being skipped.
+[   12.475217] systemd[1]: Starting Load Kernel Module configfs...
+[   12.487710] systemd[1]: Starting Load Kernel Module drm...
+[   12.499713] systemd[1]: Starting Load Kernel Module efi_pstore...
+[   12.506615] pstore: backend 'erst' already in use: ignoring 'efi_pstore'
+[   12.521695] systemd[1]: Starting Load Kernel Module fuse...
+[   12.533252] systemd[1]: Condition check resulted in File System Check on Root Device being skipped.
+[   12.552210] systemd[1]: Starting Load Kernel Modules...
+[   12.563861] systemd[1]: Starting Remount Root and Kernel File Systems...
+[   12.564413] bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+[   12.584965] Bridge firewalling registered
+[   12.592882] knem 1.1.4.90mlnx3: initialized
+[   12.594036] EXT4-fs (dm-0): re-mounted 598454bc-3ce2-4005-8e63-765459a45df5 r/w. Quota mode: none.
+[   12.621211] systemd[1]: Starting Coldplug All udev Devices...
+[   12.636107] systemd[1]: Started Journal Service.
+[   12.777989] alua: device handler registered
+[   12.785976] emc: device handler registered
+[   12.791011] rdac: device handler registered
+[   12.807825] systemd-journald[1076]: Received client request to flush runtime journal.
+[   12.820112] systemd-journald[1076]: File /var/log/journal/e56b4688d8ee42409d4e7439190fa856/system.journal corrupted or uncleanly shut down, renaming and replacing.
+[   12.992430] loop0: detected capacity change from 0 to 121984
+[   13.001302] loop1: detected capacity change from 0 to 121984
+[   13.010173] loop2: detected capacity change from 0 to 165960
+[   13.017744] loop3: detected capacity change from 0 to 165952
+[   13.026164] loop4: detected capacity change from 0 to 90552
+[   13.033805] loop5: detected capacity change from 0 to 90800
+[   13.110873]  cs_system_cfg: CoreSight Configuration manager initialised
+[   13.111368] IPMI message handler: version 39.2
+[   13.114158] ipmi device interface
+[   13.114273] coresight stm0: STM32 initialized
+[   13.120303] power_meter ACPI000D:00: Found ACPI power meter.
+[   13.121085] power_meter ACPI000D:00: hwmon_device_register() is deprecated. Please convert the driver to use hwmon_device_register_with_info().
+[   13.121369] power_meter ACPI000D:01: Found ACPI power meter.
+[   13.121437] power_meter ACPI000D:01: Ignoring unsafe software power cap!
+[   13.121458] power_meter ACPI000D:01: hwmon_device_register() is deprecated. Please convert the driver to use hwmon_device_register_with_info().
+[   13.121627] power_meter ACPI000D:02: Found ACPI power meter.
+[   13.121707] power_meter ACPI000D:02: hwmon_device_register() is deprecated. Please convert the driver to use hwmon_device_register_with_info().
+[   13.121809] power_meter ACPI000D:03: Found ACPI power meter.
+[   13.121914] power_meter ACPI000D:03: hwmon_device_register() is deprecated. Please convert the driver to use hwmon_device_register_with_info().
+[   13.127299] ipmi_si: IPMI System Interface driver
+[   13.127561] ipmi_si: Unable to find any System Interface(s)
+[   13.136513] Compat-mlnx-ofed backport release: eb6cb58
+[   13.136517] Backport based on https://:@git-nbu.nvidia.com/r/a/mlnx_ofed/mlnx-ofa_kernel-4.0.git eb6cb58
+[   13.136518] compat.git: https://:@git-nbu.nvidia.com/r/a/mlnx_ofed/mlnx-ofa_kernel-4.0.git
+[   13.139521] arm_spe_pmu arm,spe-v1: probed SPEv1.1 for CPUs 0-71 [max_record_sz 64, align 64, features 0x17]
+[   13.141970] ipmi_ssif: IPMI SSIF Interface driver
+[   13.142472] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.10.auto: option mask 0x0
+[   13.143669] ipmi_ssif i2c-IPI0001:00: ipmi_ssif: Trying ACPI-specified SSIF interface at i2c address 0x10, adapter NVDA0301:00, slave address 0x20
+[   13.145463] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.10.auto: Registered PMU @ 0x0000000011002000 using 4 counters with Global(Counter0) filter settings
+[   13.145572] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.11.auto: option mask 0x0
+[   13.145877] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.11.auto: Registered PMU @ 0x0000000011042000 using 4 counters with Global(Counter0) filter settings
+[   13.145989] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.12.auto: option mask 0x0
+[   13.146423] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.12.auto: Registered PMU @ 0x0000000011062000 using 4 counters with Global(Counter0) filter settings
+[   13.146540] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.13.auto: option mask 0x0
+[   13.147680] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.13.auto: Registered PMU @ 0x0000000011082000 using 4 counters with Global(Counter0) filter settings
+[   13.147853] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.14.auto: option mask 0x0
+[   13.153246] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.14.auto: Registered PMU @ 0x00000000110a2000 using 4 counters with Global(Counter0) filter settings
+[   13.153402] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.15.auto: option mask 0x0
+[   13.165295] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.15.auto: Registered PMU @ 0x0000000012002000 using 4 counters with Global(Counter0) filter settings
+[   13.165485] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.16.auto: option mask 0x0
+[   13.170107] ipmi_ssif i2c-IPI0001:00: IPMI message handler: Found new BMC (man_id: 0x002a7c, prod_id: 0x1d31, dev_id: 0x20)
+[   13.171999] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.16.auto: Registered PMU @ 0x0000000012042000 using 4 counters with Global(Counter0) filter settings
+[   13.172048] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.17.auto: option mask 0x0
+[   13.175967] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.17.auto: Registered PMU @ 0x0000000012062000 using 4 counters with Global(Counter0) filter settings
+[   13.176007] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.18.auto: option mask 0x0
+[   13.176258] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.18.auto: Registered PMU @ 0x0000000012082000 using 4 counters with Global(Counter0) filter settings
+[   13.176296] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.19.auto: option mask 0x0
+[   13.176570] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.19.auto: Registered PMU @ 0x00000000120a2000 using 4 counters with Global(Counter0) filter settings
+[   13.176619] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.20.auto: option mask 0x0
+[   13.176940] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.20.auto: Registered PMU @ 0x0000000015002000 using 4 counters with Global(Counter0) filter settings
+[   13.176985] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.21.auto: option mask 0x0
+[   13.177321] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.21.auto: Registered PMU @ 0x0000000015042000 using 4 counters with Global(Counter0) filter settings
+[   13.177369] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.22.auto: option mask 0x0
+[   13.177696] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.22.auto: Registered PMU @ 0x0000000015062000 using 4 counters with Global(Counter0) filter settings
+[   13.177751] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.23.auto: option mask 0x0
+[   13.178081] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.23.auto: Registered PMU @ 0x0000000015082000 using 4 counters with Global(Counter0) filter settings
+[   13.178133] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.24.auto: option mask 0x0
+[   13.178439] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.24.auto: Registered PMU @ 0x00000000150a2000 using 4 counters with Global(Counter0) filter settings
+[   13.178485] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.25.auto: option mask 0x0
+[   13.178805] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.25.auto: Registered PMU @ 0x0000000016002000 using 4 counters with Global(Counter0) filter settings
+[   13.178849] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.26.auto: option mask 0x0
+[   13.179129] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.26.auto: Registered PMU @ 0x0000000016042000 using 4 counters with Global(Counter0) filter settings
+[   13.179175] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.27.auto: option mask 0x0
+[   13.179442] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.27.auto: Registered PMU @ 0x0000000016062000 using 4 counters with Global(Counter0) filter settings
+[   13.179486] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.28.auto: option mask 0x0
+[   13.179793] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.28.auto: Registered PMU @ 0x0000000005002000 using 4 counters with Global(Counter0) filter settings
+[   13.179836] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.29.auto: option mask 0x0
+[   13.180126] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.29.auto: Registered PMU @ 0x0000000005042000 using 4 counters with Global(Counter0) filter settings
+[   13.180166] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.30.auto: option mask 0x0
+[   13.180453] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.30.auto: Registered PMU @ 0x0000000005062000 using 4 counters with Global(Counter0) filter settings
+[   13.217549] mlx5_core 0000:01:00.0: Adding to iommu group 20
+[   13.219510] mlx5_core 0000:01:00.0: firmware version: 40.45.1020
+[   13.219547] mlx5_core 0000:01:00.0: 504.112 Gb/s available PCIe bandwidth, limited by 32.0 GT/s PCIe x16 link at 0000:00:00.0 (capable of 1024.000 Gb/s with 64.0 GT/s PCIe x16 link)
+[   13.295518] EXT4-fs (nvme2n1p2): mounted filesystem b2717fb2-ea9e-47da-b2d8-6a348cf60a7e r/w with ordered data mode. Quota mode: none.
+[   13.355760] audit: type=1400 audit(1764625273.391:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=1365 comm="apparmor_parser"
+[   13.355889] audit: type=1400 audit(1764625273.391:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=1366 comm="apparmor_parser"
+[   13.355893] audit: type=1400 audit(1764625273.391:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=1366 comm="apparmor_parser"
+[   13.356138] audit: type=1400 audit(1764625273.392:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=1370 comm="apparmor_parser"
+[   13.356141] audit: type=1400 audit(1764625273.392:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_filter" pid=1370 comm="apparmor_parser"
+[   13.356143] audit: type=1400 audit(1764625273.392:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_groff" pid=1370 comm="apparmor_parser"
+[   13.356745] audit: type=1400 audit(1764625273.392:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine" pid=1372 comm="apparmor_parser"
+[   13.356747] audit: type=1400 audit(1764625273.392:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=1372 comm="apparmor_parser"
+[   13.357177] audit: type=1400 audit(1764625273.393:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_apt_news" pid=1368 comm="apparmor_parser"
+[   13.357431] audit: type=1400 audit(1764625273.393:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="tcpdump" pid=1371 comm="apparmor_parser"
+[   13.506042] RPC: Registered named UNIX socket transport module.
+[   13.506046] RPC: Registered udp transport module.
+[   13.506047] RPC: Registered tcp transport module.
+[   13.506048] RPC: Registered tcp-with-tls transport module.
+[   13.506049] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[   13.635412] MACsec IEEE 802.1AE
+[   13.687493] mlx5_core 0000:01:00.0: Rate limit: 127 rates are supported, range: 0Mbps to 390625Mbps
+[   13.687787] mlx5_core 0000:01:00.0: E-Switch: Total vports 18, per vport: max uc(128) max mc(2048)
+[   13.687836] mlx5_core 0000:01:00.0: Flow counters bulk query buffer size increased, bulk_query_len(8)
+[   13.740658] mlx5_core 0000:01:00.0: mlx5_pcie_event:325:(pid 547): PCIe slot power capability was not advertised.
+[   13.805106] mlx5_core 0000:01:00.0: mlx5e: IPSec ESP acceleration enabled
+[   14.104193] openvswitch: Open vSwitch switching datapath
+[   14.382065] mlx5_core 0000:01:00.0: MLX5E: StrdRq(1) RqSz(8) StrdSz(2048) RxCqeCmprss(0 enhanced)
+[   14.386295] mlx5_core 0002:01:00.0: Adding to iommu group 21
+[   14.388080] mlx5_core 0002:01:00.0: firmware version: 40.45.1020
+[   14.388117] mlx5_core 0002:01:00.0: 252.056 Gb/s available PCIe bandwidth, limited by 32.0 GT/s PCIe x8 link at 0002:00:00.0 (capable of 1024.000 Gb/s with 64.0 GT/s PCIe x16 link)
+[   14.842309] mlx5_core 0002:01:00.0: Flow counters bulk query buffer size increased, bulk_query_len(8)
+[   14.865887] mlx5_core 0002:01:00.0: mlx5_pcie_event:325:(pid 454): PCIe slot power capability was not advertised.
+[   14.922645] mlx5_core 0002:01:00.1: Adding to iommu group 22
+[   14.924497] mlx5_core 0002:01:00.1: firmware version: 40.45.1020
+[   14.924532] mlx5_core 0002:01:00.1: 252.056 Gb/s available PCIe bandwidth, limited by 32.0 GT/s PCIe x8 link at 0002:00:00.0 (capable of 1024.000 Gb/s with 64.0 GT/s PCIe x16 link)
+[   15.548560] mlx5_core 0002:01:00.1: E-Switch: Total vports 18, per vport: max uc(128) max mc(2048)
+[   15.548586] mlx5_core 0002:01:00.1: Flow counters bulk query buffer size increased, bulk_query_len(8)
+[   15.596180] mlx5_core 0002:01:00.1: mlx5_pcie_event:325:(pid 819): PCIe slot power capability was not advertised.
+[   15.710602] mlx5_core 0002:01:00.1: mlx5e: IPSec ESP acceleration enabled
+[   16.420781] mlx5_core 0002:01:00.1: MLX5E: StrdRq(1) RqSz(8) StrdSz(2048) RxCqeCmprss(0 enhanced)
+[   16.452139] mlx5_core 0002:01:00.1 enP2s2f1np1: renamed from eth1
+[   16.462201] mlx5_core 0000:01:00.0 enp1s0np0: renamed from eth0
+[   17.278452] mlx5_core 0000:01:00.0 enp1s0np0: Link up
+[   17.281610] mlx5_core 0000:01:00.0 mlx5_0: Port: 1 Link ACTIVE
+[   17.319171] mlx5_core 0002:01:00.0 ibP2s2f0: renamed from ib0
+[   31.483513] Key type psk registered
+[   32.011385] kauditd_printk_skb: 33 callbacks suppressed
+[   32.011389] audit: type=1400 audit(1764625292.085:43): apparmor="STATUS" operation="profile_load" profile="unconfined" name="docker-default" pid=2243 comm="apparmor_parser"
+[   32.027246] evm: overlay not supported
+[   32.127604] Initializing XFRM netlink socket
+[   32.344786] loop6: detected capacity change from 0 to 8
+[   33.288557] [ffffffcfffe00000-ffffffcfffe0ffff] potential offnode page_structs
+[   33.288732] Fallback order for Node 0: 0 1 
+[   33.288737] Fallback order for Node 1: 1 0 
+[   33.288738] Fallback order for Node 2: 0 1 
+[   33.288740] Fallback order for Node 3: 0 1 
+[   33.288742] Fallback order for Node 4: 0 1 
+[   33.288744] Fallback order for Node 5: 0 1 
+[   33.288746] Fallback order for Node 6: 0 1 
+[   33.288748] Fallback order for Node 7: 0 1 
+[   33.288749] Fallback order for Node 8: 0 1 
+[   33.288751] Built 9 zonelists, mobility grouping on.  Total pages: 7577720
+[   33.288755] Policy zone: Normal
+[   33.854182] fbcon: Taking over console
+[   33.878874] Console: switching to colour frame buffer device 240x75
+[   34.024760] workqueue: drm_fb_helper_damage_work hogged CPU for >20000us 4 times, consider switching to WQ_UNBOUND
+[   45.166445] wireguard: WireGuard 1.0.0 loaded. See www.wireguard.com for information.
+[   45.166451] wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+[   47.437169] ipip: IPv4 and MPLS over IPv4 tunneling driver
+[   74.237515] audit: type=1400 audit(1764625334.566:44): apparmor="STATUS" operation="profile_load" profile="unconfined" name="cri-containerd.apparmor.d" pid=4366 comm="apparmor_parser"
+[   84.026018] systemd-journald[1076]: File /var/log/journal/e56b4688d8ee42409d4e7439190fa856/user-1000.journal corrupted or uncleanly shut down, renaming and replacing.
+

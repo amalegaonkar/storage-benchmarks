@@ -1,0 +1,1638 @@
+=== Kernel Logs (21:38-21:42) ===
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Booting Linux on physical CPU 0x0000020000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Linux version 6.8.0-1043-nvidia-64k (buildd@bos03-arm64-070) (aarch64-linux-gnu-gcc-11 (Ubuntu 11.4.0-1ubuntu1~22.04.2) 11.4.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #46~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Oct 23 22:53:56 UTC 2 (Ubuntu 6.8.0-1043.46~22.04.1-nvidia-64k 6.8.12)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: KASLR enabled
+Dec 01 21:41:12 nbutme-gh200-1 kernel: efi: EFI v2.9 by American Megatrends
+Dec 01 21:41:12 nbutme-gh200-1 kernel: efi: RTPROP=0x7853c0e398 ACPI 2.0=0x78447eb018 SMBIOS 3.0=0x7853c05218 MEMATTR=0x784f35a018 ESRT=0x784f37c018 MOKvar=0x78532e0000 RNG=0x78447ea918 MEMRESERVE=0x7844730398 
+Dec 01 21:41:12 nbutme-gh200-1 kernel: random: crng init done
+Dec 01 21:41:12 nbutme-gh200-1 kernel: secureboot: Secure boot disabled
+Dec 01 21:41:12 nbutme-gh200-1 kernel: esrt: Reserving ESRT space from 0x000000784f37c018 to 0x000000784f37c078.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: Early table checksum verification disabled
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: RSDP 0x00000078447EB018 000024 (v02 NVIDIA)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: XSDT 0x00000078447EB098 00013C (v01 NVIDIA SMCI--MB 00000001 AMI  00000001)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: FACP 0x00000078447EAD98 000114 (v06 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: DSDT 0x0000007844743018 001EC9 (v02 NVIDIA TH500    00000001 INTL 20220331)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: FIDT 0x00000078447EBF18 00009C (v01 NVIDIA SMCI--MB 01072009 AMI  00010013)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: SSDT 0x00000078447EBB18 00015E (v02 NVIDIA PRMOPREG 00001000 INTL 20220331)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: SPMI 0x00000078447EBD98 000041 (v05 NVIDIA SMCI--MB 00000000 AMI. 00000000)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: FPDT 0x00000078447EBE18 000034 (v01 NVIDIA T241x1   00000001 AMI  00000001)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: PRMT 0x00000078447EBE98 00003C (v00 NVIDIA SMCI--MB 00000001 AMI  00000001)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: BGRT 0x00000078447EA018 000038 (v01 NVIDIA SMCI--MB 01072009 AMI  00010013)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: SDEI 0x00000078447EAF18 000024 (v01 NVIDIA SMCI--MB 00000001 NVDA 00000001)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: HEST 0x00000078447E8018 001054 (v01 NVIDIA SMCI--MB 00000001 NVDA 00000001)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: BERT 0x00000078447EAF98 000030 (v01 NVIDIA SMCI--MB 00000001 NVDA 00000001)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: EINJ 0x00000078447EAB18 000170 (v01 NVIDIA SMCI--MB 00000001 NVDA 00000001)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: ERST 0x00000078447EA098 000290 (v01 NVIDIA SMCI--MB 00000001 NVDA 00000001)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: GTDT 0x00000078447EA498 000084 (v03 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: APIC 0x00000078447E0018 001778 (v06 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: PPTT 0x0000007844740018 0020F8 (v03 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: SSDT 0x0000007844739018 006BCF (v02 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: SPCR 0x00000078447EA998 000050 (v02 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: SSDT 0x00000078447EAA18 0000CC (v02 NVIDIA SMCI--MB 00000001 INTL 20220331)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: SSDT 0x0000007844737018 0017F2 (v02 NVIDIA BPMP_S0  00000001 INTL 20220331)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: MCFG 0x00000078447EA598 0000AC (v01 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: SSDT 0x0000007844736018 0003AC (v02 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: SSDT 0x0000007844736418 0003AE (v02 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: SSDT 0x0000007844736818 0003AF (v02 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: SSDT 0x0000007844735018 0003AF (v02 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: SSDT 0x0000007844735418 0003AF (v02 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: SSDT 0x0000007844735818 0003AF (v02 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: SSDT 0x0000007844734018 0003AF (v02 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: SSDT 0x0000007844734418 000589 (v02 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: IORT 0x0000007844733018 00081B (v06 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: APMT 0x0000007844733E98 00013C (v00 NVIDIA SMCI--MB 00000001 AMI  00000001)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: MPAM 0x0000007844734E98 000084 (v01 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: SLIT 0x0000007844735E98 00012C (v01 NVIDIA SMCI--MB 00000001 AMI  00000001)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: SRAT 0x0000007844732018 0006B4 (v03 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: HMAT 0x0000007844731018 000808 (v02 NVIDIA SMCI--MB 00000001 AMI  00000001)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: WSMT 0x0000007844734F98 000028 (v01 NVIDIA SMCI--MB 00000001 AMI  00000001)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: SPCR: console: pl011,mmio32,0xc280000,115200
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x80000000-0x787fffffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: SRAT: Node 1 PXM 8 [mem 0x00000000-0xffffffffffffffff] hotplug
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: SRAT: Node 2 PXM 9 [mem 0x00000000-0xffffffffffffffff] hotplug
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: SRAT: Node 3 PXM 10 [mem 0x00000000-0xffffffffffffffff] hotplug
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: SRAT: Node 4 PXM 11 [mem 0x00000000-0xffffffffffffffff] hotplug
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: SRAT: Node 5 PXM 12 [mem 0x00000000-0xffffffffffffffff] hotplug
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: SRAT: Node 6 PXM 13 [mem 0x00000000-0xffffffffffffffff] hotplug
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: SRAT: Node 7 PXM 14 [mem 0x00000000-0xffffffffffffffff] hotplug
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: SRAT: Node 8 PXM 15 [mem 0x00000000-0xffffffffffffffff] hotplug
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NUMA: NODE_DATA [mem 0x785c3ba5c0-0x785c3bffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NUMA: Initmem setup node 1 [<memory-less node>]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NUMA: NODE_DATA [mem 0x785c3b4b80-0x785c3ba5bf]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NUMA: NODE_DATA(1) on node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NUMA: Initmem setup node 2 [<memory-less node>]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NUMA: NODE_DATA [mem 0x785c3aa5c0-0x785c3affff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NUMA: NODE_DATA(2) on node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NUMA: Initmem setup node 3 [<memory-less node>]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NUMA: NODE_DATA [mem 0x785c3a4b80-0x785c3aa5bf]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NUMA: NODE_DATA(3) on node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NUMA: Initmem setup node 4 [<memory-less node>]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NUMA: NODE_DATA [mem 0x785c39f140-0x785c3a4b7f]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NUMA: NODE_DATA(4) on node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NUMA: Initmem setup node 5 [<memory-less node>]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NUMA: NODE_DATA [mem 0x785c399700-0x785c39f13f]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NUMA: NODE_DATA(5) on node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NUMA: Initmem setup node 6 [<memory-less node>]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NUMA: NODE_DATA [mem 0x785c393cc0-0x785c3996ff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NUMA: NODE_DATA(6) on node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NUMA: Initmem setup node 7 [<memory-less node>]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NUMA: NODE_DATA [mem 0x785c38e280-0x785c393cbf]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NUMA: NODE_DATA(7) on node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NUMA: Initmem setup node 8 [<memory-less node>]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NUMA: NODE_DATA [mem 0x785c388840-0x785c38e27f]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NUMA: NODE_DATA(8) on node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Zone ranges:
+Dec 01 21:41:12 nbutme-gh200-1 kernel:   DMA      [mem 0x0000000080000000-0x00000000ffffffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel:   DMA32    empty
+Dec 01 21:41:12 nbutme-gh200-1 kernel:   Normal   [mem 0x0000000100000000-0x000000785fffffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel:   Device   empty
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Movable zone start for each node
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Early memory node ranges
+Dec 01 21:41:12 nbutme-gh200-1 kernel:   node   0: [mem 0x0000000080000000-0x00000000fffcffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel:   node   0: [mem 0x00000000fffd0000-0x00000000ffffffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel:   node   0: [mem 0x0000000100000000-0x000000784477ffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel:   node   0: [mem 0x0000007844780000-0x00000078447dffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel:   node   0: [mem 0x00000078447e0000-0x0000007851ccffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel:   node   0: [mem 0x0000007851cd0000-0x0000007852c5ffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel:   node   0: [mem 0x0000007852c60000-0x0000007852d0ffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel:   node   0: [mem 0x0000007852d10000-0x0000007853c0ffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel:   node   0: [mem 0x0000007853c10000-0x00000078567fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel:   node   0: [mem 0x0000007857000000-0x00000078571fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel:   node   0: [mem 0x0000007857600000-0x00000078576fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel:   node   0: [mem 0x0000007859700000-0x00000078597dffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel:   node   0: [mem 0x000000785c000000-0x000000785fffffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Initmem setup node 0 [mem 0x0000000080000000-0x000000785fffffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Initmem setup node 1 as memoryless
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Initmem setup node 2 as memoryless
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Initmem setup node 3 as memoryless
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Initmem setup node 4 as memoryless
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Initmem setup node 5 as memoryless
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Initmem setup node 6 as memoryless
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Initmem setup node 7 as memoryless
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Initmem setup node 8 as memoryless
+Dec 01 21:41:12 nbutme-gh200-1 kernel: On node 0, zone Normal: 128 pages in unavailable ranges
+Dec 01 21:41:12 nbutme-gh200-1 kernel: On node 0, zone Normal: 64 pages in unavailable ranges
+Dec 01 21:41:12 nbutme-gh200-1 kernel: On node 0, zone Normal: 512 pages in unavailable ranges
+Dec 01 21:41:12 nbutme-gh200-1 kernel: On node 0, zone Normal: 642 pages in unavailable ranges
+Dec 01 21:41:12 nbutme-gh200-1 kernel: cma: Reserved 512 MiB at 0x00000000c0000000 on node -1
+Dec 01 21:41:12 nbutme-gh200-1 kernel: psci: probing for conduit method from ACPI.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: psci: PSCIv1.1 detected in firmware.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: psci: Using standard PSCI v0.2 function IDs
+Dec 01 21:41:12 nbutme-gh200-1 kernel: psci: MIGRATE_INFO_TYPE not supported.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: psci: SMC Calling Convention v1.2
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x20000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x40000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x50000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x60000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x70000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x80000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x90000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0xa0000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0xb0000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0xe0000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x100000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x110000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x120000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x130000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x140000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x150000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x160000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x170000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x180000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x190000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x1a0000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x1c0000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x1d0000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x1e0000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x1f0000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x200000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x210000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x220000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x230000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x240000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x250000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x260000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x270000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x280000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x290000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x2a0000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x2b0000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x2c0000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x2d0000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x2e0000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x2f0000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x300000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x310000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x320000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x330000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x340000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x350000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x360000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x370000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x380000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x3a0000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x3b0000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x3c0000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x3d0000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x3e0000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x3f0000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x400000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x410000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x420000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x430000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x440000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x460000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x480000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x490000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x4a0000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x4b0000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x4c0000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x4d0000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x4e0000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x4f0000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x500000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x510000 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: percpu: Embedded 11 pages/cpu s586856 r8192 d125848 u720896
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pcpu-alloc: s586856 r8192 d125848 u720896 alloc=11*65536
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pcpu-alloc: [0] 00 [0] 01 [0] 02 [0] 03 [0] 04 [0] 05 [0] 06 [0] 07 
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pcpu-alloc: [0] 08 [0] 09 [0] 10 [0] 11 [0] 12 [0] 13 [0] 14 [0] 15 
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pcpu-alloc: [0] 16 [0] 17 [0] 18 [0] 19 [0] 20 [0] 21 [0] 22 [0] 23 
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pcpu-alloc: [0] 24 [0] 25 [0] 26 [0] 27 [0] 28 [0] 29 [0] 30 [0] 31 
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pcpu-alloc: [0] 32 [0] 33 [0] 34 [0] 35 [0] 36 [0] 37 [0] 38 [0] 39 
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pcpu-alloc: [0] 40 [0] 41 [0] 42 [0] 43 [0] 44 [0] 45 [0] 46 [0] 47 
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pcpu-alloc: [0] 48 [0] 49 [0] 50 [0] 51 [0] 52 [0] 53 [0] 54 [0] 55 
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pcpu-alloc: [0] 56 [0] 57 [0] 58 [0] 59 [0] 60 [0] 61 [0] 62 [0] 63 
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pcpu-alloc: [0] 64 [0] 65 [0] 66 [0] 67 [0] 68 [0] 69 [0] 70 [0] 71 
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU features: detected: Address authentication (architected QARMA5 algorithm)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU features: detected: GIC system register CPU interface
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU features: detected: Virtualization Host Extensions
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU features: detected: Spectre-v4
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU features: detected: SSBS not fully self-synchronizing
+Dec 01 21:41:12 nbutme-gh200-1 kernel: alternatives: applying boot alternatives
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Kernel command line: BOOT_IMAGE=/vmlinuz-6.8.0-1043-nvidia-64k root=/dev/mapper/ubuntu--vg-ubuntu--lv ro
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Unknown kernel command line parameters "BOOT_IMAGE=/vmlinuz-6.8.0-1043-nvidia-64k", will be passed to user space.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: printk: log_buf_len individual max cpu contribution: 4096 bytes
+Dec 01 21:41:12 nbutme-gh200-1 kernel: printk: log_buf_len total cpu_extra contributions: 290816 bytes
+Dec 01 21:41:12 nbutme-gh200-1 kernel: printk: log_buf_len min size: 262144 bytes
+Dec 01 21:41:12 nbutme-gh200-1 kernel: printk: log_buf_len: 1048576 bytes
+Dec 01 21:41:12 nbutme-gh200-1 kernel: printk: early log buf free: 247192(94%)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Dentry cache hash table entries: 16777216 (order: 11, 134217728 bytes, linear)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Inode-cache hash table entries: 8388608 (order: 10, 67108864 bytes, linear)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Fallback order for Node 0: 0 
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Fallback order for Node 1: 0 
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Fallback order for Node 2: 0 
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Fallback order for Node 3: 0 
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Fallback order for Node 4: 0 
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Fallback order for Node 5: 0 
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Fallback order for Node 6: 0 
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Fallback order for Node 7: 0 
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Fallback order for Node 8: 0 
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Built 9 zonelists, mobility grouping on.  Total pages: 7847110
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Policy zone: Normal
+Dec 01 21:41:12 nbutme-gh200-1 kernel: mem auto-init: stack:off, heap alloc:on, heap free:off
+Dec 01 21:41:12 nbutme-gh200-1 kernel: software IO TLB: area num 128.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: software IO TLB: mapped [mem 0x00000000fbfd0000-0x00000000fffd0000] (64MB)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Memory: 501013056K/502706048K available (22912K kernel code, 5354K rwdata, 16192K rodata, 12992K init, 1701K bss, 1168704K reserved, 524288K cma-reserved)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=72, Nodes=9
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ftrace: allocating 62920 entries in 16 pages
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ftrace: allocated 16 pages with 1 groups
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Dynamic Preempt: none
+Dec 01 21:41:12 nbutme-gh200-1 kernel: rcu: Preemptible hierarchical RCU implementation.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: rcu:         RCU restricting CPUs from NR_CPUS=512 to nr_cpu_ids=72.
+Dec 01 21:41:12 nbutme-gh200-1 kernel:         Trampoline variant of Tasks RCU enabled.
+Dec 01 21:41:12 nbutme-gh200-1 kernel:         Rude variant of Tasks RCU enabled.
+Dec 01 21:41:12 nbutme-gh200-1 kernel:         Tracing variant of Tasks RCU enabled.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=72
+Dec 01 21:41:12 nbutme-gh200-1 kernel: RCU Tasks: Setting shift to 7 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=72.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: RCU Tasks Rude: Setting shift to 7 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=72.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: RCU Tasks Trace: Setting shift to 7 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=72.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: GIC: Using split EOI/Deactivate mode
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GIC: enabling workaround for GICv3: ARM64 erratum 2941627
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: 960 SPIs implemented
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: 320 Extended SPIs implemented
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Root IRQ handler: gic_handle_irq
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: GICv3 features: 16 PPIs, DirectLPI
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: GICv4 features: DirectLPI RVPEID Valid+Dirty 
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU0: found redistributor 20000 region 0:0x0000000022100000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: SRAT: PXM 0 -> ITS 0 -> Node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ITS [mem 0x22040000-0x2205ffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ITS@0x0000000022040000: Single VMOVP capable
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ITS@0x0000000022040000: Using GICv4.1 mode 00000000 00000001
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ITS@0x0000000022040000: allocated 8192 Devices @100d50000 (indirect, esz 8, psz 64K, shr 1)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ITS@0x0000000022040000: allocated 32768 Interrupt Collections @100d60000 (flat, esz 2, psz 64K, shr 1)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ITS@0x0000000022040000: allocated 16384 Virtual CPUs @100d80000 (flat, esz 8, psz 64K, shr 1)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: using LPI property table @0x0000000100db0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ITS: Using DirectLPI for VPE invalidation
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ITS: Enabling GICv4 support
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU0: using allocated LPI pending table @0x0000000100df0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: rcu: srcu_init: Setting srcu_struct sizes based on contention.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arch_timer: cp15 timer(s) running at 1000.00MHz (phys).
+Dec 01 21:41:12 nbutme-gh200-1 kernel: clocksource: arch_sys_counter: mask: 0x1fffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+Dec 01 21:41:12 nbutme-gh200-1 kernel: sched_clock: 61 bits at 1000MHz, resolution 1ns, wraps every 4398046511103ns
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Console: colour dummy device 80x25
+Dec 01 21:41:12 nbutme-gh200-1 kernel: mempolicy: Enabling automatic NUMA balancing. Configure with numa_balancing= or the kernel.numa_balancing sysctl
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: Core revision 20230628
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 2000.00 BogoMIPS (lpj=1000000)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pid_max: default: 73728 minimum: 576
+Dec 01 21:41:12 nbutme-gh200-1 kernel: LSM: initializing lsm=lockdown,capability,landlock,yama,apparmor,integrity
+Dec 01 21:41:12 nbutme-gh200-1 kernel: landlock: Up and running.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Yama: becoming mindful.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: AppArmor: AppArmor initialized
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Mount-cache hash table entries: 262144 (order: 5, 2097152 bytes, linear)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Mountpoint-cache hash table entries: 262144 (order: 5, 2097152 bytes, linear)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: rcu: Hierarchical SRCU implementation.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: rcu:         Max phase no-delay instances is 400.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Platform MSI: ITS@0x22040000 domain created
+Dec 01 21:41:12 nbutme-gh200-1 kernel: PCI/MSI: ITS@0x22040000 domain created
+Dec 01 21:41:12 nbutme-gh200-1 kernel: fsl-mc MSI: ITS@0x22040000 domain created
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Remapping and enabling EFI services.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: smp: Bringing up secondary CPUs ...
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU1
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU1: found redistributor 40000 region 0:0x0000000022180000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU1: using allocated LPI pending table @0x0000000100e00000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU1: Booted secondary processor 0x0000040000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU2
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU2: found redistributor 50000 region 0:0x00000000221c0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU2: using allocated LPI pending table @0x0000000100e10000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU2: Booted secondary processor 0x0000050000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU3
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU3: found redistributor 60000 region 0:0x0000000022200000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU3: using allocated LPI pending table @0x0000000100e20000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU3: Booted secondary processor 0x0000060000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU4
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU4: found redistributor 70000 region 0:0x0000000022240000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU4: using allocated LPI pending table @0x0000000100e30000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU4: Booted secondary processor 0x0000070000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU5
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU5: found redistributor 80000 region 0:0x0000000022280000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU5: using allocated LPI pending table @0x0000000100e40000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU5: Booted secondary processor 0x0000080000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU6
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU6: found redistributor 90000 region 0:0x00000000222c0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU6: using allocated LPI pending table @0x0000000100e50000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU6: Booted secondary processor 0x0000090000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU7
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU7: found redistributor a0000 region 0:0x0000000022300000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU7: using allocated LPI pending table @0x0000000100e60000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU7: Booted secondary processor 0x00000a0000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU8
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU8: found redistributor b0000 region 0:0x0000000022340000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU8: using allocated LPI pending table @0x0000000100e70000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU8: Booted secondary processor 0x00000b0000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU9
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU9: found redistributor e0000 region 0:0x0000000022400000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU9: using allocated LPI pending table @0x0000000100e80000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU9: Booted secondary processor 0x00000e0000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU10
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU10: found redistributor 100000 region 0:0x0000000022480000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU10: using allocated LPI pending table @0x0000000100e90000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU10: Booted secondary processor 0x0000100000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU11
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU11: found redistributor 110000 region 0:0x00000000224c0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU11: using allocated LPI pending table @0x0000000100ea0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU11: Booted secondary processor 0x0000110000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU12
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU12: found redistributor 120000 region 0:0x0000000022500000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU12: using allocated LPI pending table @0x0000000100eb0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU12: Booted secondary processor 0x0000120000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU13
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU13: found redistributor 130000 region 0:0x0000000022540000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU13: using allocated LPI pending table @0x0000000100ec0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU13: Booted secondary processor 0x0000130000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU14
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU14: found redistributor 140000 region 0:0x0000000022580000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU14: using allocated LPI pending table @0x0000000100ed0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU14: Booted secondary processor 0x0000140000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU15
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU15: found redistributor 150000 region 0:0x00000000225c0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU15: using allocated LPI pending table @0x0000000100ee0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU15: Booted secondary processor 0x0000150000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU16
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU16: found redistributor 160000 region 0:0x0000000022600000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU16: using allocated LPI pending table @0x0000000100ef0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU16: Booted secondary processor 0x0000160000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU17
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU17: found redistributor 170000 region 0:0x0000000022640000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU17: using allocated LPI pending table @0x0000000100f00000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU17: Booted secondary processor 0x0000170000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU18
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU18: found redistributor 180000 region 0:0x0000000022680000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU18: using allocated LPI pending table @0x0000000100f10000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU18: Booted secondary processor 0x0000180000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU19
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU19: found redistributor 190000 region 0:0x00000000226c0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU19: using allocated LPI pending table @0x0000000100f20000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU19: Booted secondary processor 0x0000190000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU20
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU20: found redistributor 1a0000 region 0:0x0000000022700000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU20: using allocated LPI pending table @0x0000000100f30000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU20: Booted secondary processor 0x00001a0000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU21
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU21: found redistributor 1c0000 region 0:0x0000000022780000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU21: using allocated LPI pending table @0x0000000100f40000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU21: Booted secondary processor 0x00001c0000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU22
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU22: found redistributor 1d0000 region 0:0x00000000227c0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU22: using allocated LPI pending table @0x0000000100f50000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU22: Booted secondary processor 0x00001d0000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU23
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU23: found redistributor 1e0000 region 0:0x0000000022800000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU23: using allocated LPI pending table @0x0000000100f60000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU23: Booted secondary processor 0x00001e0000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU24
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU24: found redistributor 1f0000 region 0:0x0000000022840000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU24: using allocated LPI pending table @0x0000000100f70000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU24: Booted secondary processor 0x00001f0000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU25
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU25: found redistributor 200000 region 0:0x0000000022880000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU25: using allocated LPI pending table @0x0000000100f80000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU25: Booted secondary processor 0x0000200000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU26
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU26: found redistributor 210000 region 0:0x00000000228c0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU26: using allocated LPI pending table @0x0000000100f90000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU26: Booted secondary processor 0x0000210000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU27
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU27: found redistributor 220000 region 0:0x0000000022900000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU27: using allocated LPI pending table @0x0000000100fa0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU27: Booted secondary processor 0x0000220000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU28
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU28: found redistributor 230000 region 0:0x0000000022940000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU28: using allocated LPI pending table @0x0000000100fb0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU28: Booted secondary processor 0x0000230000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU29
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU29: found redistributor 240000 region 0:0x0000000022980000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU29: using allocated LPI pending table @0x0000000100fc0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU29: Booted secondary processor 0x0000240000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU30
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU30: found redistributor 250000 region 0:0x00000000229c0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU30: using allocated LPI pending table @0x0000000100fd0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU30: Booted secondary processor 0x0000250000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU31
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU31: found redistributor 260000 region 0:0x0000000022a00000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU31: using allocated LPI pending table @0x0000000100fe0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU31: Booted secondary processor 0x0000260000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU32
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU32: found redistributor 270000 region 0:0x0000000022a40000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU32: using allocated LPI pending table @0x0000000100ff0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU32: Booted secondary processor 0x0000270000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU33
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU33: found redistributor 280000 region 0:0x0000000022a80000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU33: using allocated LPI pending table @0x0000000101000000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU33: Booted secondary processor 0x0000280000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU34
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU34: found redistributor 290000 region 0:0x0000000022ac0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU34: using allocated LPI pending table @0x0000000101010000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU34: Booted secondary processor 0x0000290000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU35
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU35: found redistributor 2a0000 region 0:0x0000000022b00000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU35: using allocated LPI pending table @0x0000000101020000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU35: Booted secondary processor 0x00002a0000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU36
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU36: found redistributor 2b0000 region 0:0x0000000022b40000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU36: using allocated LPI pending table @0x0000000101030000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU36: Booted secondary processor 0x00002b0000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU37
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU37: found redistributor 2c0000 region 0:0x0000000022b80000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU37: using allocated LPI pending table @0x0000000101040000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU37: Booted secondary processor 0x00002c0000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU38
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU38: found redistributor 2d0000 region 0:0x0000000022bc0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU38: using allocated LPI pending table @0x0000000101050000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU38: Booted secondary processor 0x00002d0000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU39
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU39: found redistributor 2e0000 region 0:0x0000000022c00000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU39: using allocated LPI pending table @0x0000000101060000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU39: Booted secondary processor 0x00002e0000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU40
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU40: found redistributor 2f0000 region 0:0x0000000022c40000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU40: using allocated LPI pending table @0x0000000101070000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU40: Booted secondary processor 0x00002f0000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU41
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU41: found redistributor 300000 region 0:0x0000000022c80000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU41: using allocated LPI pending table @0x0000000101080000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU41: Booted secondary processor 0x0000300000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU42
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU42: found redistributor 310000 region 0:0x0000000022cc0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU42: using allocated LPI pending table @0x0000000101090000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU42: Booted secondary processor 0x0000310000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU43
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU43: found redistributor 320000 region 0:0x0000000022d00000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU43: using allocated LPI pending table @0x00000001010a0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU43: Booted secondary processor 0x0000320000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU44
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU44: found redistributor 330000 region 0:0x0000000022d40000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU44: using allocated LPI pending table @0x00000001010b0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU44: Booted secondary processor 0x0000330000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU45
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU45: found redistributor 340000 region 0:0x0000000022d80000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU45: using allocated LPI pending table @0x00000001010c0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU45: Booted secondary processor 0x0000340000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU46
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU46: found redistributor 350000 region 0:0x0000000022dc0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU46: using allocated LPI pending table @0x00000001010d0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU46: Booted secondary processor 0x0000350000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU47
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU47: found redistributor 360000 region 0:0x0000000022e00000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU47: using allocated LPI pending table @0x00000001010e0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU47: Booted secondary processor 0x0000360000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU48
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU48: found redistributor 370000 region 0:0x0000000022e40000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU48: using allocated LPI pending table @0x00000001010f0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU48: Booted secondary processor 0x0000370000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU49
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU49: found redistributor 380000 region 0:0x0000000022e80000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU49: using allocated LPI pending table @0x0000000101100000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU49: Booted secondary processor 0x0000380000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU50
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU50: found redistributor 3a0000 region 0:0x0000000022f00000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU50: using allocated LPI pending table @0x0000000101110000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU50: Booted secondary processor 0x00003a0000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU51
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU51: found redistributor 3b0000 region 0:0x0000000022f40000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU51: using allocated LPI pending table @0x0000000101120000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU51: Booted secondary processor 0x00003b0000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU52
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU52: found redistributor 3c0000 region 0:0x0000000022f80000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU52: using allocated LPI pending table @0x0000000101130000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU52: Booted secondary processor 0x00003c0000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU53
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU53: found redistributor 3d0000 region 0:0x0000000022fc0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU53: using allocated LPI pending table @0x0000000101140000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU53: Booted secondary processor 0x00003d0000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU54
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU54: found redistributor 3e0000 region 0:0x0000000023000000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU54: using allocated LPI pending table @0x0000000101150000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU54: Booted secondary processor 0x00003e0000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU55
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU55: found redistributor 3f0000 region 0:0x0000000023040000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU55: using allocated LPI pending table @0x0000000101160000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU55: Booted secondary processor 0x00003f0000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU56
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU56: found redistributor 400000 region 0:0x0000000023080000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU56: using allocated LPI pending table @0x0000000101170000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU56: Booted secondary processor 0x0000400000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU57
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU57: found redistributor 410000 region 0:0x00000000230c0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU57: using allocated LPI pending table @0x0000000101180000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU57: Booted secondary processor 0x0000410000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU58
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU58: found redistributor 420000 region 0:0x0000000023100000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU58: using allocated LPI pending table @0x0000000101190000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU58: Booted secondary processor 0x0000420000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU59
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU59: found redistributor 430000 region 0:0x0000000023140000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU59: using allocated LPI pending table @0x00000001011a0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU59: Booted secondary processor 0x0000430000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU60
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU60: found redistributor 440000 region 0:0x0000000023180000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU60: using allocated LPI pending table @0x00000001011b0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU60: Booted secondary processor 0x0000440000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU61
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU61: found redistributor 460000 region 0:0x0000000023200000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU61: using allocated LPI pending table @0x00000001011c0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU61: Booted secondary processor 0x0000460000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU62
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU62: found redistributor 480000 region 0:0x0000000023280000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU62: using allocated LPI pending table @0x00000001011d0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU62: Booted secondary processor 0x0000480000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU63
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU63: found redistributor 490000 region 0:0x00000000232c0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU63: using allocated LPI pending table @0x00000001011e0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU63: Booted secondary processor 0x0000490000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU64
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU64: found redistributor 4a0000 region 0:0x0000000023300000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU64: using allocated LPI pending table @0x00000001011f0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU64: Booted secondary processor 0x00004a0000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU65
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU65: found redistributor 4b0000 region 0:0x0000000023340000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU65: using allocated LPI pending table @0x0000000101200000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU65: Booted secondary processor 0x00004b0000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU66
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU66: found redistributor 4c0000 region 0:0x0000000023380000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU66: using allocated LPI pending table @0x0000000101210000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU66: Booted secondary processor 0x00004c0000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU67
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU67: found redistributor 4d0000 region 0:0x00000000233c0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU67: using allocated LPI pending table @0x0000000101220000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU67: Booted secondary processor 0x00004d0000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU68
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU68: found redistributor 4e0000 region 0:0x0000000023400000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU68: using allocated LPI pending table @0x0000000101230000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU68: Booted secondary processor 0x00004e0000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU69
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU69: found redistributor 4f0000 region 0:0x0000000023440000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU69: using allocated LPI pending table @0x0000000101240000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU69: Booted secondary processor 0x00004f0000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU70
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU70: found redistributor 500000 region 0:0x0000000023480000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU70: using allocated LPI pending table @0x0000000101250000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU70: Booted secondary processor 0x0000500000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Detected PIPT I-cache on CPU71
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU71: found redistributor 510000 region 0:0x00000000234c0000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GICv3: CPU71: using allocated LPI pending table @0x0000000101260000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU71: Booted secondary processor 0x0000510000 [0x410fd4f0]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: smp: Brought up 9 nodes, 72 CPUs
+Dec 01 21:41:12 nbutme-gh200-1 kernel: SMP: Total of 72 processors activated.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU: All CPU(s) started at EL2
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU features: detected: Branch Target Identification
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU features: detected: ARMv8.4 Translation Table Level
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU features: detected: Instruction cache invalidation not required for I/D coherence
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU features: detected: Common not Private translations
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU features: detected: CRC32 instructions
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU features: detected: Data cache clean to Point of Deep Persistence
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU features: detected: Data cache clean to Point of Persistence
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU features: detected: Data independent timing control (DIT)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU features: detected: E0PD
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU features: detected: Enhanced Privileged Access Never
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU features: detected: Enhanced Virtualization Traps
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU features: detected: Generic authentication (architected QARMA5 algorithm)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU features: detected: RCpc load-acquire (LDAPR)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU features: detected: LSE atomic instructions
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU features: detected: Privileged Access Never
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU features: detected: RAS Extension Support
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU features: detected: Speculation barrier (SB)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU features: detected: Stage-2 Force Write-Back
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU features: detected: TLB range maintenance instructions
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU features: detected: Speculative Store Bypassing Safe (SSBS)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU features: detected: Scalable Vector Extension
+Dec 01 21:41:12 nbutme-gh200-1 kernel: alternatives: applying system-wide alternatives
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU features: detected: Activity Monitors Unit (AMU) on CPU0-71
+Dec 01 21:41:12 nbutme-gh200-1 kernel: CPU features: detected: Hardware dirty bit management on CPU0-71
+Dec 01 21:41:12 nbutme-gh200-1 kernel: SVE: maximum available vector length 16 bytes per vector
+Dec 01 21:41:12 nbutme-gh200-1 kernel: SVE: default vector length 16 bytes per vector
+Dec 01 21:41:12 nbutme-gh200-1 kernel: devtmpfs: initialized
+Dec 01 21:41:12 nbutme-gh200-1 kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+Dec 01 21:41:12 nbutme-gh200-1 kernel: futex hash table entries: 32768 (order: 5, 2097152 bytes, linear)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pinctrl core: initialized pinctrl subsystem
+Dec 01 21:41:12 nbutme-gh200-1 kernel: SMBIOS 3.6.0 present.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: DMI: Supermicro ARS-111GL-NHR/G1SMH-G, BIOS 2.0a 10/19/2024
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NET: Registered PF_NETLINK/PF_ROUTE protocol family
+Dec 01 21:41:12 nbutme-gh200-1 kernel: DMA: preallocated 65536 KiB GFP_KERNEL pool for atomic allocations
+Dec 01 21:41:12 nbutme-gh200-1 kernel: DMA: preallocated 65536 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+Dec 01 21:41:12 nbutme-gh200-1 kernel: DMA: preallocated 65536 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+Dec 01 21:41:12 nbutme-gh200-1 kernel: audit: initializing netlink subsys (disabled)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: audit: type=2000 audit(0.148:1): state=initialized audit_enabled=0 res=1
+Dec 01 21:41:12 nbutme-gh200-1 kernel: thermal_sys: Registered thermal governor 'fair_share'
+Dec 01 21:41:12 nbutme-gh200-1 kernel: thermal_sys: Registered thermal governor 'bang_bang'
+Dec 01 21:41:12 nbutme-gh200-1 kernel: thermal_sys: Registered thermal governor 'step_wise'
+Dec 01 21:41:12 nbutme-gh200-1 kernel: thermal_sys: Registered thermal governor 'user_space'
+Dec 01 21:41:12 nbutme-gh200-1 kernel: thermal_sys: Registered thermal governor 'power_allocator'
+Dec 01 21:41:12 nbutme-gh200-1 kernel: cpuidle: using governor ladder
+Dec 01 21:41:12 nbutme-gh200-1 kernel: cpuidle: using governor menu
+Dec 01 21:41:12 nbutme-gh200-1 kernel: hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ASID allocator initialised with 65536 entries
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Serial: AMBA PL011 UART driver
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Modules: 2G module region forced by RANDOMIZE_MODULE_REGION_FULL
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Modules: 0 pages in range for non-PLT usage
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Modules: 31829 pages in range for PLT usage
+Dec 01 21:41:12 nbutme-gh200-1 kernel: HugeTLB: registered 16.0 GiB page size, pre-allocated 0 pages
+Dec 01 21:41:12 nbutme-gh200-1 kernel: HugeTLB: 0 KiB vmemmap can be freed for a 16.0 GiB page
+Dec 01 21:41:12 nbutme-gh200-1 kernel: HugeTLB: registered 512 MiB page size, pre-allocated 0 pages
+Dec 01 21:41:12 nbutme-gh200-1 kernel: HugeTLB: 0 KiB vmemmap can be freed for a 512 MiB page
+Dec 01 21:41:12 nbutme-gh200-1 kernel: HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+Dec 01 21:41:12 nbutme-gh200-1 kernel: HugeTLB: 0 KiB vmemmap can be freed for a 2.00 MiB page
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: Added _OSI(Module Device)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: Added _OSI(Processor Device)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: Added _OSI(3.0 _SCP Extensions)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: Added _OSI(Processor Aggregator Device)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: 13 ACPI AML tables successfully acquired and loaded
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: Interpreter enabled
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: Using GIC for interrupt routing
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: MCFG table detected, 8 entries
+Dec 01 21:41:12 nbutme-gh200-1 kernel: HEST: Table parsing has been initialized.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: sdei: SDEIv1.0 (0x0) detected in firmware.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: {1}[Hardware Error]: Hardware error from APEI Generic Hardware Error Source: 1284
+Dec 01 21:41:12 nbutme-gh200-1 kernel: {1}[Hardware Error]: It has been corrected by h/w and requires no further action
+Dec 01 21:41:12 nbutme-gh200-1 kernel: {1}[Hardware Error]: event severity: corrected
+Dec 01 21:41:12 nbutme-gh200-1 kernel: {1}[Hardware Error]:  Error 0, type: corrected
+Dec 01 21:41:12 nbutme-gh200-1 kernel: {1}[Hardware Error]:   section_type: PCIe error
+Dec 01 21:41:12 nbutme-gh200-1 kernel: {1}[Hardware Error]:   port_type: 5, upstream switch port
+Dec 01 21:41:12 nbutme-gh200-1 kernel: {1}[Hardware Error]:   command: 0x0107, status: 0x0010
+Dec 01 21:41:12 nbutme-gh200-1 kernel: {1}[Hardware Error]:   device_id: 0008:01:00.0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: {1}[Hardware Error]:   slot: 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: {1}[Hardware Error]:   secondary_bus: 0x00
+Dec 01 21:41:12 nbutme-gh200-1 kernel: {1}[Hardware Error]:   vendor_id: 0x12d8, device_id: 0xb404
+Dec 01 21:41:12 nbutme-gh200-1 kernel: {1}[Hardware Error]:   class_code: 060400
+Dec 01 21:41:12 nbutme-gh200-1 kernel: {1}[Hardware Error]:   bridge: secondary_status: 0x0000, control: 0x0012
+Dec 01 21:41:12 nbutme-gh200-1 kernel: GHES: APEI firmware first mode is enabled by APEI bit and WHEA _OSC.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: IORT: SMMU-v3[11000000] Mapped to Proximity domain 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: IORT: SMMU-v3[12000000] Mapped to Proximity domain 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: IORT: SMMU-v3[15000000] Mapped to Proximity domain 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: IORT: SMMU-v3[16000000] Mapped to Proximity domain 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: IORT: SMMU-v3[5000000] Mapped to Proximity domain 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: AER: no pci_dev for 0008:01:00.0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ARMH0011:00: ttyAMA0 at MMIO 0xc280000 (irq = 66, base_baud = 0) is a SBSA
+Dec 01 21:41:12 nbutme-gh200-1 kernel: printk: legacy console [ttyAMA0] enabled
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI EDR HPX-Type3]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:00: _OSC: platform does not support [SHPCHotplug PME AER DPC]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug PCIeCapability LTR]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:00: ECAM area [mem 0x600010000000-0x60001fffffff] reserved by PNP0C02:01
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:00: ECAM at [mem 0x600010000000-0x60001fffffff] for [bus 00-ff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: Remapped I/O 0x0000600020000000 to [io  0x0000-0xffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: PCI host bridge to bus 0000:00
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0000:00: root bus resource [mem 0x600040000000-0x6000bfffffff window] (bus address [0x40000000-0xbfffffff])
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0000:00: root bus resource [mem 0x6000c0000000-0x607fffffffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0000:00: root bus resource [io  0x0000-0xffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0000:00:00.0: [10de:22b2] type 01 class 0x060400 PCIe Root Port
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0000:00:00.0: PCI bridge to [bus 01]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0000:00:00.0:   bridge window [mem 0x600040000000-0x6000400fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0000:00:00.0:   bridge window [mem 0x6000c0000000-0x6000c3ffffff 64bit pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0000:00:00.0: enabling Extended Tags
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0000:00:00.0: PME# supported from D0 D3hot
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0000:01:00.0: [15b3:1023] type 00 class 0x020000 PCIe Endpoint
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0000:01:00.0: BAR 0 [mem 0x6000c0000000-0x6000c1ffffff 64bit pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0000:01:00.0: ROM [mem 0x600040000000-0x6000400fffff pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0000:01:00.0: enabling Extended Tags
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0000:01:00.0: PME# supported from D3cold
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0000:01:00.0: VF BAR 0 [mem 0x6000c2000000-0x6000c21fffff 64bit pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0000:01:00.0: VF BAR 0 [mem 0x6000c2000000-0x6000c3ffffff 64bit pref]: contains BAR 0 for 16 VFs
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0000:01:00.0: 504.112 Gb/s available PCIe bandwidth, limited by 32.0 GT/s PCIe x16 link at 0000:00:00.0 (capable of 1024.000 Gb/s with 64.0 GT/s PCIe x16 link)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0000:00: on NUMA node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0000:00:00.0: bridge window [io  0x1000-0x0fff] to [bus 01] add_size 1000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0000:00:00.0: bridge window [mem 0x02000000-0x03ffffff 64bit pref] to [bus 01] add_size 2000000 add_align 2000000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0000:00:00.0: bridge window [mem 0x00100000-0x001fffff] to [bus 01] add_size 100000 add_align 100000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0000:00:00.0: bridge window [mem 0x6000c0000000-0x6000c3ffffff 64bit pref]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0000:00:00.0: bridge window [mem 0x600040000000-0x6000401fffff]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0000:00:00.0: bridge window [io  0x1000-0x1fff]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0000:01:00.0: BAR 0 [mem 0x6000c0000000-0x6000c1ffffff 64bit pref]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0000:01:00.0: VF BAR 0 [mem 0x6000c2000000-0x6000c3ffffff 64bit pref]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0000:01:00.0: ROM [mem 0x600040000000-0x6000400fffff pref]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0000:00:00.0: PCI bridge to [bus 01]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0000:00:00.0:   bridge window [io  0x1000-0x1fff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0000:00:00.0:   bridge window [mem 0x600040000000-0x6000401fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0000:00:00.0:   bridge window [mem 0x6000c0000000-0x6000c3ffffff 64bit pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0000:00: resource 4 [mem 0x600040000000-0x6000bfffffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0000:00: resource 5 [mem 0x6000c0000000-0x607fffffffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0000:00: resource 6 [io  0x0000-0xffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0000:01: resource 0 [io  0x1000-0x1fff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0000:01: resource 1 [mem 0x600040000000-0x6000401fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0000:01: resource 2 [mem 0x6000c0000000-0x6000c3ffffff 64bit pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: PCI Root Bridge [PCI2] (domain 0002 [bus 00-ff])
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:01: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI EDR HPX-Type3]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:01: _OSC: platform does not support [SHPCHotplug PME AER DPC]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:01: _OSC: OS now controls [PCIeHotplug PCIeCapability LTR]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:01: ECAM area [mem 0x610010000000-0x61001fffffff] reserved by PNP0C02:02
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:01: ECAM at [mem 0x610010000000-0x61001fffffff] for [bus 00-ff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: Remapped I/O 0x0000610020000000 to [io  0x10000-0x1ffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: PCI host bridge to bus 0002:00
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0002:00: root bus resource [mem 0x610040000000-0x6100bfffffff window] (bus address [0x40000000-0xbfffffff])
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0002:00: root bus resource [mem 0x6100c0000000-0x617fffffffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0002:00: root bus resource [io  0x10000-0x1ffff window] (bus address [0x0000-0xffff])
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0002:00: root bus resource [bus 00-ff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:00:00.0: [10de:22b2] type 01 class 0x060400 PCIe Root Port
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:00:00.0: PCI bridge to [bus 01]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:00:00.0:   bridge window [mem 0x610040000000-0x6100401fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:00:00.0:   bridge window [mem 0x6100c0000000-0x6100c7ffffff 64bit pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:00:00.0: enabling Extended Tags
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:00:00.0: PME# supported from D0 D3hot
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:01:00.0: [15b3:1023] type 00 class 0x020700 PCIe Endpoint
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:01:00.0: BAR 0 [mem 0x6100c2000000-0x6100c3ffffff 64bit pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:01:00.0: ROM [mem 0x610040100000-0x6100401fffff pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:01:00.0: enabling Extended Tags
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:01:00.0: PME# supported from D3cold
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:01:00.0: VF BAR 0 [mem 0x6100c6000000-0x6100c61fffff 64bit pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:01:00.0: VF BAR 0 [mem 0x6100c6000000-0x6100c7ffffff 64bit pref]: contains BAR 0 for 16 VFs
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:01:00.0: 252.056 Gb/s available PCIe bandwidth, limited by 32.0 GT/s PCIe x8 link at 0002:00:00.0 (capable of 1024.000 Gb/s with 64.0 GT/s PCIe x16 link)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:01:00.1: [15b3:1023] type 00 class 0x020000 PCIe Endpoint
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:01:00.1: BAR 0 [mem 0x6100c0000000-0x6100c1ffffff 64bit pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:01:00.1: ROM [mem 0x610040000000-0x6100400fffff pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:01:00.1: enabling Extended Tags
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:01:00.1: PME# supported from D3cold
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:01:00.1: VF BAR 0 [mem 0x6100c4000000-0x6100c41fffff 64bit pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:01:00.1: VF BAR 0 [mem 0x6100c4000000-0x6100c5ffffff 64bit pref]: contains BAR 0 for 16 VFs
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:00:00.0: ASPM: current common clock configuration is inconsistent, reconfiguring
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0002:00: on NUMA node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:00:00.0: bridge window [io  0x1000-0x0fff] to [bus 01] add_size 1000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:00:00.0: bridge window [mem 0x02000000-0x05ffffff 64bit pref] to [bus 01] add_size 4000000 add_align 2000000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:00:00.0: bridge window [mem 0x6100c0000000-0x6100c7ffffff 64bit pref]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:00:00.0: bridge window [mem 0x610040000000-0x6100401fffff]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:00:00.0: bridge window [io  0x10000-0x10fff]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:01:00.0: BAR 0 [mem 0x6100c0000000-0x6100c1ffffff 64bit pref]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:01:00.1: BAR 0 [mem 0x6100c2000000-0x6100c3ffffff 64bit pref]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:01:00.0: VF BAR 0 [mem 0x6100c4000000-0x6100c5ffffff 64bit pref]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:01:00.1: VF BAR 0 [mem 0x6100c6000000-0x6100c7ffffff 64bit pref]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:01:00.0: ROM [mem 0x610040000000-0x6100400fffff pref]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:01:00.1: ROM [mem 0x610040100000-0x6100401fffff pref]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:00:00.0: PCI bridge to [bus 01]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:00:00.0:   bridge window [io  0x10000-0x10fff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:00:00.0:   bridge window [mem 0x610040000000-0x6100401fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0002:00:00.0:   bridge window [mem 0x6100c0000000-0x6100c7ffffff 64bit pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0002:00: resource 4 [mem 0x610040000000-0x6100bfffffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0002:00: resource 5 [mem 0x6100c0000000-0x617fffffffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0002:00: resource 6 [io  0x10000-0x1ffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0002:01: resource 0 [io  0x10000-0x10fff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0002:01: resource 1 [mem 0x610040000000-0x6100401fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0002:01: resource 2 [mem 0x6100c0000000-0x6100c7ffffff 64bit pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: PCI Root Bridge [PCI4] (domain 0004 [bus 00-ff])
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:02: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI EDR HPX-Type3]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:02: _OSC: platform does not support [SHPCHotplug PME AER DPC]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:02: _OSC: OS now controls [PCIeHotplug PCIeCapability LTR]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:02: ECAM area [mem 0x620010000000-0x62001fffffff] reserved by PNP0C02:03
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:02: ECAM at [mem 0x620010000000-0x62001fffffff] for [bus 00-ff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: Remapped I/O 0x0000620020000000 to [io  0x20000-0x2ffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: PCI host bridge to bus 0004:00
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0004:00: root bus resource [mem 0x620040000000-0x6200bfffffff window] (bus address [0x40000000-0xbfffffff])
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0004:00: root bus resource [mem 0x6200c0000000-0x627fffffffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0004:00: root bus resource [io  0x20000-0x2ffff window] (bus address [0x0000-0xffff])
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0004:00: root bus resource [bus 00-ff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0004:00:00.0: [10de:22b2] type 01 class 0x060400 PCIe Root Port
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0004:00:00.0: PCI bridge to [bus 01]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0004:00:00.0:   bridge window [mem 0x620040000000-0x6200400fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0004:00:00.0: enabling Extended Tags
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0004:00:00.0: PME# supported from D0 D3hot
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0004:01:00.0: [1344:51c3] type 00 class 0x010802 PCIe Endpoint
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0004:01:00.0: BAR 0 [mem 0x620040040000-0x62004007ffff 64bit]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0004:01:00.0: ROM [mem 0x620040000000-0x62004003ffff pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0004:01:00.0: enabling Extended Tags
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0004:01:00.0: PME# supported from D0 D1 D3hot
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0004:00: on NUMA node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0004:00:00.0: bridge window [io  0x1000-0x0fff] to [bus 01] add_size 1000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0004:00:00.0: bridge window [mem 0x00100000-0x000fffff 64bit pref] to [bus 01] add_size 200000 add_align 100000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0004:00:00.0: bridge window [mem 0x00100000-0x001fffff] to [bus 01] add_size 100000 add_align 100000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0004:00:00.0: bridge window [mem 0x620040000000-0x6200401fffff]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0004:00:00.0: bridge window [mem 0x6200c0000000-0x6200c01fffff 64bit pref]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0004:00:00.0: bridge window [io  0x20000-0x20fff]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0004:01:00.0: BAR 0 [mem 0x620040000000-0x62004003ffff 64bit]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0004:01:00.0: ROM [mem 0x620040040000-0x62004007ffff pref]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0004:00:00.0: PCI bridge to [bus 01]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0004:00:00.0:   bridge window [io  0x20000-0x20fff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0004:00:00.0:   bridge window [mem 0x620040000000-0x6200401fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0004:00:00.0:   bridge window [mem 0x6200c0000000-0x6200c01fffff 64bit pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0004:00: resource 4 [mem 0x620040000000-0x6200bfffffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0004:00: resource 5 [mem 0x6200c0000000-0x627fffffffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0004:00: resource 6 [io  0x20000-0x2ffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0004:01: resource 0 [io  0x20000-0x20fff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0004:01: resource 1 [mem 0x620040000000-0x6200401fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0004:01: resource 2 [mem 0x6200c0000000-0x6200c01fffff 64bit pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: PCI Root Bridge [PCI5] (domain 0005 [bus 00-ff])
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:03: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI EDR HPX-Type3]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:03: _OSC: platform does not support [SHPCHotplug PME AER DPC]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:03: _OSC: OS now controls [PCIeHotplug PCIeCapability LTR]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:03: ECAM area [mem 0x628010000000-0x62801fffffff] reserved by PNP0C02:04
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:03: ECAM at [mem 0x628010000000-0x62801fffffff] for [bus 00-ff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: Remapped I/O 0x0000628020000000 to [io  0x30000-0x3ffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: PCI host bridge to bus 0005:00
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0005:00: root bus resource [mem 0x628040000000-0x6280bfffffff window] (bus address [0x40000000-0xbfffffff])
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0005:00: root bus resource [mem 0x6280c0000000-0x62ffffffffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0005:00: root bus resource [io  0x30000-0x3ffff window] (bus address [0x0000-0xffff])
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0005:00: root bus resource [bus 00-ff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0005:00:00.0: [10de:22b8] type 01 class 0x060400 PCIe Root Port
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0005:00:00.0: PCI bridge to [bus 01]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0005:00:00.0:   bridge window [mem 0x628040000000-0x6280400fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0005:00:00.0: enabling Extended Tags
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0005:00:00.0: PME# supported from D0 D3hot
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0005:01:00.0: [1344:51c3] type 00 class 0x010802 PCIe Endpoint
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0005:01:00.0: BAR 0 [mem 0x628040040000-0x62804007ffff 64bit]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0005:01:00.0: ROM [mem 0x628040000000-0x62804003ffff pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0005:01:00.0: enabling Extended Tags
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0005:01:00.0: PME# supported from D0 D1 D3hot
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0005:00: on NUMA node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0005:00:00.0: bridge window [io  0x1000-0x0fff] to [bus 01] add_size 1000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0005:00:00.0: bridge window [mem 0x00100000-0x000fffff 64bit pref] to [bus 01] add_size 200000 add_align 100000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0005:00:00.0: bridge window [mem 0x00100000-0x001fffff] to [bus 01] add_size 100000 add_align 100000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0005:00:00.0: bridge window [mem 0x628040000000-0x6280401fffff]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0005:00:00.0: bridge window [mem 0x6280c0000000-0x6280c01fffff 64bit pref]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0005:00:00.0: bridge window [io  0x30000-0x30fff]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0005:01:00.0: BAR 0 [mem 0x628040000000-0x62804003ffff 64bit]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0005:01:00.0: ROM [mem 0x628040040000-0x62804007ffff pref]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0005:00:00.0: PCI bridge to [bus 01]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0005:00:00.0:   bridge window [io  0x30000-0x30fff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0005:00:00.0:   bridge window [mem 0x628040000000-0x6280401fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0005:00:00.0:   bridge window [mem 0x6280c0000000-0x6280c01fffff 64bit pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0005:00: resource 4 [mem 0x628040000000-0x6280bfffffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0005:00: resource 5 [mem 0x6280c0000000-0x62ffffffffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0005:00: resource 6 [io  0x30000-0x3ffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0005:01: resource 0 [io  0x30000-0x30fff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0005:01: resource 1 [mem 0x628040000000-0x6280401fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0005:01: resource 2 [mem 0x6280c0000000-0x6280c01fffff 64bit pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: PCI Root Bridge [PCI6] (domain 0006 [bus 00-ff])
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:04: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI EDR HPX-Type3]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:04: _OSC: platform does not support [SHPCHotplug PME AER DPC]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:04: _OSC: OS now controls [PCIeHotplug PCIeCapability LTR]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:04: ECAM area [mem 0x630010000000-0x63001fffffff] reserved by PNP0C02:05
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:04: ECAM at [mem 0x630010000000-0x63001fffffff] for [bus 00-ff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: Remapped I/O 0x0000630020000000 to [io  0x40000-0x4ffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: PCI host bridge to bus 0006:00
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0006:00: root bus resource [mem 0x630040000000-0x6300bfffffff window] (bus address [0x40000000-0xbfffffff])
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0006:00: root bus resource [mem 0x6300c0000000-0x63ffffffffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0006:00: root bus resource [io  0x40000-0x4ffff window] (bus address [0x0000-0xffff])
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0006:00: root bus resource [bus 00-ff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0006:00:00.0: [10de:22b2] type 01 class 0x060400 PCIe Root Port
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0006:00:00.0: PCI bridge to [bus 01]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0006:00:00.0:   bridge window [mem 0x630040000000-0x6300400fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0006:00:00.0: enabling Extended Tags
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0006:00:00.0: PME# supported from D0 D3hot
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0006:01:00.0: [1344:51c4] type 00 class 0x010802 PCIe Endpoint
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0006:01:00.0: BAR 0 [mem 0x630040040000-0x63004007ffff 64bit]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0006:01:00.0: ROM [mem 0x630040000000-0x63004003ffff pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0006:01:00.0: enabling Extended Tags
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0006:01:00.0: PME# supported from D0 D1 D3hot
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0006:00: on NUMA node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0006:00:00.0: bridge window [io  0x1000-0x0fff] to [bus 01] add_size 1000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0006:00:00.0: bridge window [mem 0x00100000-0x000fffff 64bit pref] to [bus 01] add_size 200000 add_align 100000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0006:00:00.0: bridge window [mem 0x00100000-0x001fffff] to [bus 01] add_size 100000 add_align 100000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0006:00:00.0: bridge window [mem 0x630040000000-0x6300401fffff]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0006:00:00.0: bridge window [mem 0x6300c0000000-0x6300c01fffff 64bit pref]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0006:00:00.0: bridge window [io  0x40000-0x40fff]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0006:01:00.0: BAR 0 [mem 0x630040000000-0x63004003ffff 64bit]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0006:01:00.0: ROM [mem 0x630040040000-0x63004007ffff pref]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0006:00:00.0: PCI bridge to [bus 01]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0006:00:00.0:   bridge window [io  0x40000-0x40fff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0006:00:00.0:   bridge window [mem 0x630040000000-0x6300401fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0006:00:00.0:   bridge window [mem 0x6300c0000000-0x6300c01fffff 64bit pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0006:00: resource 4 [mem 0x630040000000-0x6300bfffffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0006:00: resource 5 [mem 0x6300c0000000-0x63ffffffffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0006:00: resource 6 [io  0x40000-0x4ffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0006:01: resource 0 [io  0x40000-0x40fff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0006:01: resource 1 [mem 0x630040000000-0x6300401fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0006:01: resource 2 [mem 0x6300c0000000-0x6300c01fffff 64bit pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: PCI Root Bridge [PCI7] (domain 0007 [bus 00-ff])
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:05: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI EDR HPX-Type3]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:05: _OSC: platform does not support [SHPCHotplug PME AER DPC]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:05: _OSC: OS now controls [PCIeHotplug PCIeCapability LTR]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:05: ECAM area [mem 0x640010000000-0x64001fffffff] reserved by PNP0C02:06
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:05: ECAM at [mem 0x640010000000-0x64001fffffff] for [bus 00-ff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: Remapped I/O 0x0000640020000000 to [io  0x50000-0x5ffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: PCI host bridge to bus 0007:00
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0007:00: root bus resource [mem 0x640040000000-0x6400bfffffff window] (bus address [0x40000000-0xbfffffff])
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0007:00: root bus resource [mem 0x6400c0000000-0x64ffffffffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0007:00: root bus resource [io  0x50000-0x5ffff window] (bus address [0x0000-0xffff])
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0007:00: root bus resource [bus 00-ff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0007:00:00.0: [10de:22b8] type 01 class 0x060400 PCIe Root Port
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0007:00:00.0: PCI bridge to [bus 01]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0007:00:00.0:   bridge window [mem 0x640040000000-0x6400400fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0007:00:00.0: enabling Extended Tags
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0007:00:00.0: PME# supported from D0 D3hot
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0007:01:00.0: [1344:51c4] type 00 class 0x010802 PCIe Endpoint
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0007:01:00.0: BAR 0 [mem 0x640040040000-0x64004007ffff 64bit]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0007:01:00.0: ROM [mem 0x640040000000-0x64004003ffff pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0007:01:00.0: enabling Extended Tags
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0007:01:00.0: PME# supported from D0 D1 D3hot
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0007:00: on NUMA node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0007:00:00.0: bridge window [io  0x1000-0x0fff] to [bus 01] add_size 1000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0007:00:00.0: bridge window [mem 0x00100000-0x000fffff 64bit pref] to [bus 01] add_size 200000 add_align 100000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0007:00:00.0: bridge window [mem 0x00100000-0x001fffff] to [bus 01] add_size 100000 add_align 100000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0007:00:00.0: bridge window [mem 0x640040000000-0x6400401fffff]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0007:00:00.0: bridge window [mem 0x6400c0000000-0x6400c01fffff 64bit pref]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0007:00:00.0: bridge window [io  0x50000-0x50fff]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0007:01:00.0: BAR 0 [mem 0x640040000000-0x64004003ffff 64bit]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0007:01:00.0: ROM [mem 0x640040040000-0x64004007ffff pref]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0007:00:00.0: PCI bridge to [bus 01]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0007:00:00.0:   bridge window [io  0x50000-0x50fff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0007:00:00.0:   bridge window [mem 0x640040000000-0x6400401fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0007:00:00.0:   bridge window [mem 0x6400c0000000-0x6400c01fffff 64bit pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0007:00: resource 4 [mem 0x640040000000-0x6400bfffffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0007:00: resource 5 [mem 0x6400c0000000-0x64ffffffffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0007:00: resource 6 [io  0x50000-0x5ffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0007:01: resource 0 [io  0x50000-0x50fff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0007:01: resource 1 [mem 0x640040000000-0x6400401fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0007:01: resource 2 [mem 0x6400c0000000-0x6400c01fffff 64bit pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: PCI Root Bridge [PCI8] (domain 0008 [bus 00-ff])
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:06: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI EDR HPX-Type3]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:06: _OSC: platform does not support [SHPCHotplug PME AER DPC]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:06: _OSC: OS now controls [PCIeHotplug PCIeCapability LTR]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:06: ECAM area [mem 0x650010000000-0x65001fffffff] reserved by PNP0C02:07
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:06: ECAM at [mem 0x650010000000-0x65001fffffff] for [bus 00-ff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: Remapped I/O 0x0000650020000000 to [io  0x60000-0x6ffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: PCI host bridge to bus 0008:00
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0008:00: root bus resource [mem 0x650040000000-0x6500bfffffff window] (bus address [0x40000000-0xbfffffff])
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0008:00: root bus resource [mem 0x6500c0000000-0x65ffffffffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0008:00: root bus resource [io  0x60000-0x6ffff window] (bus address [0x0000-0xffff])
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0008:00: root bus resource [bus 00-ff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:00:00.0: [10de:22b9] type 01 class 0x060400 PCIe Root Port
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:00:00.0: PCI bridge to [bus 01-06]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:00:00.0:   bridge window [io  0x60000-0x60fff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:00:00.0:   bridge window [mem 0x650040000000-0x6500412fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:00:00.0: enabling Extended Tags
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:00:00.0: PME# supported from D0 D3hot
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:01:00.0: [12d8:b404] type 01 class 0x060400 PCIe Switch Upstream Port
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:01:00.0: PCI bridge to [bus 02-06]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:01:00.0:   bridge window [io  0x60000-0x60fff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:01:00.0:   bridge window [mem 0x650040000000-0x6500412fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:01:00.0: supports D1 D2
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:01:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:01:00.0: PTM enabled (root), unknown granularity
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:02:01.0: [12d8:b404] type 01 class 0x060400 PCIe Switch Downstream Port
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:02:01.0: PCI bridge to [bus 03-04]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:02:01.0:   bridge window [io  0x60000-0x60fff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:02:01.0:   bridge window [mem 0x650040000000-0x6500410fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:02:01.0: supports D1 D2
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:02:01.0: PME# supported from D0 D1 D2 D3hot D3cold
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:02:02.0: [12d8:b404] type 01 class 0x060400 PCIe Switch Downstream Port
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:02:02.0: PCI bridge to [bus 05]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:02:02.0:   bridge window [mem 0x650041200000-0x6500412fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:02:02.0: supports D1 D2
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:02:02.0: PME# supported from D0 D1 D2 D3hot D3cold
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:02:03.0: [12d8:b404] type 01 class 0x060400 PCIe Switch Downstream Port
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:02:03.0: PCI bridge to [bus 06]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:02:03.0: supports D1 D2
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:02:03.0: PME# supported from D0 D1 D2 D3hot D3cold
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:03:00.0: [1a03:1150] type 01 class 0x060400 PCIe to PCI/PCI-X bridge
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:03:00.0: PCI bridge to [bus 04]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:03:00.0:   bridge window [io  0x60000-0x60fff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:03:00.0:   bridge window [mem 0x650040000000-0x6500410fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:03:00.0: enabling Extended Tags
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:03:00.0: supports D1 D2
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:03:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0008:04: extended config space not accessible
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:04:00.0: [1a03:2000] type 00 class 0x030000 conventional PCI endpoint
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:04:00.0: BAR 0 [mem 0x650040000000-0x650040ffffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:04:00.0: BAR 1 [mem 0x650041000000-0x65004103ffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:04:00.0: BAR 2 [io  0x60000-0x6007f]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:04:00.0: supports D1 D2
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:04:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:05:00.0: [1912:0014] type 00 class 0x0c0330 PCIe Endpoint
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:05:00.0: BAR 0 [mem 0x650041200000-0x650041201fff 64bit]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:05:00.0: PME# supported from D0 D3hot D3cold
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0008:00: on NUMA node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:00:00.0: bridge window [mem 0x00100000-0x000fffff 64bit pref] to [bus 01-06] add_size 200000 add_align 100000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:00:00.0: bridge window [mem 0x650040000000-0x650041bfffff]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:00:00.0: bridge window [mem 0x6500c0000000-0x6500c01fffff 64bit pref]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:00:00.0: bridge window [io  0x60000-0x60fff]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:01:00.0: bridge window [mem 0x650040000000-0x650041bfffff]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:01:00.0: bridge window [io  0x60000-0x60fff]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:02:01.0: bridge window [mem 0x650040000000-0x6500417fffff]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:02:02.0: bridge window [mem 0x650041800000-0x6500418fffff]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:02:01.0: bridge window [io  0x60000-0x60fff]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:03:00.0: bridge window [mem 0x650040000000-0x6500417fffff]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:03:00.0: bridge window [io  0x60000-0x60fff]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:04:00.0: BAR 0 [mem 0x650040000000-0x650040ffffff]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:04:00.0: BAR 1 [mem 0x650041000000-0x65004103ffff]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:04:00.0: BAR 2 [io  0x60000-0x6007f]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:03:00.0: PCI bridge to [bus 04]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:03:00.0:   bridge window [io  0x60000-0x60fff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:03:00.0:   bridge window [mem 0x650040000000-0x6500417fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:02:01.0: PCI bridge to [bus 03-04]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:02:01.0:   bridge window [io  0x60000-0x60fff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:02:01.0:   bridge window [mem 0x650040000000-0x6500417fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:05:00.0: BAR 0 [mem 0x650041800000-0x650041801fff 64bit]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:02:02.0: PCI bridge to [bus 05]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:02:02.0:   bridge window [mem 0x650041800000-0x6500418fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:02:03.0: PCI bridge to [bus 06]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:01:00.0: PCI bridge to [bus 02-06]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:01:00.0:   bridge window [io  0x60000-0x60fff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:01:00.0:   bridge window [mem 0x650040000000-0x650041bfffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:00:00.0: PCI bridge to [bus 01-06]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:00:00.0:   bridge window [io  0x60000-0x60fff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:00:00.0:   bridge window [mem 0x650040000000-0x650041bfffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:00:00.0:   bridge window [mem 0x6500c0000000-0x6500c01fffff 64bit pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0008:00: resource 4 [mem 0x650040000000-0x6500bfffffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0008:00: resource 5 [mem 0x6500c0000000-0x65ffffffffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0008:00: resource 6 [io  0x60000-0x6ffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0008:01: resource 0 [io  0x60000-0x60fff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0008:01: resource 1 [mem 0x650040000000-0x650041bfffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0008:01: resource 2 [mem 0x6500c0000000-0x6500c01fffff 64bit pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0008:02: resource 0 [io  0x60000-0x60fff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0008:02: resource 1 [mem 0x650040000000-0x650041bfffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0008:03: resource 0 [io  0x60000-0x60fff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0008:03: resource 1 [mem 0x650040000000-0x6500417fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0008:04: resource 0 [io  0x60000-0x60fff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0008:04: resource 1 [mem 0x650040000000-0x6500417fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0008:05: resource 1 [mem 0x650041800000-0x6500418fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: PCI Root Bridge [PCI9] (domain 0009 [bus 00-ff])
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:07: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI EDR HPX-Type3]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:07: _OSC: platform does not support [SHPCHotplug PME AER DPC]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:07: _OSC: OS now controls [PCIeHotplug PCIeCapability LTR]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:07: ECAM area [mem 0x660010000000-0x66001fffffff] reserved by PNP0C02:08
+Dec 01 21:41:12 nbutme-gh200-1 kernel: acpi PNP0A08:07: ECAM at [mem 0x660010000000-0x66001fffffff] for [bus 00-ff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: Remapped I/O 0x0000660020000000 to [io  0x70000-0x7ffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: PCI host bridge to bus 0009:00
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0009:00: root bus resource [mem 0x660040000000-0x6600bfffffff window] (bus address [0x40000000-0xbfffffff])
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0009:00: root bus resource [mem 0x6600c0000000-0x66ffffffffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0009:00: root bus resource [io  0x70000-0x7ffff window] (bus address [0x0000-0xffff])
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0009:00: root bus resource [bus 00-ff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:00:00.0: [10de:22b1] type 01 class 0x060400 PCIe Root Port
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:00:00.0: PCI bridge to [bus 01]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:00:00.0:   bridge window [mem 0x662000000000-0x6640035fffff 64bit pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:00:00.0: enabling Extended Tags
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:00:00.0: PME# supported from D0 D3hot
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:01:00.0: [10de:2342] type 00 class 0x030200 PCIe Endpoint
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:01:00.0: BAR 0 [mem 0x664002000000-0x664002ffffff 64bit pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:01:00.0: BAR 2 [mem 0x662000000000-0x663fffffffff 64bit pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:01:00.0: BAR 4 [mem 0x664000000000-0x664001ffffff 64bit pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:01:00.0: Enabling HDA controller
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:01:00.0: VF BAR 0 [mem 0x664003000000-0x66400303ffff 64bit pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:01:00.0: VF BAR 0 [mem 0x664003000000-0x6640035fffff 64bit pref]: contains BAR 0 for 24 VFs
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:01:00.0: DOE: [2c8] ABORT timed out
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:01:00.0: DOE: [2c8] failed to reset mailbox with abort command : -5
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:01:00.0: DOE: [2c8] failed to create mailbox: -5
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:01:00.0: 15.753 Gb/s available PCIe bandwidth, limited by 16.0 GT/s PCIe x1 link at 0009:00:00.0 (capable of 31.507 Gb/s with 32.0 GT/s PCIe x1 link)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0009:00: on NUMA node 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:00:00.0: bridge window [io  0x1000-0x0fff] to [bus 01] add_size 1000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:00:00.0: bridge window [mem 0x00100000-0x000fffff] to [bus 01] add_size 200000 add_align 100000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:00:00.0: bridge window [mem 0x661000000000-0x663fffffffff 64bit pref]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:00:00.0: bridge window [mem 0x660040000000-0x6600401fffff]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:00:00.0: bridge window [io  0x70000-0x70fff]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:01:00.0: BAR 2 [mem 0x662000000000-0x663fffffffff 64bit pref]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:01:00.0: BAR 4 [mem 0x661000000000-0x661001ffffff 64bit pref]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:01:00.0: BAR 0 [mem 0x661002000000-0x661002ffffff 64bit pref]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:01:00.0: VF BAR 0 [mem 0x661003000000-0x6610035fffff 64bit pref]: assigned
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:00:00.0: PCI bridge to [bus 01]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:00:00.0:   bridge window [io  0x70000-0x70fff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:00:00.0:   bridge window [mem 0x660040000000-0x6600401fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:00:00.0:   bridge window [mem 0x661000000000-0x663fffffffff 64bit pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0009:00: resource 4 [mem 0x660040000000-0x6600bfffffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0009:00: resource 5 [mem 0x6600c0000000-0x66ffffffffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0009:00: resource 6 [io  0x70000-0x7ffff window]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0009:01: resource 0 [io  0x70000-0x70fff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0009:01: resource 1 [mem 0x660040000000-0x6600401fffff]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci_bus 0009:01: resource 2 [mem 0x661000000000-0x663fffffffff 64bit pref]
+Dec 01 21:41:12 nbutme-gh200-1 kernel: iommu: Default domain type: Translated
+Dec 01 21:41:12 nbutme-gh200-1 kernel: iommu: DMA domain TLB invalidation policy: lazy mode
+Dec 01 21:41:12 nbutme-gh200-1 kernel: SCSI subsystem initialized
+Dec 01 21:41:12 nbutme-gh200-1 kernel: libata version 3.00 loaded.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: bus type USB registered
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usbcore: registered new interface driver usbfs
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usbcore: registered new interface driver hub
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usbcore: registered new device driver usb
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pps_core: LinuxPPS API ver. 1 registered
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Dec 01 21:41:12 nbutme-gh200-1 kernel: PTP clock support registered
+Dec 01 21:41:12 nbutme-gh200-1 kernel: EDAC MC: Ver: 3.0.0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: scmi_core: SCMI protocol bus registered
+Dec 01 21:41:12 nbutme-gh200-1 kernel: efivars: Registered efivars operations
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NetLabel: Initializing
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NetLabel:  domain hash size = 128
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NetLabel:  unlabeled traffic allowed by default
+Dec 01 21:41:12 nbutme-gh200-1 kernel: mctp: management component transport protocol core
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NET: Registered PF_MCTP protocol family
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:04:00.0: vgaarb: setting as boot VGA device
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:04:00.0: vgaarb: bridge control possible
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0008:04:00.0: vgaarb: VGA device added: decodes=io+mem,owns=none,locks=none
+Dec 01 21:41:12 nbutme-gh200-1 kernel: vgaarb: loaded
+Dec 01 21:41:12 nbutme-gh200-1 kernel: clocksource: Switched to clocksource arch_sys_counter
+Dec 01 21:41:12 nbutme-gh200-1 kernel: VFS: Disk quotas dquot_6.6.0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: VFS: Dquot-cache hash table entries: 8192 (order 0, 65536 bytes)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: AppArmor: AppArmor Filesystem Enabled
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pnp: PnP ACPI init
+Dec 01 21:41:12 nbutme-gh200-1 kernel: system 00:00: [mem 0x600010000000-0x60001fffffff window] could not be reserved
+Dec 01 21:41:12 nbutme-gh200-1 kernel: system 00:01: [mem 0x610010000000-0x61001fffffff window] could not be reserved
+Dec 01 21:41:12 nbutme-gh200-1 kernel: system 00:02: [mem 0x620010000000-0x62001fffffff window] could not be reserved
+Dec 01 21:41:12 nbutme-gh200-1 kernel: system 00:03: [mem 0x628010000000-0x62801fffffff window] could not be reserved
+Dec 01 21:41:12 nbutme-gh200-1 kernel: system 00:04: [mem 0x630010000000-0x63001fffffff window] could not be reserved
+Dec 01 21:41:12 nbutme-gh200-1 kernel: system 00:05: [mem 0x640010000000-0x64001fffffff window] could not be reserved
+Dec 01 21:41:12 nbutme-gh200-1 kernel: system 00:06: [mem 0x650010000000-0x65001fffffff window] could not be reserved
+Dec 01 21:41:12 nbutme-gh200-1 kernel: system 00:07: [mem 0x660010000000-0x66001fffffff window] could not be reserved
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pnp: PnP ACPI: found 8 devices
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NET: Registered PF_INET protocol family
+Dec 01 21:41:12 nbutme-gh200-1 kernel: IP idents hash table entries: 262144 (order: 5, 2097152 bytes, linear)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: tcp_listen_portaddr_hash hash table entries: 65536 (order: 4, 1048576 bytes, linear)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Table-perturb hash table entries: 65536 (order: 2, 262144 bytes, linear)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: TCP established hash table entries: 524288 (order: 6, 4194304 bytes, linear)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: TCP bind hash table entries: 65536 (order: 5, 2097152 bytes, linear)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: TCP: Hash tables configured (established 524288 bind 65536)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: MPTCP token hash table entries: 65536 (order: 4, 1572864 bytes, linear)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: UDP hash table entries: 65536 (order: 5, 2097152 bytes, linear)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: UDP-Lite hash table entries: 65536 (order: 5, 2097152 bytes, linear)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NET: Registered PF_UNIX/PF_LOCAL protocol family
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NET: Registered PF_XDP protocol family
+Dec 01 21:41:12 nbutme-gh200-1 kernel: PCI: CLS 64 bytes, default 64
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Trying to unpack rootfs image as initramfs...
+Dec 01 21:41:12 nbutme-gh200-1 kernel: kvm [1]: IPA Size Limit: 48 bits
+Dec 01 21:41:12 nbutme-gh200-1 kernel: kvm [1]: GICv4 support disabled
+Dec 01 21:41:12 nbutme-gh200-1 kernel: kvm [1]: GICv3: no GICV resource entry
+Dec 01 21:41:12 nbutme-gh200-1 kernel: kvm [1]: disabling GICv2 emulation
+Dec 01 21:41:12 nbutme-gh200-1 kernel: kvm [1]: GIC system register CPU interface enabled
+Dec 01 21:41:12 nbutme-gh200-1 kernel: kvm [1]: vgic interrupt IRQ9
+Dec 01 21:41:12 nbutme-gh200-1 kernel: kvm [1]: VHE mode initialized successfully
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Initialise system trusted keyrings
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Key type blacklist registered
+Dec 01 21:41:12 nbutme-gh200-1 kernel: workingset: timestamp_bits=40 max_order=23 bucket_order=0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: zbud: loaded
+Dec 01 21:41:12 nbutme-gh200-1 kernel: squashfs: version 4.0 (2009/01/31) Phillip Lougher
+Dec 01 21:41:12 nbutme-gh200-1 kernel: fuse: init (API version 7.39)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: integrity: Platform Keyring initialized
+Dec 01 21:41:12 nbutme-gh200-1 kernel: integrity: Machine keyring initialized
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Key type asymmetric registered
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Asymmetric key parser 'x509' registered
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 242)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: io scheduler mq-deadline registered
+Dec 01 21:41:12 nbutme-gh200-1 kernel: tegra186-gpio NVDA0508:00: invalid resource (null)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: tegra186-gpio NVDA0508:00: invalid resource (null)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+Dec 01 21:41:12 nbutme-gh200-1 kernel: thermal LNXTHERM:00: registered as thermal_zone0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: thermal: Thermal Zone [TZ00] (49 C)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: thermal LNXTHERM:01: registered as thermal_zone1
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: thermal: Thermal Zone [TZ01] (49 C)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: thermal LNXTHERM:02: registered as thermal_zone2
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: thermal: Thermal Zone [TZ02] (48 C)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: thermal LNXTHERM:03: registered as thermal_zone3
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: thermal: Thermal Zone [TZ03] (50 C)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: thermal LNXTHERM:04: registered as thermal_zone4
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: thermal: Thermal Zone [TZ04] (47 C)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: thermal LNXTHERM:05: registered as thermal_zone5
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: thermal: Thermal Zone [TZ05] (48 C)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: thermal LNXTHERM:06: registered as thermal_zone6
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: thermal: Thermal Zone [TZ06] (47 C)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: thermal LNXTHERM:07: registered as thermal_zone7
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: thermal: Thermal Zone [TZ07] (44 C)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: thermal LNXTHERM:08: registered as thermal_zone8
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: thermal: Thermal Zone [TZ08] (41 C)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: thermal LNXTHERM:09: registered as thermal_zone9
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: thermal: Thermal Zone [TZ09] (50 C)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: thermal LNXTHERM:0a: registered as thermal_zone10
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: thermal: Thermal Zone [TZ0A] (38 C)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: thermal LNXTHERM:0b: registered as thermal_zone11
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: thermal: Thermal Zone [TZ0B] (39 C)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: thermal LNXTHERM:0c: registered as thermal_zone12
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: thermal: Thermal Zone [TZL0] (50 C)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ERST: Error Record Serialization Table (ERST) support is initialized.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pstore: Using crash dump compression: deflate
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pstore: Registered erst as persistent store backend
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI GTDT: found 1 SBSA generic Watchdog(s).
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+Dec 01 21:41:12 nbutme-gh200-1 kernel: msm_serial: driver initialized
+Dec 01 21:41:12 nbutme-gh200-1 kernel: SuperH (H)SCI(F) driver initialized
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.5.auto: option mask 0x0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.5.auto: ias 48-bit, oas 48-bit (features 0x000e1fbf)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.5.auto: allocated 524288 entries for cmdq
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.5.auto: allocated 524288 entries for evtq
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.5.auto: allocated 524288 entries for priq
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.5.auto: msi_domain absent - falling back to wired irqs
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.5.auto: no priq irq - PRI will be broken
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.6.auto: option mask 0x0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.6.auto: ias 48-bit, oas 48-bit (features 0x000e1fbf)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.6.auto: allocated 524288 entries for cmdq
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.6.auto: allocated 524288 entries for evtq
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Freeing initrd memory: 202816K
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.6.auto: allocated 524288 entries for priq
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.6.auto: msi_domain absent - falling back to wired irqs
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.6.auto: no priq irq - PRI will be broken
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.7.auto: option mask 0x0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.7.auto: ias 48-bit, oas 48-bit (features 0x000e1fbf)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.7.auto: allocated 524288 entries for cmdq
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.7.auto: allocated 524288 entries for evtq
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.7.auto: allocated 524288 entries for priq
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.7.auto: msi_domain absent - falling back to wired irqs
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.7.auto: no priq irq - PRI will be broken
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.8.auto: option mask 0x0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.8.auto: ias 48-bit, oas 48-bit (features 0x000e1fbf)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.8.auto: allocated 524288 entries for cmdq
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.8.auto: allocated 524288 entries for evtq
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.8.auto: allocated 524288 entries for priq
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.8.auto: msi_domain absent - falling back to wired irqs
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.8.auto: no priq irq - PRI will be broken
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.9.auto: option mask 0x0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.9.auto: ias 48-bit, oas 48-bit (features 0x000e1fbf)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.9.auto: allocated 524288 entries for cmdq
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.9.auto: allocated 524288 entries for evtq
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.9.auto: allocated 524288 entries for priq
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.9.auto: msi_domain absent - falling back to wired irqs
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.9.auto: no priq irq - PRI will be broken
+Dec 01 21:41:12 nbutme-gh200-1 kernel: loop: module loaded
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ACPI: bus type drm_connector registered
+Dec 01 21:41:12 nbutme-gh200-1 kernel: tegra-qspi NVDA1513:00: Adding to iommu group 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: tegra-qspi NVDA1513:00: device reset failed
+Dec 01 21:41:12 nbutme-gh200-1 kernel: tun: Universal TUN/TAP device driver, 1.6
+Dec 01 21:41:12 nbutme-gh200-1 kernel: PPP generic driver version 2.4.2
+Dec 01 21:41:12 nbutme-gh200-1 kernel: mousedev: PS/2 mouse device common for all mice
+Dec 01 21:41:12 nbutme-gh200-1 kernel: rtc-efi rtc-efi.0: registered as rtc0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: rtc-efi rtc-efi.0: setting system clock to 2025-12-01T21:41:09 UTC (1764625269)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: i2c_dev: i2c /dev entries driver
+Dec 01 21:41:12 nbutme-gh200-1 kernel: device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: device-mapper: uevent: version 1.0.3
+Dec 01 21:41:12 nbutme-gh200-1 kernel: device-mapper: ioctl: 4.48.0-ioctl (2023-03-01) initialised: dm-devel@redhat.com
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ghes_edac: This system has 1 DIMM sockets.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: EDAC MC0: Giving out device to module ghes_edac.c controller ghes_edac: DEV ghes (INTERRUPT)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ledtrig-cpu: registered to indicate activity on CPUs
+Dec 01 21:41:12 nbutme-gh200-1 kernel: [drm] Initialized simpledrm 1.0.0 20200625 for simple-framebuffer.0 on minor 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: fbcon: Deferring console take-over
+Dec 01 21:41:12 nbutme-gh200-1 kernel: simple-framebuffer simple-framebuffer.0: [drm] fb0: simpledrmdrmfb frame buffer device
+Dec 01 21:41:12 nbutme-gh200-1 kernel: SMCCC: SOC_ID: ID = jep106:036b:0241 Revision = 0x00000002
+Dec 01 21:41:12 nbutme-gh200-1 kernel: hw perfevents: enabled with armv8_pmuv3_0 PMU driver, 7 counters available
+Dec 01 21:41:12 nbutme-gh200-1 kernel: drop_monitor: Initializing network drop monitor service
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NET: Registered PF_INET6 protocol family
+Dec 01 21:41:12 nbutme-gh200-1 kernel: watchdog: Delayed init of the lockup detector failed: -19
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Segment Routing with IPv6
+Dec 01 21:41:12 nbutme-gh200-1 kernel: watchdog: Hard watchdog permanently disabled
+Dec 01 21:41:12 nbutme-gh200-1 kernel: In-situ OAM (IOAM) with IPv6
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NET: Registered PF_PACKET protocol family
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Key type dns_resolver registered
+Dec 01 21:41:12 nbutme-gh200-1 kernel: registered taskstats version 1
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Loading compiled-in X.509 certificates
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Loaded X.509 cert 'Build time autogenerated kernel key: aa6809d012ebdb486c3af4e51e76fe0fea2a6446'
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Loaded X.509 cert 'Canonical Ltd. Live Patch Signing 2025 Kmod: d541cef61dc7e793b7eb7e899970a2eef0b5dc8c'
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+Dec 01 21:41:12 nbutme-gh200-1 kernel: blacklist: Loading compiled-in revocation X.509 certificates
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2017): 242ade75ac4a15e50d50c84b0d45ff3eae707a03'
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (ESM 2018): 365188c1d374d6b07c3c8f240f8ef722433d6a8b'
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2019): c0746fd6c5da3ae827864651ad66ae47fe24b3e8'
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v1): a8d54bbb3825cfb94fa13c9f8a594a195c107b8d'
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v2): 4cf046892d6fd3c9a5b03f98d845f90851dc6a8c'
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v3): 100437bb6de6e469b581e61cd66bce3ef4ed53af'
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (Ubuntu Core 2019): c1d57b8f6b743f23ee41f4f7ee292f06eecadfb9'
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Key type .fscrypt registered
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Key type fscrypt-provisioning registered
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Key type encrypted registered
+Dec 01 21:41:12 nbutme-gh200-1 kernel: AppArmor: AppArmor sha256 policy hashing enabled
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ima: secureboot mode disabled
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ima: No TPM chip found, activating TPM-bypass!
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Loading compiled-in module X.509 certificates
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Loaded X.509 cert 'Build time autogenerated kernel key: aa6809d012ebdb486c3af4e51e76fe0fea2a6446'
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ima: Allocated hash algorithm: sha256
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ima: No architecture policies found
+Dec 01 21:41:12 nbutme-gh200-1 kernel: evm: Initialising EVM extended attributes:
+Dec 01 21:41:12 nbutme-gh200-1 kernel: evm: security.selinux
+Dec 01 21:41:12 nbutme-gh200-1 kernel: evm: security.SMACK64
+Dec 01 21:41:12 nbutme-gh200-1 kernel: evm: security.SMACK64EXEC
+Dec 01 21:41:12 nbutme-gh200-1 kernel: evm: security.SMACK64TRANSMUTE
+Dec 01 21:41:12 nbutme-gh200-1 kernel: evm: security.SMACK64MMAP
+Dec 01 21:41:12 nbutme-gh200-1 kernel: evm: security.apparmor
+Dec 01 21:41:12 nbutme-gh200-1 kernel: evm: security.ima
+Dec 01 21:41:12 nbutme-gh200-1 kernel: evm: security.capability
+Dec 01 21:41:12 nbutme-gh200-1 kernel: evm: HMAC attrs: 0x1
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pcieport 0000:00:00.0: Adding to iommu group 1
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pcieport 0000:00:00.0: pciehp: Slot #0 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise- Interlock- NoCompl+ IbPresDis- LLActRep+
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pcieport 0002:00:00.0: Adding to iommu group 2
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pcieport 0002:00:00.0: pciehp: Slot #2 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise- Interlock- NoCompl+ IbPresDis- LLActRep+
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pcieport 0004:00:00.0: Adding to iommu group 3
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pcieport 0004:00:00.0: pciehp: Slot #4 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise- Interlock- NoCompl+ IbPresDis- LLActRep+
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pcieport 0005:00:00.0: Adding to iommu group 4
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pcieport 0005:00:00.0: pciehp: Slot #5 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise- Interlock- NoCompl+ IbPresDis- LLActRep+
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pcieport 0006:00:00.0: Adding to iommu group 5
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pcieport 0006:00:00.0: pciehp: Slot #6 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise- Interlock- NoCompl+ IbPresDis- LLActRep+
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pcieport 0007:00:00.0: Adding to iommu group 6
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pcieport 0007:00:00.0: pciehp: Slot #7 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise- Interlock- NoCompl+ IbPresDis- LLActRep+
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pcieport 0008:00:00.0: Adding to iommu group 7
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pcieport 0008:00:00.0: pciehp: Slot #8 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise- Interlock- NoCompl+ IbPresDis- LLActRep+
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pcieport 0008:01:00.0: Adding to iommu group 8
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pcieport 0008:02:01.0: Adding to iommu group 9
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pcieport 0008:02:02.0: Adding to iommu group 10
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pcieport 0008:02:03.0: Adding to iommu group 11
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pcieport 0008:03:00.0: Adding to iommu group 12
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pcieport 0009:00:00.0: Adding to iommu group 13
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pcieport 0009:00:00.0: pciehp: Slot #9 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise- Interlock- NoCompl+ IbPresDis- LLActRep+
+Dec 01 21:41:12 nbutme-gh200-1 kernel: clk: Disabling unused clocks
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Freeing unused kernel memory: 12992K
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Checked W+X mappings: passed, no W+X pages found
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Run /init as init process
+Dec 01 21:41:12 nbutme-gh200-1 kernel:   with arguments:
+Dec 01 21:41:12 nbutme-gh200-1 kernel:     /init
+Dec 01 21:41:12 nbutme-gh200-1 kernel:   with environment:
+Dec 01 21:41:12 nbutme-gh200-1 kernel:     HOME=/
+Dec 01 21:41:12 nbutme-gh200-1 kernel:     TERM=linux
+Dec 01 21:41:12 nbutme-gh200-1 kernel:     BOOT_IMAGE=/vmlinuz-6.8.0-1043-nvidia-64k
+Dec 01 21:41:12 nbutme-gh200-1 kernel: tegra-i2c NVDA0301:00: cannot use DMA: -19
+Dec 01 21:41:12 nbutme-gh200-1 kernel: tegra-i2c NVDA0301:00: falling back to PIO
+Dec 01 21:41:12 nbutme-gh200-1 kernel: xhci_hcd 0008:05:00.0: Adding to iommu group 14
+Dec 01 21:41:12 nbutme-gh200-1 kernel: xhci_hcd 0008:05:00.0: failed to load firmware renesas_usb_fw.mem, fallback to ROM
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ast 0008:04:00.0: stream 66560 already in tree
+Dec 01 21:41:12 nbutme-gh200-1 kernel: xhci_hcd 0008:05:00.0: xHCI Host Controller
+Dec 01 21:41:12 nbutme-gh200-1 kernel: xhci_hcd 0008:05:00.0: new USB bus registered, assigned bus number 1
+Dec 01 21:41:12 nbutme-gh200-1 kernel: xhci_hcd 0008:05:00.0: Zeroing 64bit base registers, expecting fault
+Dec 01 21:41:12 nbutme-gh200-1 kernel: nvme 0005:01:00.0: Adding to iommu group 15
+Dec 01 21:41:12 nbutme-gh200-1 kernel: nvidia: loading out-of-tree module taints kernel.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: nvidia: module verification failed: signature and/or required key missing - tainting kernel
+Dec 01 21:41:12 nbutme-gh200-1 kernel: xhci_hcd 0008:05:00.0: Fault detected
+Dec 01 21:41:12 nbutme-gh200-1 kernel: nvme 0006:01:00.0: Adding to iommu group 16
+Dec 01 21:41:12 nbutme-gh200-1 kernel: xhci_hcd 0008:05:00.0: hcc params 0x014051cf hci version 0x100 quirks 0x0000001100000010
+Dec 01 21:41:12 nbutme-gh200-1 kernel: nvme 0004:01:00.0: Adding to iommu group 17
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.9.auto: event 0x10 received:
+Dec 01 21:41:12 nbutme-gh200-1 kernel: nvme 0007:01:00.0: Adding to iommu group 18
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.9.auto:         0x0001050000000010
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.9.auto:         0x0000020800000000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.9.auto:         0x0000000000000000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: arm-smmu-v3 arm-smmu-v3.9.auto:         0x0000000000000000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: nvme nvme0: pci function 0005:01:00.0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: nvme nvme2: pci function 0004:01:00.0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: nvme nvme1: pci function 0006:01:00.0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: xhci_hcd 0008:05:00.0: xHCI Host Controller
+Dec 01 21:41:12 nbutme-gh200-1 kernel: nvidia-nvlink: Nvlink Core is being initialized, major device number 510
+Dec 01 21:41:12 nbutme-gh200-1 kernel: xhci_hcd 0008:05:00.0: new USB bus registered, assigned bus number 2
+Dec 01 21:41:12 nbutme-gh200-1 kernel: 
+Dec 01 21:41:12 nbutme-gh200-1 kernel: xhci_hcd 0008:05:00.0: Host supports USB 3.0 SuperSpeed
+Dec 01 21:41:12 nbutme-gh200-1 kernel: nvidia 0009:01:00.0: Adding to iommu group 19
+Dec 01 21:41:12 nbutme-gh200-1 kernel: nvme nvme3: pci function 0007:01:00.0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: i2c i2c-0: supports SMBALERT#
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.08
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usb usb1: Product: xHCI Host Controller
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usb usb1: Manufacturer: Linux 6.8.0-1043-nvidia-64k xhci-hcd
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usb usb1: SerialNumber: 0008:05:00.0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: hub 1-0:1.0: USB hub found
+Dec 01 21:41:12 nbutme-gh200-1 kernel: hub 1-0:1.0: 4 ports detected
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NVRM: loading NVIDIA UNIX Open Kernel Module for aarch64  580.105.08  Release Build  (dvs-builder@U22-I3-G07-01-1)  Wed Oct 29 22:23:50 UTC 2025
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ast 0008:04:00.0: enabling device (0002 -> 0003)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ast 0008:04:00.0: Using default configuration
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ast 0008:04:00.0: AST 2600 detected
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ast 0008:04:00.0: [drm] Using ASPEED DisplayPort transmitter
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ast 0008:04:00.0: [drm] dram MCLK=396 Mhz type=1 bus_width=16
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.08
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usb usb2: Product: xHCI Host Controller
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usb usb2: Manufacturer: Linux 6.8.0-1043-nvidia-64k xhci-hcd
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usb usb2: SerialNumber: 0008:05:00.0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: [drm] Initialized ast 0.1.0 20120228 for 0008:04:00.0 on minor 0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: fbcon: Deferring console take-over
+Dec 01 21:41:12 nbutme-gh200-1 kernel: hub 2-0:1.0: USB hub found
+Dec 01 21:41:12 nbutme-gh200-1 kernel: hub 2-0:1.0: 4 ports detected
+Dec 01 21:41:12 nbutme-gh200-1 kernel: ast 0008:04:00.0: [drm] fb0: astdrmfb frame buffer device
+Dec 01 21:41:12 nbutme-gh200-1 kernel: nvme nvme1: 72/0/0 default/read/poll queues
+Dec 01 21:41:12 nbutme-gh200-1 kernel: nvme nvme0: 72/0/0 default/read/poll queues
+Dec 01 21:41:12 nbutme-gh200-1 kernel: nvme nvme3: 72/0/0 default/read/poll queues
+Dec 01 21:41:12 nbutme-gh200-1 kernel: nvme nvme2: 72/0/0 default/read/poll queues
+Dec 01 21:41:12 nbutme-gh200-1 kernel:  nvme2n1: p1 p2 p3
+Dec 01 21:41:12 nbutme-gh200-1 kernel: nvidia-modeset: Loading NVIDIA UNIX Open Kernel Mode Setting Driver for aarch64  580.105.08  Release Build  (dvs-builder@U22-I3-G07-01-1)  Wed Oct 29 22:12:54 UTC 2025
+Dec 01 21:41:12 nbutme-gh200-1 kernel: [drm] [nvidia-drm] [GPU ID 0x00090100] Loading driver
+Dec 01 21:41:12 nbutme-gh200-1 kernel: NVRM: numa memblock size of zero found during device start
+Dec 01 21:41:12 nbutme-gh200-1 kernel: [drm] [nvidia-drm] [GPU ID 0x00090100] NUMA was not set up yet; ignoring this device
+Dec 01 21:41:12 nbutme-gh200-1 kernel: md0: detected capacity change from 0 to 12501938176
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usb 1-1: new high-speed USB device number 2 using xhci_hcd
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usb 1-1: New USB device found, idVendor=1d6b, idProduct=0107, bcdDevice= 1.00
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usb 1-1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usb 1-1: Product: USB Virtual Hub
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usb 1-1: Manufacturer: Aspeed
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usb 1-1: SerialNumber: 00000000
+Dec 01 21:41:12 nbutme-gh200-1 kernel: hub 1-1:1.0: USB hub found
+Dec 01 21:41:12 nbutme-gh200-1 kernel: hub 1-1:1.0: 7 ports detected
+Dec 01 21:41:12 nbutme-gh200-1 kernel: raid6: neonx8   gen() 27117 MB/s
+Dec 01 21:41:12 nbutme-gh200-1 kernel: raid6: neonx4   gen() 25265 MB/s
+Dec 01 21:41:12 nbutme-gh200-1 kernel: raid6: neonx2   gen() 22500 MB/s
+Dec 01 21:41:12 nbutme-gh200-1 kernel: raid6: neonx1   gen() 20085 MB/s
+Dec 01 21:41:12 nbutme-gh200-1 kernel: raid6: int64x8  gen()  9421 MB/s
+Dec 01 21:41:12 nbutme-gh200-1 kernel: raid6: int64x4  gen() 10289 MB/s
+Dec 01 21:41:12 nbutme-gh200-1 kernel: raid6: int64x2  gen()  9492 MB/s
+Dec 01 21:41:12 nbutme-gh200-1 kernel: raid6: int64x1  gen()  7851 MB/s
+Dec 01 21:41:12 nbutme-gh200-1 kernel: raid6: using algorithm neonx8 gen() 27117 MB/s
+Dec 01 21:41:12 nbutme-gh200-1 kernel: raid6: .... xor() 20320 MB/s, rmw enabled
+Dec 01 21:41:12 nbutme-gh200-1 kernel: raid6: using neon recovery algorithm
+Dec 01 21:41:12 nbutme-gh200-1 kernel: xor: measuring software checksum speed
+Dec 01 21:41:12 nbutme-gh200-1 kernel:    8regs           : 36987 MB/sec
+Dec 01 21:41:12 nbutme-gh200-1 kernel:    32regs          : 37364 MB/sec
+Dec 01 21:41:12 nbutme-gh200-1 kernel:    arm64_neon      : 46121 MB/sec
+Dec 01 21:41:12 nbutme-gh200-1 kernel: xor: using function: arm64_neon (46121 MB/sec)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: async_tx: api initialized (async)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usb 1-1.1: new high-speed USB device number 3 using xhci_hcd
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Btrfs loaded, zoned=yes, fsverity=yes
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usb 1-1.1: New USB device found, idVendor=0557, idProduct=9241, bcdDevice= 5.04
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usb 1-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usb 1-1.1: Product: SMCI HID KM
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usb 1-1.1: Manufacturer: Linux 5.4.62 with aspeed_vhub
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usb 1-1.2: new high-speed USB device number 4 using xhci_hcd
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usb 1-1.2: New USB device found, idVendor=0b1f, idProduct=03ee, bcdDevice= 5.04
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usb 1-1.2: Product: RNDIS/Ethernet Gadget
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usb 1-1.2: Manufacturer: Linux 5.4.62 with aspeed_vhub
+Dec 01 21:41:12 nbutme-gh200-1 kernel: hid: raw HID events driver (C) Jiri Kosina
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usbcore: registered new interface driver cdc_ether
+Dec 01 21:41:12 nbutme-gh200-1 kernel: EXT4-fs (dm-0): mounted filesystem 598454bc-3ce2-4005-8e63-765459a45df5 ro with ordered data mode. Quota mode: none.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usbcore: registered new interface driver usbhid
+Dec 01 21:41:12 nbutme-gh200-1 kernel: rndis_host 1-1.2:2.0 usb0: register 'rndis_host' at usb-0008:05:00.0-1.2, RNDIS device, be:3a:f2:b6:05:9f
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usbhid: USB HID core driver
+Dec 01 21:41:12 nbutme-gh200-1 kernel: usbcore: registered new interface driver rndis_host
+Dec 01 21:41:12 nbutme-gh200-1 kernel: input: Linux 5.4.62 with aspeed_vhub SMCI HID KM as /devices/pci0008:00/0008:00:00.0/0008:01:00.0/0008:02:02.0/0008:05:00.0/usb1/1-1/1-1.1/1-1.1:1.0/0003:0557:9241.0001/input/input0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: rndis_host 1-1.2:2.0 enxbe3af2b6059f: renamed from usb0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: hid-generic 0003:0557:9241.0001: input,hidraw0: USB HID v1.00 Keyboard [Linux 5.4.62 with aspeed_vhub SMCI HID KM] on usb-0008:05:00.0-1.1/input0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: input: Linux 5.4.62 with aspeed_vhub SMCI HID KM as /devices/pci0008:00/0008:00:00.0/0008:01:00.0/0008:02:02.0/0008:05:00.0/usb1/1-1/1-1.1/1-1.1:1.1/0003:0557:9241.0002/input/input1
+Dec 01 21:41:12 nbutme-gh200-1 kernel: hid-generic 0003:0557:9241.0002: input,hidraw1: USB HID v1.00 Mouse [Linux 5.4.62 with aspeed_vhub SMCI HID KM] on usb-0008:05:00.0-1.1/input1
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Inserted module 'autofs4'
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: systemd 249.11-0ubuntu3.16 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY -P11KIT -QRENCODE +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Detected architecture arm64.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Hostname set to <nbutme-gh200-1>.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: block nvme2n1: the capability attribute has been deprecated.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: /lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Configuration file /etc/systemd/system/containerd.service is marked executable. Please remove executable permission bits. Proceeding anyway.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Configuration file /etc/systemd/system/containerd.service is marked world-writable. Please remove world writability permission bits. Proceeding anyway.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Queued start job for default target Graphical Interface.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Created slice Slice /system/modprobe.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Created slice Slice /system/serial-getty.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Created slice Slice /system/systemd-fsck.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Created slice User and Session Slice.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Reached target Slice Units.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Reached target Mounting snaps.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Reached target Swaps.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Reached target Local Verity Protected Volumes.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Listening on Device-mapper event daemon FIFOs.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Listening on LVM2 poll daemon socket.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Listening on multipathd control socket.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Listening on RPCbind Server Activation Socket.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Listening on Syslog Socket.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Listening on fsck to fsckd communication Socket.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Listening on initctl Compatibility Named Pipe.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Listening on Journal Audit Socket.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Listening on Journal Socket (/dev/log).
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Listening on Journal Socket.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Listening on Network Service Netlink Socket.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Listening on udev Control Socket.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Listening on udev Kernel Socket.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Mounting Huge Pages File System...
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Mounting POSIX Message Queue File System...
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Mounting Kernel Debug File System...
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Mounting Kernel Trace File System...
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Starting Journal Service...
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Condition check resulted in Kernel Module supporting RPCSEC_GSS being skipped.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Starting Set the console keyboard layout...
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Starting Create List of Static Device Nodes...
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Condition check resulted in LXD - agent being skipped.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Starting Load Kernel Module configfs...
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Starting Load Kernel Module drm...
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Starting Load Kernel Module efi_pstore...
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pstore: backend 'erst' already in use: ignoring 'efi_pstore'
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Starting Load Kernel Module fuse...
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Condition check resulted in File System Check on Root Device being skipped.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Starting Load Kernel Modules...
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Starting Remount Root and Kernel File Systems...
+Dec 01 21:41:12 nbutme-gh200-1 kernel: bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: Bridge firewalling registered
+Dec 01 21:41:12 nbutme-gh200-1 kernel: knem 1.1.4.90mlnx3: initialized
+Dec 01 21:41:12 nbutme-gh200-1 kernel: EXT4-fs (dm-0): re-mounted 598454bc-3ce2-4005-8e63-765459a45df5 r/w. Quota mode: none.
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Starting Coldplug All udev Devices...
+Dec 01 21:41:12 nbutme-gh200-1 systemd[1]: Started Journal Service.
+Dec 01 21:41:12 nbutme-gh200-1 kernel: alua: device handler registered
+Dec 01 21:41:12 nbutme-gh200-1 kernel: emc: device handler registered
+Dec 01 21:41:12 nbutme-gh200-1 kernel: rdac: device handler registered
+Dec 01 21:41:13 nbutme-gh200-1 kernel: loop0: detected capacity change from 0 to 121984
+Dec 01 21:41:13 nbutme-gh200-1 kernel: loop1: detected capacity change from 0 to 121984
+Dec 01 21:41:13 nbutme-gh200-1 kernel: loop2: detected capacity change from 0 to 165960
+Dec 01 21:41:13 nbutme-gh200-1 kernel: loop3: detected capacity change from 0 to 165952
+Dec 01 21:41:13 nbutme-gh200-1 kernel: loop4: detected capacity change from 0 to 90552
+Dec 01 21:41:13 nbutme-gh200-1 kernel: loop5: detected capacity change from 0 to 90800
+Dec 01 21:41:13 nbutme-gh200-1 kernel:  cs_system_cfg: CoreSight Configuration manager initialised
+Dec 01 21:41:13 nbutme-gh200-1 kernel: IPMI message handler: version 39.2
+Dec 01 21:41:13 nbutme-gh200-1 kernel: ipmi device interface
+Dec 01 21:41:13 nbutme-gh200-1 kernel: coresight stm0: STM32 initialized
+Dec 01 21:41:13 nbutme-gh200-1 kernel: power_meter ACPI000D:00: Found ACPI power meter.
+Dec 01 21:41:13 nbutme-gh200-1 kernel: power_meter ACPI000D:00: hwmon_device_register() is deprecated. Please convert the driver to use hwmon_device_register_with_info().
+Dec 01 21:41:13 nbutme-gh200-1 kernel: power_meter ACPI000D:01: Found ACPI power meter.
+Dec 01 21:41:13 nbutme-gh200-1 kernel: power_meter ACPI000D:01: Ignoring unsafe software power cap!
+Dec 01 21:41:13 nbutme-gh200-1 kernel: power_meter ACPI000D:01: hwmon_device_register() is deprecated. Please convert the driver to use hwmon_device_register_with_info().
+Dec 01 21:41:13 nbutme-gh200-1 kernel: power_meter ACPI000D:02: Found ACPI power meter.
+Dec 01 21:41:13 nbutme-gh200-1 kernel: power_meter ACPI000D:02: hwmon_device_register() is deprecated. Please convert the driver to use hwmon_device_register_with_info().
+Dec 01 21:41:13 nbutme-gh200-1 kernel: power_meter ACPI000D:03: Found ACPI power meter.
+Dec 01 21:41:13 nbutme-gh200-1 kernel: power_meter ACPI000D:03: hwmon_device_register() is deprecated. Please convert the driver to use hwmon_device_register_with_info().
+Dec 01 21:41:13 nbutme-gh200-1 kernel: ipmi_si: IPMI System Interface driver
+Dec 01 21:41:13 nbutme-gh200-1 kernel: ipmi_si: Unable to find any System Interface(s)
+Dec 01 21:41:13 nbutme-gh200-1 kernel: Compat-mlnx-ofed backport release: eb6cb58
+Dec 01 21:41:13 nbutme-gh200-1 kernel: Backport based on https://:@git-nbu.nvidia.com/r/a/mlnx_ofed/mlnx-ofa_kernel-4.0.git eb6cb58
+Dec 01 21:41:13 nbutme-gh200-1 kernel: compat.git: https://:@git-nbu.nvidia.com/r/a/mlnx_ofed/mlnx-ofa_kernel-4.0.git
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm_spe_pmu arm,spe-v1: probed SPEv1.1 for CPUs 0-71 [max_record_sz 64, align 64, features 0x17]
+Dec 01 21:41:13 nbutme-gh200-1 kernel: ipmi_ssif: IPMI SSIF Interface driver
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.10.auto: option mask 0x0
+Dec 01 21:41:13 nbutme-gh200-1 kernel: ipmi_ssif i2c-IPI0001:00: ipmi_ssif: Trying ACPI-specified SSIF interface at i2c address 0x10, adapter NVDA0301:00, slave address 0x20
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.10.auto: Registered PMU @ 0x0000000011002000 using 4 counters with Global(Counter0) filter settings
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.11.auto: option mask 0x0
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.11.auto: Registered PMU @ 0x0000000011042000 using 4 counters with Global(Counter0) filter settings
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.12.auto: option mask 0x0
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.12.auto: Registered PMU @ 0x0000000011062000 using 4 counters with Global(Counter0) filter settings
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.13.auto: option mask 0x0
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.13.auto: Registered PMU @ 0x0000000011082000 using 4 counters with Global(Counter0) filter settings
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.14.auto: option mask 0x0
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.14.auto: Registered PMU @ 0x00000000110a2000 using 4 counters with Global(Counter0) filter settings
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.15.auto: option mask 0x0
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.15.auto: Registered PMU @ 0x0000000012002000 using 4 counters with Global(Counter0) filter settings
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.16.auto: option mask 0x0
+Dec 01 21:41:13 nbutme-gh200-1 kernel: ipmi_ssif i2c-IPI0001:00: IPMI message handler: Found new BMC (man_id: 0x002a7c, prod_id: 0x1d31, dev_id: 0x20)
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.16.auto: Registered PMU @ 0x0000000012042000 using 4 counters with Global(Counter0) filter settings
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.17.auto: option mask 0x0
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.17.auto: Registered PMU @ 0x0000000012062000 using 4 counters with Global(Counter0) filter settings
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.18.auto: option mask 0x0
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.18.auto: Registered PMU @ 0x0000000012082000 using 4 counters with Global(Counter0) filter settings
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.19.auto: option mask 0x0
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.19.auto: Registered PMU @ 0x00000000120a2000 using 4 counters with Global(Counter0) filter settings
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.20.auto: option mask 0x0
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.20.auto: Registered PMU @ 0x0000000015002000 using 4 counters with Global(Counter0) filter settings
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.21.auto: option mask 0x0
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.21.auto: Registered PMU @ 0x0000000015042000 using 4 counters with Global(Counter0) filter settings
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.22.auto: option mask 0x0
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.22.auto: Registered PMU @ 0x0000000015062000 using 4 counters with Global(Counter0) filter settings
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.23.auto: option mask 0x0
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.23.auto: Registered PMU @ 0x0000000015082000 using 4 counters with Global(Counter0) filter settings
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.24.auto: option mask 0x0
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.24.auto: Registered PMU @ 0x00000000150a2000 using 4 counters with Global(Counter0) filter settings
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.25.auto: option mask 0x0
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.25.auto: Registered PMU @ 0x0000000016002000 using 4 counters with Global(Counter0) filter settings
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.26.auto: option mask 0x0
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.26.auto: Registered PMU @ 0x0000000016042000 using 4 counters with Global(Counter0) filter settings
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.27.auto: option mask 0x0
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.27.auto: Registered PMU @ 0x0000000016062000 using 4 counters with Global(Counter0) filter settings
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.28.auto: option mask 0x0
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.28.auto: Registered PMU @ 0x0000000005002000 using 4 counters with Global(Counter0) filter settings
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.29.auto: option mask 0x0
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.29.auto: Registered PMU @ 0x0000000005042000 using 4 counters with Global(Counter0) filter settings
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.30.auto: option mask 0x0
+Dec 01 21:41:13 nbutme-gh200-1 kernel: arm-smmu-v3-pmcg arm-smmu-v3-pmcg.30.auto: Registered PMU @ 0x0000000005062000 using 4 counters with Global(Counter0) filter settings
+Dec 01 21:41:13 nbutme-gh200-1 kernel: mlx5_core 0000:01:00.0: Adding to iommu group 20
+Dec 01 21:41:14 nbutme-gh200-1 kernel: mlx5_core 0000:01:00.0: firmware version: 40.45.1020
+Dec 01 21:41:14 nbutme-gh200-1 kernel: mlx5_core 0000:01:00.0: 504.112 Gb/s available PCIe bandwidth, limited by 32.0 GT/s PCIe x16 link at 0000:00:00.0 (capable of 1024.000 Gb/s with 64.0 GT/s PCIe x16 link)
+Dec 01 21:41:14 nbutme-gh200-1 kernel: EXT4-fs (nvme2n1p2): mounted filesystem b2717fb2-ea9e-47da-b2d8-6a348cf60a7e r/w with ordered data mode. Quota mode: none.
+Dec 01 21:41:14 nbutme-gh200-1 kernel: audit: type=1400 audit(1764625273.391:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=1365 comm="apparmor_parser"
+Dec 01 21:41:14 nbutme-gh200-1 kernel: audit: type=1400 audit(1764625273.391:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=1366 comm="apparmor_parser"
+Dec 01 21:41:14 nbutme-gh200-1 kernel: audit: type=1400 audit(1764625273.391:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=1366 comm="apparmor_parser"
+Dec 01 21:41:14 nbutme-gh200-1 kernel: audit: type=1400 audit(1764625273.392:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=1370 comm="apparmor_parser"
+Dec 01 21:41:14 nbutme-gh200-1 kernel: audit: type=1400 audit(1764625273.392:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_filter" pid=1370 comm="apparmor_parser"
+Dec 01 21:41:14 nbutme-gh200-1 kernel: audit: type=1400 audit(1764625273.392:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_groff" pid=1370 comm="apparmor_parser"
+Dec 01 21:41:14 nbutme-gh200-1 kernel: audit: type=1400 audit(1764625273.392:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine" pid=1372 comm="apparmor_parser"
+Dec 01 21:41:14 nbutme-gh200-1 kernel: audit: type=1400 audit(1764625273.392:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=1372 comm="apparmor_parser"
+Dec 01 21:41:14 nbutme-gh200-1 kernel: audit: type=1400 audit(1764625273.393:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_apt_news" pid=1368 comm="apparmor_parser"
+Dec 01 21:41:14 nbutme-gh200-1 kernel: audit: type=1400 audit(1764625273.393:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="tcpdump" pid=1371 comm="apparmor_parser"
+Dec 01 21:41:14 nbutme-gh200-1 kernel: RPC: Registered named UNIX socket transport module.
+Dec 01 21:41:14 nbutme-gh200-1 kernel: RPC: Registered udp transport module.
+Dec 01 21:41:14 nbutme-gh200-1 kernel: RPC: Registered tcp transport module.
+Dec 01 21:41:14 nbutme-gh200-1 kernel: RPC: Registered tcp-with-tls transport module.
+Dec 01 21:41:14 nbutme-gh200-1 kernel: RPC: Registered tcp NFSv4.1 backchannel transport module.
+Dec 01 21:41:14 nbutme-gh200-1 kernel: MACsec IEEE 802.1AE
+Dec 01 21:41:14 nbutme-gh200-1 kernel: mlx5_core 0000:01:00.0: Rate limit: 127 rates are supported, range: 0Mbps to 390625Mbps
+Dec 01 21:41:14 nbutme-gh200-1 kernel: mlx5_core 0000:01:00.0: E-Switch: Total vports 18, per vport: max uc(128) max mc(2048)
+Dec 01 21:41:14 nbutme-gh200-1 kernel: mlx5_core 0000:01:00.0: Flow counters bulk query buffer size increased, bulk_query_len(8)
+Dec 01 21:41:14 nbutme-gh200-1 kernel: mlx5_core 0000:01:00.0: mlx5_pcie_event:325:(pid 547): PCIe slot power capability was not advertised.
+Dec 01 21:41:14 nbutme-gh200-1 kernel: mlx5_core 0000:01:00.0: mlx5e: IPSec ESP acceleration enabled
+Dec 01 21:41:14 nbutme-gh200-1 kernel: openvswitch: Open vSwitch switching datapath
+Dec 01 21:41:14 nbutme-gh200-1 kernel: mlx5_core 0000:01:00.0: MLX5E: StrdRq(1) RqSz(8) StrdSz(2048) RxCqeCmprss(0 enhanced)
+Dec 01 21:41:14 nbutme-gh200-1 kernel: mlx5_core 0002:01:00.0: Adding to iommu group 21
+Dec 01 21:41:14 nbutme-gh200-1 kernel: mlx5_core 0002:01:00.0: firmware version: 40.45.1020
+Dec 01 21:41:14 nbutme-gh200-1 kernel: mlx5_core 0002:01:00.0: 252.056 Gb/s available PCIe bandwidth, limited by 32.0 GT/s PCIe x8 link at 0002:00:00.0 (capable of 1024.000 Gb/s with 64.0 GT/s PCIe x16 link)
+Dec 01 21:41:14 nbutme-gh200-1 kernel: mlx5_core 0002:01:00.0: Flow counters bulk query buffer size increased, bulk_query_len(8)
+Dec 01 21:41:14 nbutme-gh200-1 kernel: mlx5_core 0002:01:00.0: mlx5_pcie_event:325:(pid 454): PCIe slot power capability was not advertised.
+Dec 01 21:41:14 nbutme-gh200-1 kernel: mlx5_core 0002:01:00.1: Adding to iommu group 22
+Dec 01 21:41:16 nbutme-gh200-1 kernel: mlx5_core 0002:01:00.1: firmware version: 40.45.1020
+Dec 01 21:41:16 nbutme-gh200-1 kernel: mlx5_core 0002:01:00.1: 252.056 Gb/s available PCIe bandwidth, limited by 32.0 GT/s PCIe x8 link at 0002:00:00.0 (capable of 1024.000 Gb/s with 64.0 GT/s PCIe x16 link)
+Dec 01 21:41:16 nbutme-gh200-1 kernel: mlx5_core 0002:01:00.1: E-Switch: Total vports 18, per vport: max uc(128) max mc(2048)
+Dec 01 21:41:16 nbutme-gh200-1 kernel: mlx5_core 0002:01:00.1: Flow counters bulk query buffer size increased, bulk_query_len(8)
+Dec 01 21:41:16 nbutme-gh200-1 kernel: mlx5_core 0002:01:00.1: mlx5_pcie_event:325:(pid 819): PCIe slot power capability was not advertised.
+Dec 01 21:41:16 nbutme-gh200-1 kernel: mlx5_core 0002:01:00.1: mlx5e: IPSec ESP acceleration enabled
+Dec 01 21:41:16 nbutme-gh200-1 kernel: mlx5_core 0002:01:00.1: MLX5E: StrdRq(1) RqSz(8) StrdSz(2048) RxCqeCmprss(0 enhanced)
+Dec 01 21:41:16 nbutme-gh200-1 kernel: mlx5_core 0002:01:00.1 enP2s2f1np1: renamed from eth1
+Dec 01 21:41:16 nbutme-gh200-1 kernel: mlx5_core 0000:01:00.0 enp1s0np0: renamed from eth0
+Dec 01 21:41:17 nbutme-gh200-1 kernel: mlx5_core 0000:01:00.0 enp1s0np0: Link up
+Dec 01 21:41:17 nbutme-gh200-1 kernel: mlx5_core 0000:01:00.0 mlx5_0: Port: 1 Link ACTIVE
+Dec 01 21:41:17 nbutme-gh200-1 kernel: mlx5_core 0002:01:00.0 ibP2s2f0: renamed from ib0
+Dec 01 21:41:31 nbutme-gh200-1 kernel: Key type psk registered
+Dec 01 21:41:32 nbutme-gh200-1 kernel: kauditd_printk_skb: 33 callbacks suppressed
+Dec 01 21:41:32 nbutme-gh200-1 kernel: audit: type=1400 audit(1764625292.085:43): apparmor="STATUS" operation="profile_load" profile="unconfined" name="docker-default" pid=2243 comm="apparmor_parser"
+Dec 01 21:41:32 nbutme-gh200-1 kernel: evm: overlay not supported
+Dec 01 21:41:32 nbutme-gh200-1 kernel: Initializing XFRM netlink socket
+Dec 01 21:41:32 nbutme-gh200-1 kernel: loop6: detected capacity change from 0 to 8
+Dec 01 21:41:33 nbutme-gh200-1 kernel: [ffffffcfffe00000-ffffffcfffe0ffff] potential offnode page_structs
+Dec 01 21:41:33 nbutme-gh200-1 kernel: Fallback order for Node 0: 0 1 
+Dec 01 21:41:33 nbutme-gh200-1 kernel: Fallback order for Node 1: 1 0 
+Dec 01 21:41:33 nbutme-gh200-1 kernel: Fallback order for Node 2: 0 1 
+Dec 01 21:41:33 nbutme-gh200-1 kernel: Fallback order for Node 3: 0 1 
+Dec 01 21:41:33 nbutme-gh200-1 kernel: Fallback order for Node 4: 0 1 
+Dec 01 21:41:33 nbutme-gh200-1 kernel: Fallback order for Node 5: 0 1 
+Dec 01 21:41:33 nbutme-gh200-1 kernel: Fallback order for Node 6: 0 1 
+Dec 01 21:41:33 nbutme-gh200-1 kernel: Fallback order for Node 7: 0 1 
+Dec 01 21:41:33 nbutme-gh200-1 kernel: Fallback order for Node 8: 0 1 
+Dec 01 21:41:33 nbutme-gh200-1 kernel: Built 9 zonelists, mobility grouping on.  Total pages: 7577720
+Dec 01 21:41:33 nbutme-gh200-1 kernel: Policy zone: Normal
+Dec 01 21:41:33 nbutme-gh200-1 kernel: fbcon: Taking over console
+Dec 01 21:41:34 nbutme-gh200-1 kernel: Console: switching to colour frame buffer device 240x75
+Dec 01 21:41:34 nbutme-gh200-1 kernel: workqueue: drm_fb_helper_damage_work hogged CPU for >20000us 4 times, consider switching to WQ_UNBOUND
+Dec 01 21:41:45 nbutme-gh200-1 kernel: wireguard: WireGuard 1.0.0 loaded. See www.wireguard.com for information.
+Dec 01 21:41:45 nbutme-gh200-1 kernel: wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+Dec 01 21:41:47 nbutme-gh200-1 kernel: ipip: IPv4 and MPLS over IPv4 tunneling driver
+

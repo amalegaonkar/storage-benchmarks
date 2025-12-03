@@ -1,0 +1,45 @@
+==================================
+GDS Crash Debug Summary
+Generated: Mon Dec  1 10:27:52 PM UTC 2025
+==================================
+
+Files collected:
+  ./debug_output/cpu_info_20251201_222752.txt (3.1K)
+  ./debug_output/crash_indicators_20251201_222752.txt (298)
+  ./debug_output/dmesg_20251201_222752.txt (17K)
+  ./debug_output/gpu_info_20251201_222752.txt (2.2K)
+  ./debug_output/kernel_modules_20251201_222752.txt (440)
+  ./debug_output/limits_20251201_222752.txt (907)
+  ./debug_output/memory_info_20251201_222752.txt (937)
+  ./debug_output/processes_20251201_222752.txt (705)
+  ./debug_output/storage_info_20251201_222752.txt (3.9K)
+  ./debug_output/SUMMARY_20251201_222752.txt (155)
+  ./debug_output/system_info_20251201_222752.txt (215)
+  ./debug_output/system_logs_20251201_222752.txt (22K)
+
+=== Quick Status Check ===
+
+GPU Status:
+NVIDIA GH200 480GB, 97280 MiB, 30
+
+GDS Module:
+  [WARN] nvidia_fs module is NOT loaded
+
+Recent Errors (last 5):
+[    9.094095] pstore: Using crash dump compression: deflate
+[    9.435853] tegra-qspi NVDA1513:00: device reset failed
+[    9.574916] watchdog: Delayed init of the lockup detector failed: -19
+[   10.229566] xhci_hcd 0008:05:00.0: failed to load firmware renesas_usb_fw.mem, fallback to ROM
+[   10.258010] nvidia: module verification failed: signature and/or required key missing - tainting kernel
+
+GPU Memory Usage:
+0 MiB, 97871 MiB
+
+=== Recommendations ===
+
+1. Load GDS module: sudo modprobe nvidia_fs
+2. Check dmesg_20251201_222752.txt for kernel errors
+3. Check crash_indicators_20251201_222752.txt for crash signatures
+4. Review gpu_info_20251201_222752.txt for GPU memory issues
+5. Check if system has enough GPU memory for test
+

@@ -1,0 +1,157 @@
+=== Recent System Log (journalctl, last 100 lines) ===
+Dec 01 21:46:30 nbutme-gh200-1 systemd[1]: update-notifier-download.service: Deactivated successfully.
+Dec 01 21:46:30 nbutme-gh200-1 systemd[1]: Finished Download data for packages that failed at package install time.
+Dec 01 21:46:42 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:46:42.154258823Z" level=info msg="container event discarded" container=830f58e13cf754deba7a81a8a9493748a6002c3646376a07c978f56bd054ba3f type=CONTAINER_DELETED_EVENT
+Dec 01 21:46:42 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:46:42.167887304Z" level=info msg="container event discarded" container=2f73bea9bd8cd9449a72db8cc9e2477d552ad0f5d485e319aecbfa4f056cf5ab type=CONTAINER_DELETED_EVENT
+Dec 01 21:46:42 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:46:42.167917929Z" level=info msg="container event discarded" container=007c93d5b4e901ed300a2006d3fab4a5a36698186e621f77d62ef7d662ff6bc5 type=CONTAINER_DELETED_EVENT
+Dec 01 21:46:42 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:46:42.167924553Z" level=info msg="container event discarded" container=8c46de2f80d397c1226c1b0f7e510efa500d71141b09da2ac041c9ef0451c8db type=CONTAINER_DELETED_EVENT
+Dec 01 21:46:42 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:46:42.167929833Z" level=info msg="container event discarded" container=950b84e811d48da9e551e4c966c0e4751a0532c0da69664967311d979fdb4333 type=CONTAINER_DELETED_EVENT
+Dec 01 21:46:42 nbutme-gh200-1 kubelet[2739]: W1201 21:46:42.193397    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node1, number of cpuDirs 0, err: <nil>
+Dec 01 21:46:42 nbutme-gh200-1 kubelet[2739]: W1201 21:46:42.193533    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node2, number of cpuDirs 0, err: <nil>
+Dec 01 21:46:42 nbutme-gh200-1 kubelet[2739]: W1201 21:46:42.193643    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node3, number of cpuDirs 0, err: <nil>
+Dec 01 21:46:42 nbutme-gh200-1 kubelet[2739]: W1201 21:46:42.193755    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node4, number of cpuDirs 0, err: <nil>
+Dec 01 21:46:42 nbutme-gh200-1 kubelet[2739]: W1201 21:46:42.193872    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node5, number of cpuDirs 0, err: <nil>
+Dec 01 21:46:42 nbutme-gh200-1 kubelet[2739]: W1201 21:46:42.193978    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node6, number of cpuDirs 0, err: <nil>
+Dec 01 21:46:42 nbutme-gh200-1 kubelet[2739]: W1201 21:46:42.194088    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node7, number of cpuDirs 0, err: <nil>
+Dec 01 21:46:42 nbutme-gh200-1 kubelet[2739]: W1201 21:46:42.194196    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node8, number of cpuDirs 0, err: <nil>
+Dec 01 21:46:43 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:46:43.462345401Z" level=info msg="container event discarded" container=0a5ef7f260385b619c13fb5ee27e54097e951f7de136a9ec7afb834b477e6e68 type=CONTAINER_DELETED_EVENT
+Dec 01 21:46:43 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:46:43.462368921Z" level=info msg="container event discarded" container=cd17b62a917f1a9b9ced600bc496569d17e2803fa89b2dad450243d7cbed6d4d type=CONTAINER_DELETED_EVENT
+Dec 01 21:46:43 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:46:43.462375961Z" level=info msg="container event discarded" container=f3cb4c1bc699d81df618b5018692f46a13f23cacb6ad4ad75f6b24f2d3a4a16e type=CONTAINER_DELETED_EVENT
+Dec 01 21:46:43 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:46:43.498552729Z" level=info msg="container event discarded" container=ff34d30d773c2b05570b00494b0053c751978e30f1b403d26367d04b5efeeef4 type=CONTAINER_CREATED_EVENT
+Dec 01 21:46:43 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:46:43.498567353Z" level=info msg="container event discarded" container=ff34d30d773c2b05570b00494b0053c751978e30f1b403d26367d04b5efeeef4 type=CONTAINER_STARTED_EVENT
+Dec 01 21:46:43 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:46:43.498572089Z" level=info msg="container event discarded" container=7291827912c8f7a40108b013afa11cf5936e39c03cccd80662c950aa90ac818e type=CONTAINER_CREATED_EVENT
+Dec 01 21:46:43 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:46:43.498576601Z" level=info msg="container event discarded" container=7291827912c8f7a40108b013afa11cf5936e39c03cccd80662c950aa90ac818e type=CONTAINER_STARTED_EVENT
+Dec 01 21:46:43 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:46:43.509707619Z" level=info msg="container event discarded" container=5afc24e019055c5c59e7d1803aaa067fc6da2ea680dc16d638fadc3c618d694b type=CONTAINER_CREATED_EVENT
+Dec 01 21:46:43 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:46:43.509725283Z" level=info msg="container event discarded" container=9bcd481f1686bf1360210b4c81834e5a93ef39cdee30c3613033c53baaed890a type=CONTAINER_CREATED_EVENT
+Dec 01 21:46:43 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:46:43.535011516Z" level=info msg="container event discarded" container=9bcd481f1686bf1360210b4c81834e5a93ef39cdee30c3613033c53baaed890a type=CONTAINER_STARTED_EVENT
+Dec 01 21:46:43 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:46:43.535022652Z" level=info msg="container event discarded" container=5afc24e019055c5c59e7d1803aaa067fc6da2ea680dc16d638fadc3c618d694b type=CONTAINER_STARTED_EVENT
+Dec 01 21:46:43 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:46:43.663269582Z" level=info msg="container event discarded" container=9bcd481f1686bf1360210b4c81834e5a93ef39cdee30c3613033c53baaed890a type=CONTAINER_STOPPED_EVENT
+Dec 01 21:46:44 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:46:44.193427734Z" level=info msg="container event discarded" container=b8d050f5ca5ca1d43d21d2e45c50c74ef5f0bb6bd32c1dd8043b82e727e70b8f type=CONTAINER_CREATED_EVENT
+Dec 01 21:46:44 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:46:44.229562953Z" level=info msg="container event discarded" container=b8d050f5ca5ca1d43d21d2e45c50c74ef5f0bb6bd32c1dd8043b82e727e70b8f type=CONTAINER_STARTED_EVENT
+Dec 01 21:46:44 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:46:44.725008815Z" level=info msg="container event discarded" container=b8d050f5ca5ca1d43d21d2e45c50c74ef5f0bb6bd32c1dd8043b82e727e70b8f type=CONTAINER_STOPPED_EVENT
+Dec 01 21:46:45 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:46:45.200848295Z" level=info msg="container event discarded" container=627f8c5ac1db382a26b7652f678439ed915f012c267841259c90963f7618fdf8 type=CONTAINER_CREATED_EVENT
+Dec 01 21:46:45 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:46:45.238983689Z" level=info msg="container event discarded" container=627f8c5ac1db382a26b7652f678439ed915f012c267841259c90963f7618fdf8 type=CONTAINER_STARTED_EVENT
+Dec 01 21:46:45 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:46:45.480547714Z" level=info msg="container event discarded" container=627f8c5ac1db382a26b7652f678439ed915f012c267841259c90963f7618fdf8 type=CONTAINER_STOPPED_EVENT
+Dec 01 21:46:46 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:46:46.203228412Z" level=info msg="container event discarded" container=4bee6dd7c73fbd47415f0becbe618728abba3a76f8520aad2ea5df753748c21e type=CONTAINER_CREATED_EVENT
+Dec 01 21:46:46 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:46:46.241365875Z" level=info msg="container event discarded" container=4bee6dd7c73fbd47415f0becbe618728abba3a76f8520aad2ea5df753748c21e type=CONTAINER_STARTED_EVENT
+Dec 01 21:47:14 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:47:14.552152486Z" level=info msg="container event discarded" container=d145639e98846de28ce3208cf1a1a0d6dca3d5711884dcc570dddabecb5f3597 type=CONTAINER_CREATED_EVENT
+Dec 01 21:47:14 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:47:14.552188391Z" level=info msg="container event discarded" container=d145639e98846de28ce3208cf1a1a0d6dca3d5711884dcc570dddabecb5f3597 type=CONTAINER_STARTED_EVENT
+Dec 01 21:47:14 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:47:14.580319881Z" level=info msg="container event discarded" container=4f3c522c9eeebdad512d79375ae379fe9ce25bcac4c67938e8336cb83e02359f type=CONTAINER_CREATED_EVENT
+Dec 01 21:47:14 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:47:14.616460477Z" level=info msg="container event discarded" container=4f3c522c9eeebdad512d79375ae379fe9ce25bcac4c67938e8336cb83e02359f type=CONTAINER_STARTED_EVENT
+Dec 01 21:48:12 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:48:12.453773896Z" level=info msg="container event discarded" container=cd9537dddb903df24f5379ef86ec3f02d955b13f715f14c72a046e3d5c877d37 type=CONTAINER_DELETED_EVENT
+Dec 01 21:51:42 nbutme-gh200-1 kubelet[2739]: W1201 21:51:42.193087    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node1, number of cpuDirs 0, err: <nil>
+Dec 01 21:51:42 nbutme-gh200-1 kubelet[2739]: W1201 21:51:42.193293    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node2, number of cpuDirs 0, err: <nil>
+Dec 01 21:51:42 nbutme-gh200-1 kubelet[2739]: W1201 21:51:42.193434    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node3, number of cpuDirs 0, err: <nil>
+Dec 01 21:51:42 nbutme-gh200-1 kubelet[2739]: W1201 21:51:42.193560    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node4, number of cpuDirs 0, err: <nil>
+Dec 01 21:51:42 nbutme-gh200-1 kubelet[2739]: W1201 21:51:42.193736    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node5, number of cpuDirs 0, err: <nil>
+Dec 01 21:51:42 nbutme-gh200-1 kubelet[2739]: W1201 21:51:42.194366    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node6, number of cpuDirs 0, err: <nil>
+Dec 01 21:51:42 nbutme-gh200-1 kubelet[2739]: W1201 21:51:42.194508    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node7, number of cpuDirs 0, err: <nil>
+Dec 01 21:51:42 nbutme-gh200-1 kubelet[2739]: W1201 21:51:42.194628    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node8, number of cpuDirs 0, err: <nil>
+Dec 01 21:56:32 nbutme-gh200-1 systemd[1]: Starting Cleanup of Temporary Directories...
+Dec 01 21:56:32 nbutme-gh200-1 systemd[1]: systemd-tmpfiles-clean.service: Deactivated successfully.
+Dec 01 21:56:32 nbutme-gh200-1 systemd[1]: Finished Cleanup of Temporary Directories.
+Dec 01 21:56:42 nbutme-gh200-1 kubelet[2739]: W1201 21:56:42.192998    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node1, number of cpuDirs 0, err: <nil>
+Dec 01 21:56:42 nbutme-gh200-1 kubelet[2739]: W1201 21:56:42.193186    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node2, number of cpuDirs 0, err: <nil>
+Dec 01 21:56:42 nbutme-gh200-1 kubelet[2739]: W1201 21:56:42.193302    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node3, number of cpuDirs 0, err: <nil>
+Dec 01 21:56:42 nbutme-gh200-1 kubelet[2739]: W1201 21:56:42.193414    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node4, number of cpuDirs 0, err: <nil>
+Dec 01 21:56:42 nbutme-gh200-1 kubelet[2739]: W1201 21:56:42.193535    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node5, number of cpuDirs 0, err: <nil>
+Dec 01 21:56:42 nbutme-gh200-1 kubelet[2739]: W1201 21:56:42.193644    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node6, number of cpuDirs 0, err: <nil>
+Dec 01 21:56:42 nbutme-gh200-1 kubelet[2739]: W1201 21:56:42.193762    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node7, number of cpuDirs 0, err: <nil>
+Dec 01 21:56:42 nbutme-gh200-1 kubelet[2739]: W1201 21:56:42.193874    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node8, number of cpuDirs 0, err: <nil>
+Dec 01 22:01:42 nbutme-gh200-1 kubelet[2739]: W1201 22:01:42.192486    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node1, number of cpuDirs 0, err: <nil>
+Dec 01 22:01:42 nbutme-gh200-1 kubelet[2739]: W1201 22:01:42.192636    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node2, number of cpuDirs 0, err: <nil>
+Dec 01 22:01:42 nbutme-gh200-1 kubelet[2739]: W1201 22:01:42.192770    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node3, number of cpuDirs 0, err: <nil>
+Dec 01 22:01:42 nbutme-gh200-1 kubelet[2739]: W1201 22:01:42.192903    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node4, number of cpuDirs 0, err: <nil>
+Dec 01 22:01:42 nbutme-gh200-1 kubelet[2739]: W1201 22:01:42.193039    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node5, number of cpuDirs 0, err: <nil>
+Dec 01 22:01:42 nbutme-gh200-1 kubelet[2739]: W1201 22:01:42.193415    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node6, number of cpuDirs 0, err: <nil>
+Dec 01 22:01:42 nbutme-gh200-1 kubelet[2739]: W1201 22:01:42.193539    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node7, number of cpuDirs 0, err: <nil>
+Dec 01 22:01:42 nbutme-gh200-1 kubelet[2739]: W1201 22:01:42.193656    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node8, number of cpuDirs 0, err: <nil>
+Dec 01 22:02:33 nbutme-gh200-1 sshd[13951]: Connection closed by authenticating user ubuntu 10.110.83.251 port 50227 [preauth]
+Dec 01 22:06:42 nbutme-gh200-1 kubelet[2739]: W1201 22:06:42.192997    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node1, number of cpuDirs 0, err: <nil>
+Dec 01 22:06:42 nbutme-gh200-1 kubelet[2739]: W1201 22:06:42.193118    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node2, number of cpuDirs 0, err: <nil>
+Dec 01 22:06:42 nbutme-gh200-1 kubelet[2739]: W1201 22:06:42.193220    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node3, number of cpuDirs 0, err: <nil>
+Dec 01 22:06:42 nbutme-gh200-1 kubelet[2739]: W1201 22:06:42.193327    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node4, number of cpuDirs 0, err: <nil>
+Dec 01 22:06:42 nbutme-gh200-1 kubelet[2739]: W1201 22:06:42.193569    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node5, number of cpuDirs 0, err: <nil>
+Dec 01 22:06:42 nbutme-gh200-1 kubelet[2739]: W1201 22:06:42.193862    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node6, number of cpuDirs 0, err: <nil>
+Dec 01 22:06:42 nbutme-gh200-1 kubelet[2739]: W1201 22:06:42.194019    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node7, number of cpuDirs 0, err: <nil>
+Dec 01 22:06:42 nbutme-gh200-1 kubelet[2739]: W1201 22:06:42.194232    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node8, number of cpuDirs 0, err: <nil>
+Dec 01 22:11:42 nbutme-gh200-1 kubelet[2739]: W1201 22:11:42.192242    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node1, number of cpuDirs 0, err: <nil>
+Dec 01 22:11:42 nbutme-gh200-1 kubelet[2739]: W1201 22:11:42.192367    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node2, number of cpuDirs 0, err: <nil>
+Dec 01 22:11:42 nbutme-gh200-1 kubelet[2739]: W1201 22:11:42.192697    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node3, number of cpuDirs 0, err: <nil>
+Dec 01 22:11:42 nbutme-gh200-1 kubelet[2739]: W1201 22:11:42.192870    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node4, number of cpuDirs 0, err: <nil>
+Dec 01 22:11:42 nbutme-gh200-1 kubelet[2739]: W1201 22:11:42.193002    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node5, number of cpuDirs 0, err: <nil>
+Dec 01 22:11:42 nbutme-gh200-1 kubelet[2739]: W1201 22:11:42.193128    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node6, number of cpuDirs 0, err: <nil>
+Dec 01 22:11:42 nbutme-gh200-1 kubelet[2739]: W1201 22:11:42.193257    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node7, number of cpuDirs 0, err: <nil>
+Dec 01 22:11:42 nbutme-gh200-1 kubelet[2739]: W1201 22:11:42.193532    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node8, number of cpuDirs 0, err: <nil>
+Dec 01 22:16:42 nbutme-gh200-1 kubelet[2739]: W1201 22:16:42.192580    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node1, number of cpuDirs 0, err: <nil>
+Dec 01 22:16:42 nbutme-gh200-1 kubelet[2739]: W1201 22:16:42.192698    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node2, number of cpuDirs 0, err: <nil>
+Dec 01 22:16:42 nbutme-gh200-1 kubelet[2739]: W1201 22:16:42.192807    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node3, number of cpuDirs 0, err: <nil>
+Dec 01 22:16:42 nbutme-gh200-1 kubelet[2739]: W1201 22:16:42.192918    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node4, number of cpuDirs 0, err: <nil>
+Dec 01 22:16:42 nbutme-gh200-1 kubelet[2739]: W1201 22:16:42.193018    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node5, number of cpuDirs 0, err: <nil>
+Dec 01 22:16:42 nbutme-gh200-1 kubelet[2739]: W1201 22:16:42.193115    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node6, number of cpuDirs 0, err: <nil>
+Dec 01 22:16:42 nbutme-gh200-1 kubelet[2739]: W1201 22:16:42.193216    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node7, number of cpuDirs 0, err: <nil>
+Dec 01 22:16:42 nbutme-gh200-1 kubelet[2739]: W1201 22:16:42.193318    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node8, number of cpuDirs 0, err: <nil>
+Dec 01 22:16:56 nbutme-gh200-1 sshd[20278]: Connection closed by authenticating user ubuntu 10.110.83.251 port 51053 [preauth]
+Dec 01 22:17:01 nbutme-gh200-1 CRON[21120]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Dec 01 22:17:01 nbutme-gh200-1 CRON[21126]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 01 22:17:01 nbutme-gh200-1 CRON[21120]: pam_unix(cron:session): session closed for user root
+Dec 01 22:17:04 nbutme-gh200-1 sshd[21100]: Accepted password for ubuntu from 10.110.83.251 port 51160 ssh2
+Dec 01 22:17:04 nbutme-gh200-1 sshd[21100]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by (uid=0)
+Dec 01 22:17:04 nbutme-gh200-1 systemd-logind[1956]: New session 5 of user ubuntu.
+Dec 01 22:17:04 nbutme-gh200-1 systemd[1]: Started Session 5 of User ubuntu.
+
+=== System Log Errors ===
+Nov 19 23:30:12 nbutme-gh200-1 kernel: Out of memory: Killed process 189310 (nixlbench) total-vm:629263360kB, anon-rss:581386176kB, file-rss:9216kB, shmem-rss:0kB, UID:1000 pgtables:71488kB oom_score_adj:0
+Nov 19 23:31:12 nbutme-gh200-1 kernel: Out of memory: Killed process 190868 (nixlbench) total-vm:629263360kB, anon-rss:581612544kB, file-rss:9216kB, shmem-rss:0kB, UID:1000 pgtables:71488kB oom_score_adj:0
+Nov 20 04:12:55 nbutme-gh200-1 sshd[1967]: error: beginning MaxStartups throttling
+Nov 21 01:48:10 nbutme-gh200-1 sshd[1967]: error: beginning MaxStartups throttling
+Nov 21 20:33:12 nbutme-gh200-1 sshd[1967]: error: beginning MaxStartups throttling
+Nov 22 12:14:19 nbutme-gh200-1 sshd[1900150]: error: kex_exchange_identification: Connection closed by remote host
+Nov 22 12:15:16 nbutme-gh200-1 sshd[1967]: error: beginning MaxStartups throttling
+Nov 23 06:13:04 nbutme-gh200-1 sshd[1967]: error: beginning MaxStartups throttling
+Nov 23 22:40:17 nbutme-gh200-1 sshd[1967]: error: beginning MaxStartups throttling
+Nov 24 16:09:22 nbutme-gh200-1 sshd[1967]: error: beginning MaxStartups throttling
+Nov 25 10:11:28 nbutme-gh200-1 sshd[1967]: error: beginning MaxStartups throttling
+Nov 26 01:17:24 nbutme-gh200-1 sshd[1967]: error: beginning MaxStartups throttling
+Nov 26 17:27:35 nbutme-gh200-1 sshd[1967]: error: beginning MaxStartups throttling
+Nov 27 10:51:30 nbutme-gh200-1 sshd[1967]: error: beginning MaxStartups throttling
+Nov 28 10:32:04 nbutme-gh200-1 sshd[1967]: error: beginning MaxStartups throttling
+Nov 29 11:03:32 nbutme-gh200-1 sshd[1967]: error: beginning MaxStartups throttling
+Nov 30 12:35:20 nbutme-gh200-1 sshd[1967]: error: beginning MaxStartups throttling
+Dec 01 06:18:46 nbutme-gh200-1 sshd[1967]: error: beginning MaxStartups throttling
+Dec 01 20:54:29 nbutme-gh200-1 sudo[4104620]: pam_unix(sudo:auth): conversation failed
+Dec 01 20:54:29 nbutme-gh200-1 sudo[4104620]: pam_unix(sudo:auth): auth could not identify password for [ubuntu]
+-- Boot a63600eb2a534c31a44db3866516f956 --
+Dec 01 20:59:00 nbutme-gh200-1 kernel: AER: no pci_dev for 0008:01:00.0
+Dec 01 20:59:00 nbutme-gh200-1 kernel: pci 0009:01:00.0: DOE: [2c8] ABORT timed out
+Dec 01 20:59:00 nbutme-gh200-1 kernel: pci 0009:01:00.0: DOE: [2c8] failed to reset mailbox with abort command : -5
+Dec 01 20:59:00 nbutme-gh200-1 kernel: pci 0009:01:00.0: DOE: [2c8] failed to create mailbox: -5
+Dec 01 20:59:00 nbutme-gh200-1 kernel: tegra186-gpio NVDA0508:00: invalid resource (null)
+Dec 01 20:59:00 nbutme-gh200-1 kernel: tegra186-gpio NVDA0508:00: invalid resource (null)
+Dec 01 20:59:00 nbutme-gh200-1 kernel: tegra-i2c NVDA0301:00: cannot use DMA: -19
+Dec 01 20:59:00 nbutme-gh200-1 kernel: tegra-i2c NVDA0301:00: falling back to PIO
+Dec 01 20:59:00 nbutme-gh200-1 kernel: 
+Dec 01 20:59:01 nbutme-gh200-1 ovs-vsctl[1512]: ovs|00001|db_ctl_base|ERR|unix:/var/run/openvswitch/db.sock: database connection failed (No such file or directory)
+-- Boot 64dbff2674554a65a6ec82f59df11762 --
+Dec 01 21:18:44 nbutme-gh200-1 kernel: AER: no pci_dev for 0008:01:00.0
+Dec 01 21:18:44 nbutme-gh200-1 kernel: pci 0009:01:00.0: DOE: [2c8] ABORT timed out
+Dec 01 21:18:44 nbutme-gh200-1 kernel: pci 0009:01:00.0: DOE: [2c8] failed to reset mailbox with abort command : -5
+Dec 01 21:18:44 nbutme-gh200-1 kernel: pci 0009:01:00.0: DOE: [2c8] failed to create mailbox: -5
+Dec 01 21:18:44 nbutme-gh200-1 kernel: tegra186-gpio NVDA0508:00: invalid resource (null)
+Dec 01 21:18:44 nbutme-gh200-1 kernel: tegra186-gpio NVDA0508:00: invalid resource (null)
+Dec 01 21:18:44 nbutme-gh200-1 kernel: tegra-i2c NVDA0301:00: cannot use DMA: -19
+Dec 01 21:18:44 nbutme-gh200-1 kernel: tegra-i2c NVDA0301:00: falling back to PIO
+Dec 01 21:18:44 nbutme-gh200-1 kernel: 
+Dec 01 21:18:45 nbutme-gh200-1 ovs-vsctl[1576]: ovs|00001|db_ctl_base|ERR|unix:/var/run/openvswitch/db.sock: database connection failed (No such file or directory)
+-- Boot 9d4af7f412d74ce79adca365ad6882aa --
+Dec 01 21:41:12 nbutme-gh200-1 kernel: AER: no pci_dev for 0008:01:00.0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:01:00.0: DOE: [2c8] ABORT timed out
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:01:00.0: DOE: [2c8] failed to reset mailbox with abort command : -5
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:01:00.0: DOE: [2c8] failed to create mailbox: -5
+Dec 01 21:41:12 nbutme-gh200-1 kernel: tegra186-gpio NVDA0508:00: invalid resource (null)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: tegra186-gpio NVDA0508:00: invalid resource (null)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: tegra-i2c NVDA0301:00: cannot use DMA: -19
+Dec 01 21:41:12 nbutme-gh200-1 kernel: tegra-i2c NVDA0301:00: falling back to PIO
+Dec 01 21:41:12 nbutme-gh200-1 kernel: 
+Dec 01 21:41:13 nbutme-gh200-1 ovs-vsctl[1512]: ovs|00001|db_ctl_base|ERR|unix:/var/run/openvswitch/db.sock: database connection failed (No such file or directory)
+

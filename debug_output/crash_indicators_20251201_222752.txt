@@ -1,0 +1,12 @@
+=== Oops Messages ===
+[   12.374730] systemd[1]: Mounting Kernel Debug File System...
+
+=== Panic Messages ===
+
+=== Segmentation Faults ===
+
+=== Out of Memory ===
+
+=== GPU Related Errors ===
+[   10.258010] nvidia: module verification failed: signature and/or required key missing - tainting kernel
+

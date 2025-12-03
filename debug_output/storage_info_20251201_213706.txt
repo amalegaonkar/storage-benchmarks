@@ -1,0 +1,35 @@
+=== Mounted Filesystems ===
+Filesystem                         Size  Used Avail Use% Mounted on
+tmpfs                               48G   46M   48G   1% /run
+efivarfs                           384K   20K  365K   6% /sys/firmware/efi/efivars
+/dev/mapper/ubuntu--vg-ubuntu--lv  877G  167G  665G  21% /
+tmpfs                              240G     0  240G   0% /dev/shm
+tmpfs                              5.0M     0  5.0M   0% /run/lock
+/dev/nvme0n1p2                     2.0G  707M  1.1G  39% /boot
+/dev/nvme0n1p1                     1.1G  6.4M  1.1G   1% /boot/efi
+shm                                 64M     0   64M   0% /run/containerd/io.containerd.grpc.v1.cri/sandboxes/b19a1e8ff086160975f832c1a43a25d26fa788dd1b9536b7325e4c78ce41f1d2/shm
+shm                                 64M     0   64M   0% /run/containerd/io.containerd.grpc.v1.cri/sandboxes/8fd5dd9f4cad8e3602337b64c326ace7fb3821916f1566213d4c86f36596bcb4/shm
+shm                                 64M     0   64M   0% /run/containerd/io.containerd.grpc.v1.cri/sandboxes/9a1453ebe820077aebc0ff84c60c6e20edf41b1d8db71c2736d61b4d507e3bcc/shm
+tmpfs                               48G  128K   48G   1% /run/user/1000
+
+=== Block Devices ===
+NAME                      MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINTS
+loop0                       7:0    0  59.6M  1 loop  /snap/core20/2672
+loop1                       7:1    0  59.6M  1 loop  /snap/core20/2683
+loop2                       7:2    0    81M  1 loop  /snap/lxd/35822
+loop3                       7:3    0    81M  1 loop  /snap/lxd/36562
+loop4                       7:4    0  44.2M  1 loop  /snap/snapd/25205
+loop5                       7:5    0  44.3M  1 loop  /snap/snapd/25585
+nvme2n1                   259:0    0   2.9T  0 disk  
+└─md0                       9:0    0   5.8T  0 raid0 
+nvme3n1                   259:1    0   2.9T  0 disk  
+└─md0                       9:0    0   5.8T  0 raid0 
+nvme1n1                   259:2    0 894.3G  0 disk  
+nvme0n1                   259:3    0 894.3G  0 disk  
+├─nvme0n1p1               259:4    0     1G  0 part  /boot/efi
+├─nvme0n1p2               259:5    0     2G  0 part  /boot
+└─nvme0n1p3               259:6    0 891.2G  0 part  
+  └─ubuntu--vg-ubuntu--lv 252:0    0 891.2G  0 lvm   /
+
+=== Storage Test Directory ===
+

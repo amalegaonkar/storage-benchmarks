@@ -1,0 +1,61 @@
+WARNING: Adjusting warmup_iter to 256 to allow equal distribution to 16 threads
+Using null runtime for storage backend without ETCD
+POSIX backend with API type: URING
+Single instance storage backend - no synchronization needed
+Creating file: /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_0
+Creating file: /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_1
+Creating file: /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_2
+Creating file: /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_3
+Creating file: /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_4
+Creating file: /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_5
+Creating file: /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_6
+Creating file: /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_7
+Creating file: /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_8
+Creating file: /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_9
+Creating file: /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_10
+Creating file: /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_11
+Creating file: /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_12
+Creating file: /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_13
+Creating file: /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_14
+Creating file: /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_15
+****************************************************************************************************************************************************************
+NIXLBench Configuration
+****************************************************************************************************************************************************************
+Runtime (--runtime_type=[etcd])                             : ETCD
+ETCD Endpoint                                               : disabled (storage backend)
+Worker type (--worker_type=[nixl,nvshmem])                  : nixl
+Backend (--backend=[UCX,GDS,GDS_MT,POSIX,Mooncake,HF3FS,OBJ]): POSIX
+Enable pt (--enable_pt=[0,1])                               : 0
+Progress threads (--progress_threads=N)                     : 0
+Device list (--device_list=dev1,dev2,...)                   : all
+Enable VMM (--enable_vmm=[0,1])                             : 0
+POSIX API type (--posix_api_type=[AIO,URING,POSIXAIO])      : URING
+filepath (--filepath=path)                                  : /tmp/nvme_raid0/
+Number of files (--num_files=N)                             : 16
+Storage enable direct (--storage_enable_direct=[0,1])       : 1
+Initiator seg type (--initiator_seg_type=[DRAM,VRAM])       : DRAM
+Target seg type (--target_seg_type=[DRAM,VRAM])             : DRAM
+Scheme (--scheme=[pairwise,manytoone,onetomany,tp])         : pairwise
+Mode (--mode=[SG,MG])                                       : SG
+Op type (--op_type=[READ,WRITE])                            : WRITE
+Check consistency (--check_consistency=[0,1])               : 0
+Total buffer size (--total_buffer_size=N)                   : 68719476736
+Num initiator dev (--num_initiator_dev=N)                   : 1
+Num target dev (--num_target_dev=N)                         : 1
+Start block size (--start_block_size=N)                     : 1048576
+Max block size (--max_block_size=N)                         : 16777216
+Start batch size (--start_batch_size=N)                     : 256
+Max batch size (--max_batch_size=N)                         : 256
+Num iter (--num_iter=N)                                     : 2048
+Warmup iter (--warmup_iter=N)                               : 256
+Large block iter factor (--large_blk_iter_ftr=N)            : 16
+Num threads (--num_threads=N)                               : 16
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Block Size (B)      Batch Size     B/W (GB/Sec)   Avg Lat. (us)  Avg Prep (us)  P99 Prep (us)  Avg Post (us)  P99 Post (us)  Avg Tx (us)    P99 Tx (us)    
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1048576             256            10.470549      100.1          288.8          363.0          1472.6         12860.0        401810.1       951324.0       
+2097152             256            10.225470      205.1          280.7          360.0          4222.7         45087.0        796681.6       1376562.0      
+4194304             256            10.217705      410.5          270.1          355.0          44898.4        129857.0       1625609.5      1738542.0      
+8388608             256            10.109009      829.8          295.1          370.0          1110123.3      3571718.0      2121708.6      2761707.0      
+16777216            256            10.388129      1615.0         319.4          475.0          4435908.2      8042581.0      1928852.5      2407412.0      

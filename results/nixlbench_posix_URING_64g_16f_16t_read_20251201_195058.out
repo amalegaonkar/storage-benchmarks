@@ -1,0 +1,77 @@
+WARNING: Adjusting warmup_iter to 256 to allow equal distribution to 16 threads
+Using null runtime for storage backend without ETCD
+POSIX backend with API type: URING
+Single instance storage backend - no synchronization needed
+Creating file: /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_0
+File /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_0 exists, size: 53687091200
+Creating file: /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_1
+File /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_1 exists, size: 53687091200
+Creating file: /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_2
+File /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_2 exists, size: 53687091200
+Creating file: /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_3
+File /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_3 exists, size: 53687091200
+Creating file: /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_4
+File /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_4 exists, size: 53687091200
+Creating file: /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_5
+File /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_5 exists, size: 53687091200
+Creating file: /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_6
+File /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_6 exists, size: 53687091200
+Creating file: /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_7
+File /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_7 exists, size: 53687091200
+Creating file: /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_8
+File /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_8 exists, size: 53687091200
+Creating file: /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_9
+File /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_9 exists, size: 53687091200
+Creating file: /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_10
+File /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_10 exists, size: 53687091200
+Creating file: /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_11
+File /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_11 exists, size: 53687091200
+Creating file: /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_12
+File /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_12 exists, size: 53687091200
+Creating file: /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_13
+File /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_13 exists, size: 53687091200
+Creating file: /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_14
+File /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_14 exists, size: 53687091200
+Creating file: /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_15
+File /tmp/nvme_raid0//nixlbench_posix_test_file_initiator_15 exists, size: 53687091200
+****************************************************************************************************************************************************************
+NIXLBench Configuration
+****************************************************************************************************************************************************************
+Runtime (--runtime_type=[etcd])                             : ETCD
+ETCD Endpoint                                               : disabled (storage backend)
+Worker type (--worker_type=[nixl,nvshmem])                  : nixl
+Backend (--backend=[UCX,GDS,GDS_MT,POSIX,Mooncake,HF3FS,OBJ]): POSIX
+Enable pt (--enable_pt=[0,1])                               : 0
+Progress threads (--progress_threads=N)                     : 0
+Device list (--device_list=dev1,dev2,...)                   : all
+Enable VMM (--enable_vmm=[0,1])                             : 0
+POSIX API type (--posix_api_type=[AIO,URING,POSIXAIO])      : URING
+filepath (--filepath=path)                                  : /tmp/nvme_raid0/
+Number of files (--num_files=N)                             : 16
+Storage enable direct (--storage_enable_direct=[0,1])       : 1
+Initiator seg type (--initiator_seg_type=[DRAM,VRAM])       : DRAM
+Target seg type (--target_seg_type=[DRAM,VRAM])             : DRAM
+Scheme (--scheme=[pairwise,manytoone,onetomany,tp])         : pairwise
+Mode (--mode=[SG,MG])                                       : SG
+Op type (--op_type=[READ,WRITE])                            : READ
+Check consistency (--check_consistency=[0,1])               : 0
+Total buffer size (--total_buffer_size=N)                   : 68719476736
+Num initiator dev (--num_initiator_dev=N)                   : 1
+Num target dev (--num_target_dev=N)                         : 1
+Start block size (--start_block_size=N)                     : 1048576
+Max block size (--max_block_size=N)                         : 16777216
+Start batch size (--start_batch_size=N)                     : 256
+Max batch size (--max_batch_size=N)                         : 256
+Num iter (--num_iter=N)                                     : 2048
+Warmup iter (--warmup_iter=N)                               : 256
+Large block iter factor (--large_blk_iter_ftr=N)            : 16
+Num threads (--num_threads=N)                               : 16
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Block Size (B)      Batch Size     B/W (GB/Sec)   Avg Lat. (us)  Avg Prep (us)  P99 Prep (us)  Avg Post (us)  P99 Post (us)  Avg Tx (us)    P99 Tx (us)    
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1048576             256            12.603070      83.2           294.9          331.0          1154.2         4803.0         332796.2       792983.0       
+2097152             256            12.619109      166.2          259.2          325.0          3649.3         39077.0        631110.7       1097871.0      
+4194304             256            12.700514      330.2          258.1          298.0          37364.6        119231.0       1304762.2      1349924.0      
+8388608             256            12.504068      670.9          286.7          384.0          717748.0       2919865.0      1903345.9      2297089.0      
+16777216            256            12.532322      1338.7         288.2          328.0          3818565.1      6297164.0      1482440.9      1878277.0      

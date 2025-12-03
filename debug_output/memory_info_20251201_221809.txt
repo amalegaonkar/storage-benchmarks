@@ -1,0 +1,31 @@
+=== System Memory ===
+               total        used        free      shared  buff/cache   available
+Mem:           573Gi        10Gi       561Gi        54Mi       2.0Gi       542Gi
+Swap:             0B          0B          0B
+
+=== Memory Details ===
+MemTotal:       601367872 kB
+MemFree:        588643008 kB
+MemAvailable:   569240128 kB
+Buffers:          144192 kB
+Cached:          1787200 kB
+SwapCached:            0 kB
+Active:          1892160 kB
+Inactive:         987264 kB
+Active(anon):    1036032 kB
+Inactive(anon):        0 kB
+Active(file):     856128 kB
+Inactive(file):   987264 kB
+Unevictable:      221952 kB
+Mlocked:          212352 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Zswap:                 0 kB
+Zswapped:              0 kB
+Dirty:               576 kB
+Writeback:             0 kB
+
+=== GPU Memory (if available) ===
+memory.total [MiB], memory.used [MiB], memory.free [MiB]
+97871 MiB, 0 MiB, 97280 MiB
+

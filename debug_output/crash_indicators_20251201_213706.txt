@@ -1,0 +1,10 @@
+=== Oops Messages ===
+
+=== Panic Messages ===
+
+=== Segmentation Faults ===
+
+=== Out of Memory ===
+
+=== GPU Related Errors ===
+

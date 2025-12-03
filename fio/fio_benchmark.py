@@ -30,7 +30,7 @@ DEFAULT_STORAGE_LOCATIONS = {
 }
 
 DEFAULT_BLOCK_SIZE = "1M"
-DEFAULT_IO_DEPTHS = [1, 128]
+DEFAULT_IO_DEPTHS = [1, 64]
 DEFAULT_NUM_ITERATIONS = 3  # Read the file 3 times for average
 
 # Threshold for using file size as block size (files smaller than this)

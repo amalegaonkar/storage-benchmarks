@@ -1,0 +1,6 @@
+=== Recent Kernel Messages (last 100 lines) ===
+
+=== Kernel Errors ===
+
+=== GDS/NVIDIA related messages ===
+

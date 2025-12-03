@@ -1,0 +1,178 @@
+=== Recent Kernel Messages (last 100 lines) ===
+[   13.171999] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.16.auto: Registered PMU @ 0x0000000012042000 using 4 counters with Global(Counter0) filter settings
+[   13.172048] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.17.auto: option mask 0x0
+[   13.175967] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.17.auto: Registered PMU @ 0x0000000012062000 using 4 counters with Global(Counter0) filter settings
+[   13.176007] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.18.auto: option mask 0x0
+[   13.176258] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.18.auto: Registered PMU @ 0x0000000012082000 using 4 counters with Global(Counter0) filter settings
+[   13.176296] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.19.auto: option mask 0x0
+[   13.176570] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.19.auto: Registered PMU @ 0x00000000120a2000 using 4 counters with Global(Counter0) filter settings
+[   13.176619] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.20.auto: option mask 0x0
+[   13.176940] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.20.auto: Registered PMU @ 0x0000000015002000 using 4 counters with Global(Counter0) filter settings
+[   13.176985] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.21.auto: option mask 0x0
+[   13.177321] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.21.auto: Registered PMU @ 0x0000000015042000 using 4 counters with Global(Counter0) filter settings
+[   13.177369] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.22.auto: option mask 0x0
+[   13.177696] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.22.auto: Registered PMU @ 0x0000000015062000 using 4 counters with Global(Counter0) filter settings
+[   13.177751] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.23.auto: option mask 0x0
+[   13.178081] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.23.auto: Registered PMU @ 0x0000000015082000 using 4 counters with Global(Counter0) filter settings
+[   13.178133] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.24.auto: option mask 0x0
+[   13.178439] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.24.auto: Registered PMU @ 0x00000000150a2000 using 4 counters with Global(Counter0) filter settings
+[   13.178485] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.25.auto: option mask 0x0
+[   13.178805] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.25.auto: Registered PMU @ 0x0000000016002000 using 4 counters with Global(Counter0) filter settings
+[   13.178849] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.26.auto: option mask 0x0
+[   13.179129] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.26.auto: Registered PMU @ 0x0000000016042000 using 4 counters with Global(Counter0) filter settings
+[   13.179175] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.27.auto: option mask 0x0
+[   13.179442] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.27.auto: Registered PMU @ 0x0000000016062000 using 4 counters with Global(Counter0) filter settings
+[   13.179486] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.28.auto: option mask 0x0
+[   13.179793] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.28.auto: Registered PMU @ 0x0000000005002000 using 4 counters with Global(Counter0) filter settings
+[   13.179836] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.29.auto: option mask 0x0
+[   13.180126] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.29.auto: Registered PMU @ 0x0000000005042000 using 4 counters with Global(Counter0) filter settings
+[   13.180166] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.30.auto: option mask 0x0
+[   13.180453] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.30.auto: Registered PMU @ 0x0000000005062000 using 4 counters with Global(Counter0) filter settings
+[   13.217549] mlx5_core 0000:01:00.0: Adding to iommu group 20
+[   13.219510] mlx5_core 0000:01:00.0: firmware version: 40.45.1020
+[   13.219547] mlx5_core 0000:01:00.0: 504.112 Gb/s available PCIe bandwidth, limited by 32.0 GT/s PCIe x16 link at 0000:00:00.0 (capable of 1024.000 Gb/s with 64.0 GT/s PCIe x16 link)
+[   13.295518] EXT4-fs (nvme2n1p2): mounted filesystem b2717fb2-ea9e-47da-b2d8-6a348cf60a7e r/w with ordered data mode. Quota mode: none.
+[   13.355760] audit: type=1400 audit(1764625273.391:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=1365 comm="apparmor_parser"
+[   13.355889] audit: type=1400 audit(1764625273.391:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=1366 comm="apparmor_parser"
+[   13.355893] audit: type=1400 audit(1764625273.391:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=1366 comm="apparmor_parser"
+[   13.356138] audit: type=1400 audit(1764625273.392:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=1370 comm="apparmor_parser"
+[   13.356141] audit: type=1400 audit(1764625273.392:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_filter" pid=1370 comm="apparmor_parser"
+[   13.356143] audit: type=1400 audit(1764625273.392:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_groff" pid=1370 comm="apparmor_parser"
+[   13.356745] audit: type=1400 audit(1764625273.392:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine" pid=1372 comm="apparmor_parser"
+[   13.356747] audit: type=1400 audit(1764625273.392:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=1372 comm="apparmor_parser"
+[   13.357177] audit: type=1400 audit(1764625273.393:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_apt_news" pid=1368 comm="apparmor_parser"
+[   13.357431] audit: type=1400 audit(1764625273.393:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="tcpdump" pid=1371 comm="apparmor_parser"
+[   13.506042] RPC: Registered named UNIX socket transport module.
+[   13.506046] RPC: Registered udp transport module.
+[   13.506047] RPC: Registered tcp transport module.
+[   13.506048] RPC: Registered tcp-with-tls transport module.
+[   13.506049] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[   13.635412] MACsec IEEE 802.1AE
+[   13.687493] mlx5_core 0000:01:00.0: Rate limit: 127 rates are supported, range: 0Mbps to 390625Mbps
+[   13.687787] mlx5_core 0000:01:00.0: E-Switch: Total vports 18, per vport: max uc(128) max mc(2048)
+[   13.687836] mlx5_core 0000:01:00.0: Flow counters bulk query buffer size increased, bulk_query_len(8)
+[   13.740658] mlx5_core 0000:01:00.0: mlx5_pcie_event:325:(pid 547): PCIe slot power capability was not advertised.
+[   13.805106] mlx5_core 0000:01:00.0: mlx5e: IPSec ESP acceleration enabled
+[   14.104193] openvswitch: Open vSwitch switching datapath
+[   14.382065] mlx5_core 0000:01:00.0: MLX5E: StrdRq(1) RqSz(8) StrdSz(2048) RxCqeCmprss(0 enhanced)
+[   14.386295] mlx5_core 0002:01:00.0: Adding to iommu group 21
+[   14.388080] mlx5_core 0002:01:00.0: firmware version: 40.45.1020
+[   14.388117] mlx5_core 0002:01:00.0: 252.056 Gb/s available PCIe bandwidth, limited by 32.0 GT/s PCIe x8 link at 0002:00:00.0 (capable of 1024.000 Gb/s with 64.0 GT/s PCIe x16 link)
+[   14.842309] mlx5_core 0002:01:00.0: Flow counters bulk query buffer size increased, bulk_query_len(8)
+[   14.865887] mlx5_core 0002:01:00.0: mlx5_pcie_event:325:(pid 454): PCIe slot power capability was not advertised.
+[   14.922645] mlx5_core 0002:01:00.1: Adding to iommu group 22
+[   14.924497] mlx5_core 0002:01:00.1: firmware version: 40.45.1020
+[   14.924532] mlx5_core 0002:01:00.1: 252.056 Gb/s available PCIe bandwidth, limited by 32.0 GT/s PCIe x8 link at 0002:00:00.0 (capable of 1024.000 Gb/s with 64.0 GT/s PCIe x16 link)
+[   15.548560] mlx5_core 0002:01:00.1: E-Switch: Total vports 18, per vport: max uc(128) max mc(2048)
+[   15.548586] mlx5_core 0002:01:00.1: Flow counters bulk query buffer size increased, bulk_query_len(8)
+[   15.596180] mlx5_core 0002:01:00.1: mlx5_pcie_event:325:(pid 819): PCIe slot power capability was not advertised.
+[   15.710602] mlx5_core 0002:01:00.1: mlx5e: IPSec ESP acceleration enabled
+[   16.420781] mlx5_core 0002:01:00.1: MLX5E: StrdRq(1) RqSz(8) StrdSz(2048) RxCqeCmprss(0 enhanced)
+[   16.452139] mlx5_core 0002:01:00.1 enP2s2f1np1: renamed from eth1
+[   16.462201] mlx5_core 0000:01:00.0 enp1s0np0: renamed from eth0
+[   17.278452] mlx5_core 0000:01:00.0 enp1s0np0: Link up
+[   17.281610] mlx5_core 0000:01:00.0 mlx5_0: Port: 1 Link ACTIVE
+[   17.319171] mlx5_core 0002:01:00.0 ibP2s2f0: renamed from ib0
+[   31.483513] Key type psk registered
+[   32.011385] kauditd_printk_skb: 33 callbacks suppressed
+[   32.011389] audit: type=1400 audit(1764625292.085:43): apparmor="STATUS" operation="profile_load" profile="unconfined" name="docker-default" pid=2243 comm="apparmor_parser"
+[   32.027246] evm: overlay not supported
+[   32.127604] Initializing XFRM netlink socket
+[   32.344786] loop6: detected capacity change from 0 to 8
+[   33.288557] [ffffffcfffe00000-ffffffcfffe0ffff] potential offnode page_structs
+[   33.288732] Fallback order for Node 0: 0 1 
+[   33.288737] Fallback order for Node 1: 1 0 
+[   33.288738] Fallback order for Node 2: 0 1 
+[   33.288740] Fallback order for Node 3: 0 1 
+[   33.288742] Fallback order for Node 4: 0 1 
+[   33.288744] Fallback order for Node 5: 0 1 
+[   33.288746] Fallback order for Node 6: 0 1 
+[   33.288748] Fallback order for Node 7: 0 1 
+[   33.288749] Fallback order for Node 8: 0 1 
+[   33.288751] Built 9 zonelists, mobility grouping on.  Total pages: 7577720
+[   33.288755] Policy zone: Normal
+[   33.854182] fbcon: Taking over console
+[   33.878874] Console: switching to colour frame buffer device 240x75
+[   34.024760] workqueue: drm_fb_helper_damage_work hogged CPU for >20000us 4 times, consider switching to WQ_UNBOUND
+[   45.166445] wireguard: WireGuard 1.0.0 loaded. See www.wireguard.com for information.
+[   45.166451] wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+[   47.437169] ipip: IPv4 and MPLS over IPv4 tunneling driver
+[   74.237515] audit: type=1400 audit(1764625334.566:44): apparmor="STATUS" operation="profile_load" profile="unconfined" name="cri-containerd.apparmor.d" pid=4366 comm="apparmor_parser"
+[   84.026018] systemd-journald[1076]: File /var/log/journal/e56b4688d8ee42409d4e7439190fa856/user-1000.journal corrupted or uncleanly shut down, renaming and replacing.
+
+=== Kernel Errors ===
+[    0.156043] {1}[Hardware Error]: Hardware error from APEI Generic Hardware Error Source: 1284
+[    0.156045] {1}[Hardware Error]: It has been corrected by h/w and requires no further action
+[    0.156046] {1}[Hardware Error]: event severity: corrected
+[    0.156047] {1}[Hardware Error]:  Error 0, type: corrected
+[    0.156048] {1}[Hardware Error]:   section_type: PCIe error
+[    0.156049] {1}[Hardware Error]:   port_type: 5, upstream switch port
+[    0.156050] {1}[Hardware Error]:   command: 0x0107, status: 0x0010
+[    0.156051] {1}[Hardware Error]:   device_id: 0008:01:00.0
+[    0.156052] {1}[Hardware Error]:   slot: 0
+[    0.156052] {1}[Hardware Error]:   secondary_bus: 0x00
+[    0.156053] {1}[Hardware Error]:   vendor_id: 0x12d8, device_id: 0xb404
+[    0.156054] {1}[Hardware Error]:   class_code: 060400
+[    0.156054] {1}[Hardware Error]:   bridge: secondary_status: 0x0000, control: 0x0012
+[    8.299747] pci 0009:01:00.0: DOE: [2c8] failed to reset mailbox with abort command : -5
+[    8.308026] pci 0009:01:00.0: DOE: [2c8] failed to create mailbox: -5
+[    9.086377] ERST: Error Record Serialization Table (ERST) support is initialized.
+[    9.094095] pstore: Using crash dump compression: deflate
+[    9.435853] tegra-qspi NVDA1513:00: device reset failed
+[    9.574916] watchdog: Delayed init of the lockup detector failed: -19
+[   10.229566] xhci_hcd 0008:05:00.0: failed to load firmware renesas_usb_fw.mem, fallback to ROM
+[   10.258010] nvidia: module verification failed: signature and/or required key missing - tainting kernel
+[   12.374730] systemd[1]: Mounting Kernel Debug File System...
+
+=== GDS/NVIDIA related messages ===
+[    0.000000] ACPI: SSDT 0x00000078447EBB18 00015E (v02 NVIDIA PRMOPREG 00001000 INTL 20220331)
+[    0.000000] ACPI: SPMI 0x00000078447EBD98 000041 (v05 NVIDIA SMCI--MB 00000000 AMI. 00000000)
+[    0.000000] ACPI: FPDT 0x00000078447EBE18 000034 (v01 NVIDIA T241x1   00000001 AMI  00000001)
+[    0.000000] ACPI: PRMT 0x00000078447EBE98 00003C (v00 NVIDIA SMCI--MB 00000001 AMI  00000001)
+[    0.000000] ACPI: BGRT 0x00000078447EA018 000038 (v01 NVIDIA SMCI--MB 01072009 AMI  00010013)
+[    0.000000] ACPI: SDEI 0x00000078447EAF18 000024 (v01 NVIDIA SMCI--MB 00000001 NVDA 00000001)
+[    0.000000] ACPI: HEST 0x00000078447E8018 001054 (v01 NVIDIA SMCI--MB 00000001 NVDA 00000001)
+[    0.000000] ACPI: BERT 0x00000078447EAF98 000030 (v01 NVIDIA SMCI--MB 00000001 NVDA 00000001)
+[    0.000000] ACPI: EINJ 0x00000078447EAB18 000170 (v01 NVIDIA SMCI--MB 00000001 NVDA 00000001)
+[    0.000000] ACPI: ERST 0x00000078447EA098 000290 (v01 NVIDIA SMCI--MB 00000001 NVDA 00000001)
+[    0.000000] ACPI: GTDT 0x00000078447EA498 000084 (v03 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+[    0.000000] ACPI: APIC 0x00000078447E0018 001778 (v06 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+[    0.000000] ACPI: PPTT 0x0000007844740018 0020F8 (v03 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+[    0.000000] ACPI: SSDT 0x0000007844739018 006BCF (v02 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+[    0.000000] ACPI: SPCR 0x00000078447EA998 000050 (v02 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+[    0.000000] ACPI: SSDT 0x00000078447EAA18 0000CC (v02 NVIDIA SMCI--MB 00000001 INTL 20220331)
+[    0.000000] ACPI: SSDT 0x0000007844737018 0017F2 (v02 NVIDIA BPMP_S0  00000001 INTL 20220331)
+[    0.000000] ACPI: MCFG 0x00000078447EA598 0000AC (v01 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+[    0.000000] ACPI: SSDT 0x0000007844736018 0003AC (v02 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+[    0.000000] ACPI: SSDT 0x0000007844736418 0003AE (v02 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+[    0.000000] ACPI: SSDT 0x0000007844736818 0003AF (v02 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+[    0.000000] ACPI: SSDT 0x0000007844735018 0003AF (v02 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+[    0.000000] ACPI: SSDT 0x0000007844735418 0003AF (v02 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+[    0.000000] ACPI: SSDT 0x0000007844735818 0003AF (v02 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+[    0.000000] ACPI: SSDT 0x0000007844734018 0003AF (v02 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+[    0.000000] ACPI: SSDT 0x0000007844734418 000589 (v02 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+[    0.000000] ACPI: IORT 0x0000007844733018 00081B (v06 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+[    0.000000] ACPI: APMT 0x0000007844733E98 00013C (v00 NVIDIA SMCI--MB 00000001 AMI  00000001)
+[    0.000000] ACPI: MPAM 0x0000007844734E98 000084 (v01 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+[    0.000000] ACPI: SLIT 0x0000007844735E98 00012C (v01 NVIDIA SMCI--MB 00000001 AMI  00000001)
+[    0.000000] ACPI: SRAT 0x0000007844732018 0006B4 (v03 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+[    0.000000] ACPI: HMAT 0x0000007844731018 000808 (v02 NVIDIA SMCI--MB 00000001 AMI  00000001)
+[    0.000000] ACPI: WSMT 0x0000007844734F98 000028 (v01 NVIDIA SMCI--MB 00000001 AMI  00000001)
+[    0.000000] Kernel command line: BOOT_IMAGE=/vmlinuz-6.8.0-1043-nvidia-64k root=/dev/mapper/ubuntu--vg-ubuntu--lv ro
+[    0.000000] Unknown kernel command line parameters "BOOT_IMAGE=/vmlinuz-6.8.0-1043-nvidia-64k", will be passed to user space.
+[   10.096159]     BOOT_IMAGE=/vmlinuz-6.8.0-1043-nvidia-64k
+[   10.258003] nvidia: loading out-of-tree module taints kernel.
+[   10.258010] nvidia: module verification failed: signature and/or required key missing - tainting kernel
+[   10.363438] nvidia-nvlink: Nvlink Core is being initialized, major device number 510
+[   10.384463] nvidia 0009:01:00.0: Adding to iommu group 19
+[   10.425658] usb usb1: Manufacturer: Linux 6.8.0-1043-nvidia-64k xhci-hcd
+[   10.457583] NVRM: loading NVIDIA UNIX Open Kernel Module for aarch64  580.105.08  Release Build  (dvs-builder@U22-I3-G07-01-1)  Wed Oct 29 22:23:50 UTC 2025
+[   10.523846] usb usb2: Manufacturer: Linux 6.8.0-1043-nvidia-64k xhci-hcd
+[   10.611590] nvidia-modeset: Loading NVIDIA UNIX Open Kernel Mode Setting Driver for aarch64  580.105.08  Release Build  (dvs-builder@U22-I3-G07-01-1)  Wed Oct 29 22:12:54 UTC 2025
+[   10.629631] [drm] [nvidia-drm] [GPU ID 0x00090100] Loading driver
+[   10.635875] [drm] [nvidia-drm] [GPU ID 0x00090100] NUMA was not set up yet; ignoring this device
+[   13.136517] Backport based on https://:@git-nbu.nvidia.com/r/a/mlnx_ofed/mlnx-ofa_kernel-4.0.git eb6cb58
+[   13.136518] compat.git: https://:@git-nbu.nvidia.com/r/a/mlnx_ofed/mlnx-ofa_kernel-4.0.git
+[   13.355889] audit: type=1400 audit(1764625273.391:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=1366 comm="apparmor_parser"
+[   13.355893] audit: type=1400 audit(1764625273.391:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=1366 comm="apparmor_parser"
+

@@ -1,0 +1,7 @@
+=== System Information ===
+Hostname: nbutme-gh200-1
+Uptime:  22:18:09 up 37 min,  2 users,  load average: 0.10, 0.08, 0.09
+Kernel: 6.8.0-1043-nvidia-64k
+OS: Ubuntu 22.04.5 LTS
+Date: Mon Dec  1 10:18:09 PM UTC 2025
+

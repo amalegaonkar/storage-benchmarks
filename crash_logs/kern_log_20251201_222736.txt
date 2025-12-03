@@ -1,0 +1,306 @@
+=== Recent kern.log (last 200 lines) ===
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   10.635873] NVRM: numa memblock size of zero found during device start
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   10.635875] [drm] [nvidia-drm] [GPU ID 0x00090100] NUMA was not set up yet; ignoring this device
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   10.691058] md0: detected capacity change from 0 to 12501938176
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   10.692133] usb 1-1: new high-speed USB device number 2 using xhci_hcd
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   10.833676] usb 1-1: New USB device found, idVendor=1d6b, idProduct=0107, bcdDevice= 1.00
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   10.842045] usb 1-1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   10.849341] usb 1-1: Product: USB Virtual Hub
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   10.853793] usb 1-1: Manufacturer: Aspeed
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   10.857888] usb 1-1: SerialNumber: 00000000
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   10.865587] hub 1-1:1.0: USB hub found
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   10.869802] hub 1-1:1.0: 7 ports detected
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   10.924125] raid6: neonx8   gen() 27117 MB/s
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   10.945135] raid6: neonx4   gen() 25265 MB/s
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   10.966137] raid6: neonx2   gen() 22500 MB/s
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   10.987128] raid6: neonx1   gen() 20085 MB/s
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.008125] raid6: int64x8  gen()  9421 MB/s
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.029154] raid6: int64x4  gen() 10289 MB/s
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.050163] raid6: int64x2  gen()  9492 MB/s
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.071158] raid6: int64x1  gen()  7851 MB/s
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.075519] raid6: using algorithm neonx8 gen() 27117 MB/s
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.098126] raid6: .... xor() 20320 MB/s, rmw enabled
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.103291] raid6: using neon recovery algorithm
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.109199] xor: measuring software checksum speed
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.114185]    8regs           : 36987 MB/sec
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.118723]    32regs          : 37364 MB/sec
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.123245]    arm64_neon      : 46121 MB/sec
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.127695] xor: using function: arm64_neon (46121 MB/sec)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.133906] async_tx: api initialized (async)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.154129] usb 1-1.1: new high-speed USB device number 3 using xhci_hcd
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.207944] Btrfs loaded, zoned=yes, fsverity=yes
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.243299] usb 1-1.1: New USB device found, idVendor=0557, idProduct=9241, bcdDevice= 5.04
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.254572] usb 1-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.265081] usb 1-1.1: Product: SMCI HID KM
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.272358] usb 1-1.1: Manufacturer: Linux 5.4.62 with aspeed_vhub
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.353129] usb 1-1.2: new high-speed USB device number 4 using xhci_hcd
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.442300] usb 1-1.2: New USB device found, idVendor=0b1f, idProduct=03ee, bcdDevice= 5.04
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.453659] usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.463971] usb 1-1.2: Product: RNDIS/Ethernet Gadget
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.471999] usb 1-1.2: Manufacturer: Linux 5.4.62 with aspeed_vhub
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.492047] hid: raw HID events driver (C) Jiri Kosina
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.497498] usbcore: registered new interface driver cdc_ether
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.498182] EXT4-fs (dm-0): mounted filesystem 598454bc-3ce2-4005-8e63-765459a45df5 ro with ordered data mode. Quota mode: none.
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.517231] usbcore: registered new interface driver usbhid
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.518998] rndis_host 1-1.2:2.0 usb0: register 'rndis_host' at usb-0008:05:00.0-1.2, RNDIS device, be:3a:f2:b6:05:9f
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.525710] usbhid: USB HID core driver
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.537655] usbcore: registered new interface driver rndis_host
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.548337] input: Linux 5.4.62 with aspeed_vhub SMCI HID KM as /devices/pci0008:00/0008:00:00.0/0008:01:00.0/0008:02:02.0/0008:05:00.0/usb1/1-1/1-1.1/1-1.1:1.0/0003:0557:9241.0001/input/input0
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.549233] rndis_host 1-1.2:2.0 enxbe3af2b6059f: renamed from usb0
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.620241] hid-generic 0003:0557:9241.0001: input,hidraw0: USB HID v1.00 Keyboard [Linux 5.4.62 with aspeed_vhub SMCI HID KM] on usb-0008:05:00.0-1.1/input0
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.634733] input: Linux 5.4.62 with aspeed_vhub SMCI HID KM as /devices/pci0008:00/0008:00:00.0/0008:01:00.0/0008:02:02.0/0008:05:00.0/usb1/1-1/1-1.1/1-1.1:1.1/0003:0557:9241.0002/input/input1
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.652406] hid-generic 0003:0557:9241.0002: input,hidraw1: USB HID v1.00 Mouse [Linux 5.4.62 with aspeed_vhub SMCI HID KM] on usb-0008:05:00.0-1.1/input1
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   11.839895] block nvme2n1: the capability attribute has been deprecated.
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   12.506615] pstore: backend 'erst' already in use: ignoring 'efi_pstore'
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   12.564413] bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   12.584965] Bridge firewalling registered
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   12.592882] knem 1.1.4.90mlnx3: initialized
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   12.594036] EXT4-fs (dm-0): re-mounted 598454bc-3ce2-4005-8e63-765459a45df5 r/w. Quota mode: none.
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   12.777989] alua: device handler registered
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   12.785976] emc: device handler registered
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   12.791011] rdac: device handler registered
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   12.992430] loop0: detected capacity change from 0 to 121984
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.001302] loop1: detected capacity change from 0 to 121984
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.010173] loop2: detected capacity change from 0 to 165960
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.017744] loop3: detected capacity change from 0 to 165952
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.026164] loop4: detected capacity change from 0 to 90552
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.033805] loop5: detected capacity change from 0 to 90800
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.110873]  cs_system_cfg: CoreSight Configuration manager initialised
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.111368] IPMI message handler: version 39.2
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.114158] ipmi device interface
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.114273] coresight stm0: STM32 initialized
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.120303] power_meter ACPI000D:00: Found ACPI power meter.
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.121085] power_meter ACPI000D:00: hwmon_device_register() is deprecated. Please convert the driver to use hwmon_device_register_with_info().
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.121369] power_meter ACPI000D:01: Found ACPI power meter.
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.121437] power_meter ACPI000D:01: Ignoring unsafe software power cap!
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.121458] power_meter ACPI000D:01: hwmon_device_register() is deprecated. Please convert the driver to use hwmon_device_register_with_info().
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.121627] power_meter ACPI000D:02: Found ACPI power meter.
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.121707] power_meter ACPI000D:02: hwmon_device_register() is deprecated. Please convert the driver to use hwmon_device_register_with_info().
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.121809] power_meter ACPI000D:03: Found ACPI power meter.
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.121914] power_meter ACPI000D:03: hwmon_device_register() is deprecated. Please convert the driver to use hwmon_device_register_with_info().
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.127299] ipmi_si: IPMI System Interface driver
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.127561] ipmi_si: Unable to find any System Interface(s)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.136513] Compat-mlnx-ofed backport release: eb6cb58
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.136517] Backport based on https://:@git-nbu.nvidia.com/r/a/mlnx_ofed/mlnx-ofa_kernel-4.0.git eb6cb58
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.136518] compat.git: https://:@git-nbu.nvidia.com/r/a/mlnx_ofed/mlnx-ofa_kernel-4.0.git
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.139521] arm_spe_pmu arm,spe-v1: probed SPEv1.1 for CPUs 0-71 [max_record_sz 64, align 64, features 0x17]
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.141970] ipmi_ssif: IPMI SSIF Interface driver
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.142472] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.10.auto: option mask 0x0
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.143669] ipmi_ssif i2c-IPI0001:00: ipmi_ssif: Trying ACPI-specified SSIF interface at i2c address 0x10, adapter NVDA0301:00, slave address 0x20
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.145463] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.10.auto: Registered PMU @ 0x0000000011002000 using 4 counters with Global(Counter0) filter settings
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.145572] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.11.auto: option mask 0x0
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.145877] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.11.auto: Registered PMU @ 0x0000000011042000 using 4 counters with Global(Counter0) filter settings
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.145989] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.12.auto: option mask 0x0
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.146423] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.12.auto: Registered PMU @ 0x0000000011062000 using 4 counters with Global(Counter0) filter settings
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.146540] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.13.auto: option mask 0x0
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.147680] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.13.auto: Registered PMU @ 0x0000000011082000 using 4 counters with Global(Counter0) filter settings
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.147853] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.14.auto: option mask 0x0
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.153246] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.14.auto: Registered PMU @ 0x00000000110a2000 using 4 counters with Global(Counter0) filter settings
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.153402] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.15.auto: option mask 0x0
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.165295] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.15.auto: Registered PMU @ 0x0000000012002000 using 4 counters with Global(Counter0) filter settings
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.165485] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.16.auto: option mask 0x0
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.170107] ipmi_ssif i2c-IPI0001:00: IPMI message handler: Found new BMC (man_id: 0x002a7c, prod_id: 0x1d31, dev_id: 0x20)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.171999] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.16.auto: Registered PMU @ 0x0000000012042000 using 4 counters with Global(Counter0) filter settings
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.172048] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.17.auto: option mask 0x0
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.175967] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.17.auto: Registered PMU @ 0x0000000012062000 using 4 counters with Global(Counter0) filter settings
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.176007] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.18.auto: option mask 0x0
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.176258] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.18.auto: Registered PMU @ 0x0000000012082000 using 4 counters with Global(Counter0) filter settings
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.176296] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.19.auto: option mask 0x0
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.176570] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.19.auto: Registered PMU @ 0x00000000120a2000 using 4 counters with Global(Counter0) filter settings
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.176619] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.20.auto: option mask 0x0
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.176940] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.20.auto: Registered PMU @ 0x0000000015002000 using 4 counters with Global(Counter0) filter settings
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.176985] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.21.auto: option mask 0x0
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.177321] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.21.auto: Registered PMU @ 0x0000000015042000 using 4 counters with Global(Counter0) filter settings
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.177369] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.22.auto: option mask 0x0
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.177696] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.22.auto: Registered PMU @ 0x0000000015062000 using 4 counters with Global(Counter0) filter settings
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.177751] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.23.auto: option mask 0x0
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.178081] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.23.auto: Registered PMU @ 0x0000000015082000 using 4 counters with Global(Counter0) filter settings
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.178133] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.24.auto: option mask 0x0
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.178439] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.24.auto: Registered PMU @ 0x00000000150a2000 using 4 counters with Global(Counter0) filter settings
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.178485] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.25.auto: option mask 0x0
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.178805] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.25.auto: Registered PMU @ 0x0000000016002000 using 4 counters with Global(Counter0) filter settings
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.178849] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.26.auto: option mask 0x0
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.179129] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.26.auto: Registered PMU @ 0x0000000016042000 using 4 counters with Global(Counter0) filter settings
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.179175] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.27.auto: option mask 0x0
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.179442] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.27.auto: Registered PMU @ 0x0000000016062000 using 4 counters with Global(Counter0) filter settings
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.179486] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.28.auto: option mask 0x0
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.179793] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.28.auto: Registered PMU @ 0x0000000005002000 using 4 counters with Global(Counter0) filter settings
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.179836] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.29.auto: option mask 0x0
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.180126] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.29.auto: Registered PMU @ 0x0000000005042000 using 4 counters with Global(Counter0) filter settings
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.180166] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.30.auto: option mask 0x0
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.180453] arm-smmu-v3-pmcg arm-smmu-v3-pmcg.30.auto: Registered PMU @ 0x0000000005062000 using 4 counters with Global(Counter0) filter settings
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.217549] mlx5_core 0000:01:00.0: Adding to iommu group 20
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.219510] mlx5_core 0000:01:00.0: firmware version: 40.45.1020
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.219547] mlx5_core 0000:01:00.0: 504.112 Gb/s available PCIe bandwidth, limited by 32.0 GT/s PCIe x16 link at 0000:00:00.0 (capable of 1024.000 Gb/s with 64.0 GT/s PCIe x16 link)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.295518] EXT4-fs (nvme2n1p2): mounted filesystem b2717fb2-ea9e-47da-b2d8-6a348cf60a7e r/w with ordered data mode. Quota mode: none.
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.355760] audit: type=1400 audit(1764625273.391:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=1365 comm="apparmor_parser"
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.355889] audit: type=1400 audit(1764625273.391:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=1366 comm="apparmor_parser"
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.355893] audit: type=1400 audit(1764625273.391:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=1366 comm="apparmor_parser"
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.356138] audit: type=1400 audit(1764625273.392:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=1370 comm="apparmor_parser"
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.356141] audit: type=1400 audit(1764625273.392:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_filter" pid=1370 comm="apparmor_parser"
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.356143] audit: type=1400 audit(1764625273.392:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_groff" pid=1370 comm="apparmor_parser"
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.356745] audit: type=1400 audit(1764625273.392:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine" pid=1372 comm="apparmor_parser"
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.356747] audit: type=1400 audit(1764625273.392:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=1372 comm="apparmor_parser"
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.357177] audit: type=1400 audit(1764625273.393:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_apt_news" pid=1368 comm="apparmor_parser"
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.357431] audit: type=1400 audit(1764625273.393:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="tcpdump" pid=1371 comm="apparmor_parser"
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.506042] RPC: Registered named UNIX socket transport module.
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.506046] RPC: Registered udp transport module.
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.506047] RPC: Registered tcp transport module.
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.506048] RPC: Registered tcp-with-tls transport module.
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.506049] RPC: Registered tcp NFSv4.1 backchannel transport module.
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.635412] MACsec IEEE 802.1AE
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.687493] mlx5_core 0000:01:00.0: Rate limit: 127 rates are supported, range: 0Mbps to 390625Mbps
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.687787] mlx5_core 0000:01:00.0: E-Switch: Total vports 18, per vport: max uc(128) max mc(2048)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.687836] mlx5_core 0000:01:00.0: Flow counters bulk query buffer size increased, bulk_query_len(8)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.740658] mlx5_core 0000:01:00.0: mlx5_pcie_event:325:(pid 547): PCIe slot power capability was not advertised.
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.805106] mlx5_core 0000:01:00.0: mlx5e: IPSec ESP acceleration enabled
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   14.104193] openvswitch: Open vSwitch switching datapath
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   14.382065] mlx5_core 0000:01:00.0: MLX5E: StrdRq(1) RqSz(8) StrdSz(2048) RxCqeCmprss(0 enhanced)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   14.386295] mlx5_core 0002:01:00.0: Adding to iommu group 21
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   14.388080] mlx5_core 0002:01:00.0: firmware version: 40.45.1020
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   14.388117] mlx5_core 0002:01:00.0: 252.056 Gb/s available PCIe bandwidth, limited by 32.0 GT/s PCIe x8 link at 0002:00:00.0 (capable of 1024.000 Gb/s with 64.0 GT/s PCIe x16 link)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   14.842309] mlx5_core 0002:01:00.0: Flow counters bulk query buffer size increased, bulk_query_len(8)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   14.865887] mlx5_core 0002:01:00.0: mlx5_pcie_event:325:(pid 454): PCIe slot power capability was not advertised.
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   14.922645] mlx5_core 0002:01:00.1: Adding to iommu group 22
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   14.924497] mlx5_core 0002:01:00.1: firmware version: 40.45.1020
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   14.924532] mlx5_core 0002:01:00.1: 252.056 Gb/s available PCIe bandwidth, limited by 32.0 GT/s PCIe x8 link at 0002:00:00.0 (capable of 1024.000 Gb/s with 64.0 GT/s PCIe x16 link)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   15.548560] mlx5_core 0002:01:00.1: E-Switch: Total vports 18, per vport: max uc(128) max mc(2048)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   15.548586] mlx5_core 0002:01:00.1: Flow counters bulk query buffer size increased, bulk_query_len(8)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   15.596180] mlx5_core 0002:01:00.1: mlx5_pcie_event:325:(pid 819): PCIe slot power capability was not advertised.
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   15.710602] mlx5_core 0002:01:00.1: mlx5e: IPSec ESP acceleration enabled
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   16.420781] mlx5_core 0002:01:00.1: MLX5E: StrdRq(1) RqSz(8) StrdSz(2048) RxCqeCmprss(0 enhanced)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   16.452139] mlx5_core 0002:01:00.1 enP2s2f1np1: renamed from eth1
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   16.462201] mlx5_core 0000:01:00.0 enp1s0np0: renamed from eth0
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   17.278452] mlx5_core 0000:01:00.0 enp1s0np0: Link up
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   17.281610] mlx5_core 0000:01:00.0 mlx5_0: Port: 1 Link ACTIVE
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   17.319171] mlx5_core 0002:01:00.0 ibP2s2f0: renamed from ib0
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   31.483513] Key type psk registered
+Dec  1 21:41:32 nbutme-gh200-1 kernel: [   32.011385] kauditd_printk_skb: 33 callbacks suppressed
+Dec  1 21:41:32 nbutme-gh200-1 kernel: [   32.011389] audit: type=1400 audit(1764625292.085:43): apparmor="STATUS" operation="profile_load" profile="unconfined" name="docker-default" pid=2243 comm="apparmor_parser"
+Dec  1 21:41:32 nbutme-gh200-1 kernel: [   32.027246] evm: overlay not supported
+Dec  1 21:41:32 nbutme-gh200-1 kernel: [   32.127604] Initializing XFRM netlink socket
+Dec  1 21:41:32 nbutme-gh200-1 kernel: [   32.344786] loop6: detected capacity change from 0 to 8
+Dec  1 21:41:33 nbutme-gh200-1 kernel: [   33.288557] [ffffffcfffe00000-ffffffcfffe0ffff] potential offnode page_structs
+Dec  1 21:41:33 nbutme-gh200-1 kernel: [   33.288732] Fallback order for Node 0: 0 1 
+Dec  1 21:41:33 nbutme-gh200-1 kernel: [   33.288737] Fallback order for Node 1: 1 0 
+Dec  1 21:41:33 nbutme-gh200-1 kernel: [   33.288738] Fallback order for Node 2: 0 1 
+Dec  1 21:41:33 nbutme-gh200-1 kernel: [   33.288740] Fallback order for Node 3: 0 1 
+Dec  1 21:41:33 nbutme-gh200-1 kernel: [   33.288742] Fallback order for Node 4: 0 1 
+Dec  1 21:41:33 nbutme-gh200-1 kernel: [   33.288744] Fallback order for Node 5: 0 1 
+Dec  1 21:41:33 nbutme-gh200-1 kernel: [   33.288746] Fallback order for Node 6: 0 1 
+Dec  1 21:41:33 nbutme-gh200-1 kernel: [   33.288748] Fallback order for Node 7: 0 1 
+Dec  1 21:41:33 nbutme-gh200-1 kernel: [   33.288749] Fallback order for Node 8: 0 1 
+Dec  1 21:41:33 nbutme-gh200-1 kernel: [   33.288751] Built 9 zonelists, mobility grouping on.  Total pages: 7577720
+Dec  1 21:41:33 nbutme-gh200-1 kernel: [   33.288755] Policy zone: Normal
+Dec  1 21:41:33 nbutme-gh200-1 kernel: [   33.854182] fbcon: Taking over console
+Dec  1 21:41:34 nbutme-gh200-1 kernel: [   33.878874] Console: switching to colour frame buffer device 240x75
+Dec  1 21:41:34 nbutme-gh200-1 kernel: [   34.024760] workqueue: drm_fb_helper_damage_work hogged CPU for >20000us 4 times, consider switching to WQ_UNBOUND
+Dec  1 21:41:45 nbutme-gh200-1 kernel: [   45.166445] wireguard: WireGuard 1.0.0 loaded. See www.wireguard.com for information.
+Dec  1 21:41:45 nbutme-gh200-1 kernel: [   45.166451] wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+Dec  1 21:41:47 nbutme-gh200-1 kernel: [   47.437169] ipip: IPv4 and MPLS over IPv4 tunneling driver
+Dec  1 21:42:14 nbutme-gh200-1 kernel: [   74.237515] audit: type=1400 audit(1764625334.566:44): apparmor="STATUS" operation="profile_load" profile="unconfined" name="cri-containerd.apparmor.d" pid=4366 comm="apparmor_parser"
+
+=== kern.log Errors ===
+Dec  1 20:59:20 nbutme-gh200-1 kernel: [    8.298858] pci 0009:01:00.0: DOE: [2c8] failed to reset mailbox with abort command : -5
+Dec  1 20:59:20 nbutme-gh200-1 kernel: [    8.307139] pci 0009:01:00.0: DOE: [2c8] failed to create mailbox: -5
+Dec  1 20:59:20 nbutme-gh200-1 kernel: [    9.085896] ERST: Error Record Serialization Table (ERST) support is initialized.
+Dec  1 20:59:20 nbutme-gh200-1 kernel: [    9.093587] pstore: Using crash dump compression: deflate
+Dec  1 20:59:20 nbutme-gh200-1 kernel: [    9.436200] tegra-qspi NVDA1513:00: device reset failed
+Dec  1 20:59:20 nbutme-gh200-1 kernel: [    9.575011] watchdog: Delayed init of the lockup detector failed: -19
+Dec  1 20:59:20 nbutme-gh200-1 kernel: [   10.232369] xhci_hcd 0008:05:00.0: failed to load firmware renesas_usb_fw.mem, fallback to ROM
+Dec  1 20:59:20 nbutme-gh200-1 kernel: [   10.261053] nvidia: module verification failed: signature and/or required key missing - tainting kernel
+Dec  1 21:19:03 nbutme-gh200-1 kernel: [    0.155697] {1}[Hardware Error]: Hardware error from APEI Generic Hardware Error Source: 1284
+Dec  1 21:19:03 nbutme-gh200-1 kernel: [    0.155699] {1}[Hardware Error]: It has been corrected by h/w and requires no further action
+Dec  1 21:19:03 nbutme-gh200-1 kernel: [    0.155700] {1}[Hardware Error]: event severity: corrected
+Dec  1 21:19:03 nbutme-gh200-1 kernel: [    0.155701] {1}[Hardware Error]:  Error 0, type: corrected
+Dec  1 21:19:03 nbutme-gh200-1 kernel: [    0.155702] {1}[Hardware Error]:   section_type: PCIe error
+Dec  1 21:19:03 nbutme-gh200-1 kernel: [    0.155703] {1}[Hardware Error]:   port_type: 5, upstream switch port
+Dec  1 21:19:03 nbutme-gh200-1 kernel: [    0.155704] {1}[Hardware Error]:   command: 0x0107, status: 0x0010
+Dec  1 21:19:03 nbutme-gh200-1 kernel: [    0.155705] {1}[Hardware Error]:   device_id: 0008:01:00.0
+Dec  1 21:19:03 nbutme-gh200-1 kernel: [    0.155706] {1}[Hardware Error]:   slot: 0
+Dec  1 21:19:03 nbutme-gh200-1 kernel: [    0.155707] {1}[Hardware Error]:   secondary_bus: 0x00
+Dec  1 21:19:03 nbutme-gh200-1 kernel: [    0.155707] {1}[Hardware Error]:   vendor_id: 0x12d8, device_id: 0xb404
+Dec  1 21:19:03 nbutme-gh200-1 kernel: [    0.155708] {1}[Hardware Error]:   class_code: 060400
+Dec  1 21:19:03 nbutme-gh200-1 kernel: [    0.155708] {1}[Hardware Error]:   bridge: secondary_status: 0x0000, control: 0x0012
+Dec  1 21:19:03 nbutme-gh200-1 kernel: [    8.301246] pci 0009:01:00.0: DOE: [2c8] failed to reset mailbox with abort command : -5
+Dec  1 21:19:03 nbutme-gh200-1 kernel: [    8.309523] pci 0009:01:00.0: DOE: [2c8] failed to create mailbox: -5
+Dec  1 21:19:03 nbutme-gh200-1 kernel: [    9.093659] ERST: Error Record Serialization Table (ERST) support is initialized.
+Dec  1 21:19:03 nbutme-gh200-1 kernel: [    9.101356] pstore: Using crash dump compression: deflate
+Dec  1 21:19:03 nbutme-gh200-1 kernel: [    9.446671] tegra-qspi NVDA1513:00: device reset failed
+Dec  1 21:19:03 nbutme-gh200-1 kernel: [    9.585480] watchdog: Delayed init of the lockup detector failed: -19
+Dec  1 21:19:03 nbutme-gh200-1 kernel: [   10.241206] xhci_hcd 0008:05:00.0: failed to load firmware renesas_usb_fw.mem, fallback to ROM
+Dec  1 21:19:03 nbutme-gh200-1 kernel: [   10.270038] nvidia: module verification failed: signature and/or required key missing - tainting kernel
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.156043] {1}[Hardware Error]: Hardware error from APEI Generic Hardware Error Source: 1284
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.156045] {1}[Hardware Error]: It has been corrected by h/w and requires no further action
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.156046] {1}[Hardware Error]: event severity: corrected
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.156047] {1}[Hardware Error]:  Error 0, type: corrected
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.156048] {1}[Hardware Error]:   section_type: PCIe error
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.156049] {1}[Hardware Error]:   port_type: 5, upstream switch port
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.156050] {1}[Hardware Error]:   command: 0x0107, status: 0x0010
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.156051] {1}[Hardware Error]:   device_id: 0008:01:00.0
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.156052] {1}[Hardware Error]:   slot: 0
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.156052] {1}[Hardware Error]:   secondary_bus: 0x00
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.156053] {1}[Hardware Error]:   vendor_id: 0x12d8, device_id: 0xb404
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.156054] {1}[Hardware Error]:   class_code: 060400
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.156054] {1}[Hardware Error]:   bridge: secondary_status: 0x0000, control: 0x0012
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    8.299747] pci 0009:01:00.0: DOE: [2c8] failed to reset mailbox with abort command : -5
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    8.308026] pci 0009:01:00.0: DOE: [2c8] failed to create mailbox: -5
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    9.086377] ERST: Error Record Serialization Table (ERST) support is initialized.
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    9.094095] pstore: Using crash dump compression: deflate
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    9.435853] tegra-qspi NVDA1513:00: device reset failed
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    9.574916] watchdog: Delayed init of the lockup detector failed: -19
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   10.229566] xhci_hcd 0008:05:00.0: failed to load firmware renesas_usb_fw.mem, fallback to ROM
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   10.258010] nvidia: module verification failed: signature and/or required key missing - tainting kernel
+
+=== kern.log GDS/NVIDIA ===
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: SSDT 0x00000078447EBB18 00015E (v02 NVIDIA PRMOPREG 00001000 INTL 20220331)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: SPMI 0x00000078447EBD98 000041 (v05 NVIDIA SMCI--MB 00000000 AMI. 00000000)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: FPDT 0x00000078447EBE18 000034 (v01 NVIDIA T241x1   00000001 AMI  00000001)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: PRMT 0x00000078447EBE98 00003C (v00 NVIDIA SMCI--MB 00000001 AMI  00000001)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: BGRT 0x00000078447EA018 000038 (v01 NVIDIA SMCI--MB 01072009 AMI  00010013)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: SDEI 0x00000078447EAF18 000024 (v01 NVIDIA SMCI--MB 00000001 NVDA 00000001)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: HEST 0x00000078447E8018 001054 (v01 NVIDIA SMCI--MB 00000001 NVDA 00000001)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: BERT 0x00000078447EAF98 000030 (v01 NVIDIA SMCI--MB 00000001 NVDA 00000001)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: EINJ 0x00000078447EAB18 000170 (v01 NVIDIA SMCI--MB 00000001 NVDA 00000001)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: ERST 0x00000078447EA098 000290 (v01 NVIDIA SMCI--MB 00000001 NVDA 00000001)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: GTDT 0x00000078447EA498 000084 (v03 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: APIC 0x00000078447E0018 001778 (v06 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: PPTT 0x0000007844740018 0020F8 (v03 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: SSDT 0x0000007844739018 006BCF (v02 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: SPCR 0x00000078447EA998 000050 (v02 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: SSDT 0x00000078447EAA18 0000CC (v02 NVIDIA SMCI--MB 00000001 INTL 20220331)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: SSDT 0x0000007844737018 0017F2 (v02 NVIDIA BPMP_S0  00000001 INTL 20220331)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: MCFG 0x00000078447EA598 0000AC (v01 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: SSDT 0x0000007844736018 0003AC (v02 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: SSDT 0x0000007844736418 0003AE (v02 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: SSDT 0x0000007844736818 0003AF (v02 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: SSDT 0x0000007844735018 0003AF (v02 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: SSDT 0x0000007844735418 0003AF (v02 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: SSDT 0x0000007844735818 0003AF (v02 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: SSDT 0x0000007844734018 0003AF (v02 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: SSDT 0x0000007844734418 000589 (v02 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: IORT 0x0000007844733018 00081B (v06 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: APMT 0x0000007844733E98 00013C (v00 NVIDIA SMCI--MB 00000001 AMI  00000001)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: MPAM 0x0000007844734E98 000084 (v01 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: SLIT 0x0000007844735E98 00012C (v01 NVIDIA SMCI--MB 00000001 AMI  00000001)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: SRAT 0x0000007844732018 0006B4 (v03 NVIDIA SMCI--MB 00000001 ARMH 00010000)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: HMAT 0x0000007844731018 000808 (v02 NVIDIA SMCI--MB 00000001 AMI  00000001)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] ACPI: WSMT 0x0000007844734F98 000028 (v01 NVIDIA SMCI--MB 00000001 AMI  00000001)
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] Kernel command line: BOOT_IMAGE=/vmlinuz-6.8.0-1043-nvidia-64k root=/dev/mapper/ubuntu--vg-ubuntu--lv ro
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [    0.000000] Unknown kernel command line parameters "BOOT_IMAGE=/vmlinuz-6.8.0-1043-nvidia-64k", will be passed to user space.
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   10.096159]     BOOT_IMAGE=/vmlinuz-6.8.0-1043-nvidia-64k
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   10.258003] nvidia: loading out-of-tree module taints kernel.
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   10.258010] nvidia: module verification failed: signature and/or required key missing - tainting kernel
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   10.363438] nvidia-nvlink: Nvlink Core is being initialized, major device number 510
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   10.384463] nvidia 0009:01:00.0: Adding to iommu group 19
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   10.425658] usb usb1: Manufacturer: Linux 6.8.0-1043-nvidia-64k xhci-hcd
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   10.457583] NVRM: loading NVIDIA UNIX Open Kernel Module for aarch64  580.105.08  Release Build  (dvs-builder@U22-I3-G07-01-1)  Wed Oct 29 22:23:50 UTC 2025
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   10.523846] usb usb2: Manufacturer: Linux 6.8.0-1043-nvidia-64k xhci-hcd
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   10.611590] nvidia-modeset: Loading NVIDIA UNIX Open Kernel Mode Setting Driver for aarch64  580.105.08  Release Build  (dvs-builder@U22-I3-G07-01-1)  Wed Oct 29 22:12:54 UTC 2025
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   10.629631] [drm] [nvidia-drm] [GPU ID 0x00090100] Loading driver
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   10.635875] [drm] [nvidia-drm] [GPU ID 0x00090100] NUMA was not set up yet; ignoring this device
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.136517] Backport based on https://:@git-nbu.nvidia.com/r/a/mlnx_ofed/mlnx-ofa_kernel-4.0.git eb6cb58
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.136518] compat.git: https://:@git-nbu.nvidia.com/r/a/mlnx_ofed/mlnx-ofa_kernel-4.0.git
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.355889] audit: type=1400 audit(1764625273.391:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=1366 comm="apparmor_parser"
+Dec  1 21:41:31 nbutme-gh200-1 kernel: [   13.355893] audit: type=1400 audit(1764625273.391:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=1366 comm="apparmor_parser"
+

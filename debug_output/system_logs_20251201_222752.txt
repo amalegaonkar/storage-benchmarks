@@ -1,0 +1,157 @@
+=== Recent System Log (journalctl, last 100 lines) ===
+Dec 01 21:46:44 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:46:44.725008815Z" level=info msg="container event discarded" container=b8d050f5ca5ca1d43d21d2e45c50c74ef5f0bb6bd32c1dd8043b82e727e70b8f type=CONTAINER_STOPPED_EVENT
+Dec 01 21:46:45 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:46:45.200848295Z" level=info msg="container event discarded" container=627f8c5ac1db382a26b7652f678439ed915f012c267841259c90963f7618fdf8 type=CONTAINER_CREATED_EVENT
+Dec 01 21:46:45 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:46:45.238983689Z" level=info msg="container event discarded" container=627f8c5ac1db382a26b7652f678439ed915f012c267841259c90963f7618fdf8 type=CONTAINER_STARTED_EVENT
+Dec 01 21:46:45 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:46:45.480547714Z" level=info msg="container event discarded" container=627f8c5ac1db382a26b7652f678439ed915f012c267841259c90963f7618fdf8 type=CONTAINER_STOPPED_EVENT
+Dec 01 21:46:46 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:46:46.203228412Z" level=info msg="container event discarded" container=4bee6dd7c73fbd47415f0becbe618728abba3a76f8520aad2ea5df753748c21e type=CONTAINER_CREATED_EVENT
+Dec 01 21:46:46 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:46:46.241365875Z" level=info msg="container event discarded" container=4bee6dd7c73fbd47415f0becbe618728abba3a76f8520aad2ea5df753748c21e type=CONTAINER_STARTED_EVENT
+Dec 01 21:47:14 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:47:14.552152486Z" level=info msg="container event discarded" container=d145639e98846de28ce3208cf1a1a0d6dca3d5711884dcc570dddabecb5f3597 type=CONTAINER_CREATED_EVENT
+Dec 01 21:47:14 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:47:14.552188391Z" level=info msg="container event discarded" container=d145639e98846de28ce3208cf1a1a0d6dca3d5711884dcc570dddabecb5f3597 type=CONTAINER_STARTED_EVENT
+Dec 01 21:47:14 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:47:14.580319881Z" level=info msg="container event discarded" container=4f3c522c9eeebdad512d79375ae379fe9ce25bcac4c67938e8336cb83e02359f type=CONTAINER_CREATED_EVENT
+Dec 01 21:47:14 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:47:14.616460477Z" level=info msg="container event discarded" container=4f3c522c9eeebdad512d79375ae379fe9ce25bcac4c67938e8336cb83e02359f type=CONTAINER_STARTED_EVENT
+Dec 01 21:48:12 nbutme-gh200-1 containerd[2039]: time="2025-12-01T21:48:12.453773896Z" level=info msg="container event discarded" container=cd9537dddb903df24f5379ef86ec3f02d955b13f715f14c72a046e3d5c877d37 type=CONTAINER_DELETED_EVENT
+Dec 01 21:51:42 nbutme-gh200-1 kubelet[2739]: W1201 21:51:42.193087    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node1, number of cpuDirs 0, err: <nil>
+Dec 01 21:51:42 nbutme-gh200-1 kubelet[2739]: W1201 21:51:42.193293    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node2, number of cpuDirs 0, err: <nil>
+Dec 01 21:51:42 nbutme-gh200-1 kubelet[2739]: W1201 21:51:42.193434    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node3, number of cpuDirs 0, err: <nil>
+Dec 01 21:51:42 nbutme-gh200-1 kubelet[2739]: W1201 21:51:42.193560    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node4, number of cpuDirs 0, err: <nil>
+Dec 01 21:51:42 nbutme-gh200-1 kubelet[2739]: W1201 21:51:42.193736    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node5, number of cpuDirs 0, err: <nil>
+Dec 01 21:51:42 nbutme-gh200-1 kubelet[2739]: W1201 21:51:42.194366    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node6, number of cpuDirs 0, err: <nil>
+Dec 01 21:51:42 nbutme-gh200-1 kubelet[2739]: W1201 21:51:42.194508    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node7, number of cpuDirs 0, err: <nil>
+Dec 01 21:51:42 nbutme-gh200-1 kubelet[2739]: W1201 21:51:42.194628    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node8, number of cpuDirs 0, err: <nil>
+Dec 01 21:56:32 nbutme-gh200-1 systemd[1]: Starting Cleanup of Temporary Directories...
+Dec 01 21:56:32 nbutme-gh200-1 systemd[1]: systemd-tmpfiles-clean.service: Deactivated successfully.
+Dec 01 21:56:32 nbutme-gh200-1 systemd[1]: Finished Cleanup of Temporary Directories.
+Dec 01 21:56:42 nbutme-gh200-1 kubelet[2739]: W1201 21:56:42.192998    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node1, number of cpuDirs 0, err: <nil>
+Dec 01 21:56:42 nbutme-gh200-1 kubelet[2739]: W1201 21:56:42.193186    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node2, number of cpuDirs 0, err: <nil>
+Dec 01 21:56:42 nbutme-gh200-1 kubelet[2739]: W1201 21:56:42.193302    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node3, number of cpuDirs 0, err: <nil>
+Dec 01 21:56:42 nbutme-gh200-1 kubelet[2739]: W1201 21:56:42.193414    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node4, number of cpuDirs 0, err: <nil>
+Dec 01 21:56:42 nbutme-gh200-1 kubelet[2739]: W1201 21:56:42.193535    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node5, number of cpuDirs 0, err: <nil>
+Dec 01 21:56:42 nbutme-gh200-1 kubelet[2739]: W1201 21:56:42.193644    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node6, number of cpuDirs 0, err: <nil>
+Dec 01 21:56:42 nbutme-gh200-1 kubelet[2739]: W1201 21:56:42.193762    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node7, number of cpuDirs 0, err: <nil>
+Dec 01 21:56:42 nbutme-gh200-1 kubelet[2739]: W1201 21:56:42.193874    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node8, number of cpuDirs 0, err: <nil>
+Dec 01 22:01:42 nbutme-gh200-1 kubelet[2739]: W1201 22:01:42.192486    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node1, number of cpuDirs 0, err: <nil>
+Dec 01 22:01:42 nbutme-gh200-1 kubelet[2739]: W1201 22:01:42.192636    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node2, number of cpuDirs 0, err: <nil>
+Dec 01 22:01:42 nbutme-gh200-1 kubelet[2739]: W1201 22:01:42.192770    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node3, number of cpuDirs 0, err: <nil>
+Dec 01 22:01:42 nbutme-gh200-1 kubelet[2739]: W1201 22:01:42.192903    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node4, number of cpuDirs 0, err: <nil>
+Dec 01 22:01:42 nbutme-gh200-1 kubelet[2739]: W1201 22:01:42.193039    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node5, number of cpuDirs 0, err: <nil>
+Dec 01 22:01:42 nbutme-gh200-1 kubelet[2739]: W1201 22:01:42.193415    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node6, number of cpuDirs 0, err: <nil>
+Dec 01 22:01:42 nbutme-gh200-1 kubelet[2739]: W1201 22:01:42.193539    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node7, number of cpuDirs 0, err: <nil>
+Dec 01 22:01:42 nbutme-gh200-1 kubelet[2739]: W1201 22:01:42.193656    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node8, number of cpuDirs 0, err: <nil>
+Dec 01 22:02:33 nbutme-gh200-1 sshd[13951]: Connection closed by authenticating user ubuntu 10.110.83.251 port 50227 [preauth]
+Dec 01 22:06:42 nbutme-gh200-1 kubelet[2739]: W1201 22:06:42.192997    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node1, number of cpuDirs 0, err: <nil>
+Dec 01 22:06:42 nbutme-gh200-1 kubelet[2739]: W1201 22:06:42.193118    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node2, number of cpuDirs 0, err: <nil>
+Dec 01 22:06:42 nbutme-gh200-1 kubelet[2739]: W1201 22:06:42.193220    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node3, number of cpuDirs 0, err: <nil>
+Dec 01 22:06:42 nbutme-gh200-1 kubelet[2739]: W1201 22:06:42.193327    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node4, number of cpuDirs 0, err: <nil>
+Dec 01 22:06:42 nbutme-gh200-1 kubelet[2739]: W1201 22:06:42.193569    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node5, number of cpuDirs 0, err: <nil>
+Dec 01 22:06:42 nbutme-gh200-1 kubelet[2739]: W1201 22:06:42.193862    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node6, number of cpuDirs 0, err: <nil>
+Dec 01 22:06:42 nbutme-gh200-1 kubelet[2739]: W1201 22:06:42.194019    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node7, number of cpuDirs 0, err: <nil>
+Dec 01 22:06:42 nbutme-gh200-1 kubelet[2739]: W1201 22:06:42.194232    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node8, number of cpuDirs 0, err: <nil>
+Dec 01 22:11:42 nbutme-gh200-1 kubelet[2739]: W1201 22:11:42.192242    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node1, number of cpuDirs 0, err: <nil>
+Dec 01 22:11:42 nbutme-gh200-1 kubelet[2739]: W1201 22:11:42.192367    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node2, number of cpuDirs 0, err: <nil>
+Dec 01 22:11:42 nbutme-gh200-1 kubelet[2739]: W1201 22:11:42.192697    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node3, number of cpuDirs 0, err: <nil>
+Dec 01 22:11:42 nbutme-gh200-1 kubelet[2739]: W1201 22:11:42.192870    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node4, number of cpuDirs 0, err: <nil>
+Dec 01 22:11:42 nbutme-gh200-1 kubelet[2739]: W1201 22:11:42.193002    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node5, number of cpuDirs 0, err: <nil>
+Dec 01 22:11:42 nbutme-gh200-1 kubelet[2739]: W1201 22:11:42.193128    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node6, number of cpuDirs 0, err: <nil>
+Dec 01 22:11:42 nbutme-gh200-1 kubelet[2739]: W1201 22:11:42.193257    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node7, number of cpuDirs 0, err: <nil>
+Dec 01 22:11:42 nbutme-gh200-1 kubelet[2739]: W1201 22:11:42.193532    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node8, number of cpuDirs 0, err: <nil>
+Dec 01 22:16:42 nbutme-gh200-1 kubelet[2739]: W1201 22:16:42.192580    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node1, number of cpuDirs 0, err: <nil>
+Dec 01 22:16:42 nbutme-gh200-1 kubelet[2739]: W1201 22:16:42.192698    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node2, number of cpuDirs 0, err: <nil>
+Dec 01 22:16:42 nbutme-gh200-1 kubelet[2739]: W1201 22:16:42.192807    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node3, number of cpuDirs 0, err: <nil>
+Dec 01 22:16:42 nbutme-gh200-1 kubelet[2739]: W1201 22:16:42.192918    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node4, number of cpuDirs 0, err: <nil>
+Dec 01 22:16:42 nbutme-gh200-1 kubelet[2739]: W1201 22:16:42.193018    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node5, number of cpuDirs 0, err: <nil>
+Dec 01 22:16:42 nbutme-gh200-1 kubelet[2739]: W1201 22:16:42.193115    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node6, number of cpuDirs 0, err: <nil>
+Dec 01 22:16:42 nbutme-gh200-1 kubelet[2739]: W1201 22:16:42.193216    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node7, number of cpuDirs 0, err: <nil>
+Dec 01 22:16:42 nbutme-gh200-1 kubelet[2739]: W1201 22:16:42.193318    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node8, number of cpuDirs 0, err: <nil>
+Dec 01 22:16:56 nbutme-gh200-1 sshd[20278]: Connection closed by authenticating user ubuntu 10.110.83.251 port 51053 [preauth]
+Dec 01 22:17:01 nbutme-gh200-1 CRON[21120]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Dec 01 22:17:01 nbutme-gh200-1 CRON[21126]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Dec 01 22:17:01 nbutme-gh200-1 CRON[21120]: pam_unix(cron:session): session closed for user root
+Dec 01 22:17:04 nbutme-gh200-1 sshd[21100]: Accepted password for ubuntu from 10.110.83.251 port 51160 ssh2
+Dec 01 22:17:04 nbutme-gh200-1 sshd[21100]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by (uid=0)
+Dec 01 22:17:04 nbutme-gh200-1 systemd-logind[1956]: New session 5 of user ubuntu.
+Dec 01 22:17:04 nbutme-gh200-1 systemd[1]: Started Session 5 of User ubuntu.
+Dec 01 22:18:15 nbutme-gh200-1 sudo[22442]: pam_unix(sudo:auth): conversation failed
+Dec 01 22:18:15 nbutme-gh200-1 sudo[22442]: pam_unix(sudo:auth): auth could not identify password for [ubuntu]
+Dec 01 22:18:23 nbutme-gh200-1 sudo[22558]: pam_unix(sudo:auth): conversation failed
+Dec 01 22:18:23 nbutme-gh200-1 sudo[22558]: pam_unix(sudo:auth): auth could not identify password for [ubuntu]
+Dec 01 22:18:30 nbutme-gh200-1 sudo[22628]: pam_unix(sudo:auth): conversation failed
+Dec 01 22:18:30 nbutme-gh200-1 sudo[22628]: pam_unix(sudo:auth): auth could not identify password for [ubuntu]
+Dec 01 22:18:35 nbutme-gh200-1 sudo[22727]: pam_unix(sudo:auth): conversation failed
+Dec 01 22:18:35 nbutme-gh200-1 sudo[22727]: pam_unix(sudo:auth): auth could not identify password for [ubuntu]
+Dec 01 22:21:42 nbutme-gh200-1 kubelet[2739]: W1201 22:21:42.191759    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node1, number of cpuDirs 0, err: <nil>
+Dec 01 22:21:42 nbutme-gh200-1 kubelet[2739]: W1201 22:21:42.191894    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node2, number of cpuDirs 0, err: <nil>
+Dec 01 22:21:42 nbutme-gh200-1 kubelet[2739]: W1201 22:21:42.192004    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node3, number of cpuDirs 0, err: <nil>
+Dec 01 22:21:42 nbutme-gh200-1 kubelet[2739]: W1201 22:21:42.192108    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node4, number of cpuDirs 0, err: <nil>
+Dec 01 22:21:42 nbutme-gh200-1 kubelet[2739]: W1201 22:21:42.192219    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node5, number of cpuDirs 0, err: <nil>
+Dec 01 22:21:42 nbutme-gh200-1 kubelet[2739]: W1201 22:21:42.192335    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node6, number of cpuDirs 0, err: <nil>
+Dec 01 22:21:42 nbutme-gh200-1 kubelet[2739]: W1201 22:21:42.192453    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node7, number of cpuDirs 0, err: <nil>
+Dec 01 22:21:42 nbutme-gh200-1 kubelet[2739]: W1201 22:21:42.192583    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node8, number of cpuDirs 0, err: <nil>
+Dec 01 22:26:42 nbutme-gh200-1 kubelet[2739]: W1201 22:26:42.192732    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node1, number of cpuDirs 0, err: <nil>
+Dec 01 22:26:42 nbutme-gh200-1 kubelet[2739]: W1201 22:26:42.192858    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node2, number of cpuDirs 0, err: <nil>
+Dec 01 22:26:42 nbutme-gh200-1 kubelet[2739]: W1201 22:26:42.192963    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node3, number of cpuDirs 0, err: <nil>
+Dec 01 22:26:42 nbutme-gh200-1 kubelet[2739]: W1201 22:26:42.193063    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node4, number of cpuDirs 0, err: <nil>
+Dec 01 22:26:42 nbutme-gh200-1 kubelet[2739]: W1201 22:26:42.193176    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node5, number of cpuDirs 0, err: <nil>
+Dec 01 22:26:42 nbutme-gh200-1 kubelet[2739]: W1201 22:26:42.193280    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node6, number of cpuDirs 0, err: <nil>
+Dec 01 22:26:42 nbutme-gh200-1 kubelet[2739]: W1201 22:26:42.193754    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node7, number of cpuDirs 0, err: <nil>
+Dec 01 22:26:42 nbutme-gh200-1 kubelet[2739]: W1201 22:26:42.193897    2739 sysinfo.go:227] Found node without any CPU, nodeDir: /sys/devices/system/node/node8, number of cpuDirs 0, err: <nil>
+Dec 01 22:27:36 nbutme-gh200-1 sudo[27375]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/ashutosh/storage-benchmarks ; USER=root ; COMMAND=nixlbench/check_crash_logs.sh
+Dec 01 22:27:36 nbutme-gh200-1 sudo[27375]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Dec 01 22:27:36 nbutme-gh200-1 sudo[27375]: pam_unix(sudo:session): session closed for user root
+Dec 01 22:27:52 nbutme-gh200-1 sudo[27586]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/ashutosh/storage-benchmarks ; USER=root ; COMMAND=nixlbench/debug_gds_crash.sh
+Dec 01 22:27:52 nbutme-gh200-1 sudo[27586]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+
+=== System Log Errors ===
+Nov 23 22:40:17 nbutme-gh200-1 sshd[1967]: error: beginning MaxStartups throttling
+Nov 24 16:09:22 nbutme-gh200-1 sshd[1967]: error: beginning MaxStartups throttling
+Nov 25 10:11:28 nbutme-gh200-1 sshd[1967]: error: beginning MaxStartups throttling
+Nov 26 01:17:24 nbutme-gh200-1 sshd[1967]: error: beginning MaxStartups throttling
+Nov 26 17:27:35 nbutme-gh200-1 sshd[1967]: error: beginning MaxStartups throttling
+Nov 27 10:51:30 nbutme-gh200-1 sshd[1967]: error: beginning MaxStartups throttling
+Nov 28 10:32:04 nbutme-gh200-1 sshd[1967]: error: beginning MaxStartups throttling
+Nov 29 11:03:32 nbutme-gh200-1 sshd[1967]: error: beginning MaxStartups throttling
+Nov 30 12:35:20 nbutme-gh200-1 sshd[1967]: error: beginning MaxStartups throttling
+Dec 01 06:18:46 nbutme-gh200-1 sshd[1967]: error: beginning MaxStartups throttling
+Dec 01 20:54:29 nbutme-gh200-1 sudo[4104620]: pam_unix(sudo:auth): conversation failed
+Dec 01 20:54:29 nbutme-gh200-1 sudo[4104620]: pam_unix(sudo:auth): auth could not identify password for [ubuntu]
+-- Boot a63600eb2a534c31a44db3866516f956 --
+Dec 01 20:59:00 nbutme-gh200-1 kernel: AER: no pci_dev for 0008:01:00.0
+Dec 01 20:59:00 nbutme-gh200-1 kernel: pci 0009:01:00.0: DOE: [2c8] ABORT timed out
+Dec 01 20:59:00 nbutme-gh200-1 kernel: pci 0009:01:00.0: DOE: [2c8] failed to reset mailbox with abort command : -5
+Dec 01 20:59:00 nbutme-gh200-1 kernel: pci 0009:01:00.0: DOE: [2c8] failed to create mailbox: -5
+Dec 01 20:59:00 nbutme-gh200-1 kernel: tegra186-gpio NVDA0508:00: invalid resource (null)
+Dec 01 20:59:00 nbutme-gh200-1 kernel: tegra186-gpio NVDA0508:00: invalid resource (null)
+Dec 01 20:59:00 nbutme-gh200-1 kernel: tegra-i2c NVDA0301:00: cannot use DMA: -19
+Dec 01 20:59:00 nbutme-gh200-1 kernel: tegra-i2c NVDA0301:00: falling back to PIO
+Dec 01 20:59:00 nbutme-gh200-1 kernel: 
+Dec 01 20:59:01 nbutme-gh200-1 ovs-vsctl[1512]: ovs|00001|db_ctl_base|ERR|unix:/var/run/openvswitch/db.sock: database connection failed (No such file or directory)
+-- Boot 64dbff2674554a65a6ec82f59df11762 --
+Dec 01 21:18:44 nbutme-gh200-1 kernel: AER: no pci_dev for 0008:01:00.0
+Dec 01 21:18:44 nbutme-gh200-1 kernel: pci 0009:01:00.0: DOE: [2c8] ABORT timed out
+Dec 01 21:18:44 nbutme-gh200-1 kernel: pci 0009:01:00.0: DOE: [2c8] failed to reset mailbox with abort command : -5
+Dec 01 21:18:44 nbutme-gh200-1 kernel: pci 0009:01:00.0: DOE: [2c8] failed to create mailbox: -5
+Dec 01 21:18:44 nbutme-gh200-1 kernel: tegra186-gpio NVDA0508:00: invalid resource (null)
+Dec 01 21:18:44 nbutme-gh200-1 kernel: tegra186-gpio NVDA0508:00: invalid resource (null)
+Dec 01 21:18:44 nbutme-gh200-1 kernel: tegra-i2c NVDA0301:00: cannot use DMA: -19
+Dec 01 21:18:44 nbutme-gh200-1 kernel: tegra-i2c NVDA0301:00: falling back to PIO
+Dec 01 21:18:44 nbutme-gh200-1 kernel: 
+Dec 01 21:18:45 nbutme-gh200-1 ovs-vsctl[1576]: ovs|00001|db_ctl_base|ERR|unix:/var/run/openvswitch/db.sock: database connection failed (No such file or directory)
+-- Boot 9d4af7f412d74ce79adca365ad6882aa --
+Dec 01 21:41:12 nbutme-gh200-1 kernel: AER: no pci_dev for 0008:01:00.0
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:01:00.0: DOE: [2c8] ABORT timed out
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:01:00.0: DOE: [2c8] failed to reset mailbox with abort command : -5
+Dec 01 21:41:12 nbutme-gh200-1 kernel: pci 0009:01:00.0: DOE: [2c8] failed to create mailbox: -5
+Dec 01 21:41:12 nbutme-gh200-1 kernel: tegra186-gpio NVDA0508:00: invalid resource (null)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: tegra186-gpio NVDA0508:00: invalid resource (null)
+Dec 01 21:41:12 nbutme-gh200-1 kernel: tegra-i2c NVDA0301:00: cannot use DMA: -19
+Dec 01 21:41:12 nbutme-gh200-1 kernel: tegra-i2c NVDA0301:00: falling back to PIO
+Dec 01 21:41:12 nbutme-gh200-1 kernel: 
+Dec 01 21:41:13 nbutme-gh200-1 ovs-vsctl[1512]: ovs|00001|db_ctl_base|ERR|unix:/var/run/openvswitch/db.sock: database connection failed (No such file or directory)
+Dec 01 22:18:15 nbutme-gh200-1 sudo[22442]: pam_unix(sudo:auth): conversation failed
+Dec 01 22:18:15 nbutme-gh200-1 sudo[22442]: pam_unix(sudo:auth): auth could not identify password for [ubuntu]
+Dec 01 22:18:23 nbutme-gh200-1 sudo[22558]: pam_unix(sudo:auth): conversation failed
+Dec 01 22:18:23 nbutme-gh200-1 sudo[22558]: pam_unix(sudo:auth): auth could not identify password for [ubuntu]
+Dec 01 22:18:30 nbutme-gh200-1 sudo[22628]: pam_unix(sudo:auth): conversation failed
+Dec 01 22:18:30 nbutme-gh200-1 sudo[22628]: pam_unix(sudo:auth): auth could not identify password for [ubuntu]
+Dec 01 22:18:35 nbutme-gh200-1 sudo[22727]: pam_unix(sudo:auth): conversation failed
+Dec 01 22:18:35 nbutme-gh200-1 sudo[22727]: pam_unix(sudo:auth): auth could not identify password for [ubuntu]
+

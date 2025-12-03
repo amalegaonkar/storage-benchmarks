@@ -1,0 +1,15 @@
+=== NVIDIA Modules ===
+nvidia_uvm           1966080  0
+nvidia_cspmu          196608  0
+arm_cspmu_module      262144  1 nvidia_cspmu
+nvidia_drm            327680  0
+nvidia_modeset       2097152  1 nvidia_drm
+nvidia              14745600  7 nvidia_uvm,nvidia_modeset
+video                 262144  1 nvidia_modeset
+ecc                   196608  1 nvidia
+
+=== GDS Module (nvidia_fs) ===
+nvidia_fs module not loaded
+
+=== Module Information ===
+

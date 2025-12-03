@@ -1,0 +1,10 @@
+=== nixlbench Processes ===
+ubuntu     22197  0.0  0.0   9536     0 ?        Ss   22:18   0:00 /usr/bin/bash -O extglob -c snap=$(command cat <&3) && builtin shopt -s extglob && builtin eval -- "$snap" && { builtin set +u 2>/dev/null || true; builtin export PWD="$(builtin pwd)"; builtin eval "$1" < /dev/null; }; COMMAND_EXIT_CODE=$?; dump_bash_state >&4; builtin exit $COMMAND_EXIT_CODE -- cd /home/ubuntu/ashutosh/storage-benchmarks && ./nixlbench/debug_gds_crash.sh
+ubuntu     22209  0.0  0.0   7552     0 ?        S    22:18   0:00 /bin/bash ./nixlbench/debug_gds_crash.sh
+ubuntu     22272  0.0  0.0   7552     0 ?        S    22:18   0:00 /bin/bash ./nixlbench/debug_gds_crash.sh
+
+=== GPU Processes ===
+# gpu         pid   type     sm    mem    enc    dec    jpg    ofa    command 
+# Idx           #    C/G      %      %      %      %      %      %    name 
+    0          -     -      -      -      -      -      -      -    -              
+

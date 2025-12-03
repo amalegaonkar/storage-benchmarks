@@ -1,0 +1,44 @@
+=== Mounted Filesystems ===
+Filesystem                         Size  Used Avail Use% Mounted on
+tmpfs                               48G   46M   48G   1% /run
+efivarfs                           384K   20K  365K   6% /sys/firmware/efi/efivars
+/dev/mapper/ubuntu--vg-ubuntu--lv  877G  167G  665G  21% /
+tmpfs                              240G     0  240G   0% /dev/shm
+tmpfs                              5.0M     0  5.0M   0% /run/lock
+/dev/nvme2n1p2                     2.0G  707M  1.1G  39% /boot
+/dev/nvme2n1p1                     1.1G  6.4M  1.1G   1% /boot/efi
+tmpfs                              574G  192K  574G   1% /var/lib/kubelet/pods/d392f90a-0738-4e3c-b8dc-0d1c612a5a7d/volumes/kubernetes.io~projected/kube-api-access-s5lrw
+tmpfs                              574G  192K  574G   1% /var/lib/kubelet/pods/04c13c48-54dc-4f65-8199-4d7220497038/volumes/kubernetes.io~projected/kube-api-access-zcpcd
+tmpfs                              512M  192K  512M   1% /var/lib/kubelet/pods/28667826-26e4-4f49-8f03-d114ee1659f7/volumes/kubernetes.io~projected/kube-api-access-hsdmc
+shm                                 64M     0   64M   0% /run/containerd/io.containerd.grpc.v1.cri/sandboxes/ff34d30d773c2b05570b00494b0053c751978e30f1b403d26367d04b5efeeef4/shm
+overlay                            877G  167G  665G  21% /run/containerd/io.containerd.runtime.v2.task/k8s.io/ff34d30d773c2b05570b00494b0053c751978e30f1b403d26367d04b5efeeef4/rootfs
+shm                                 64M     0   64M   0% /run/containerd/io.containerd.grpc.v1.cri/sandboxes/7291827912c8f7a40108b013afa11cf5936e39c03cccd80662c950aa90ac818e/shm
+overlay                            877G  167G  665G  21% /run/containerd/io.containerd.runtime.v2.task/k8s.io/7291827912c8f7a40108b013afa11cf5936e39c03cccd80662c950aa90ac818e/rootfs
+overlay                            877G  167G  665G  21% /run/containerd/io.containerd.runtime.v2.task/k8s.io/5afc24e019055c5c59e7d1803aaa067fc6da2ea680dc16d638fadc3c618d694b/rootfs
+overlay                            877G  167G  665G  21% /run/containerd/io.containerd.runtime.v2.task/k8s.io/4bee6dd7c73fbd47415f0becbe618728abba3a76f8520aad2ea5df753748c21e/rootfs
+shm                                 64M     0   64M   0% /run/containerd/io.containerd.grpc.v1.cri/sandboxes/d145639e98846de28ce3208cf1a1a0d6dca3d5711884dcc570dddabecb5f3597/shm
+overlay                            877G  167G  665G  21% /run/containerd/io.containerd.runtime.v2.task/k8s.io/d145639e98846de28ce3208cf1a1a0d6dca3d5711884dcc570dddabecb5f3597/rootfs
+overlay                            877G  167G  665G  21% /run/containerd/io.containerd.runtime.v2.task/k8s.io/4f3c522c9eeebdad512d79375ae379fe9ce25bcac4c67938e8336cb83e02359f/rootfs
+tmpfs                               48G  128K   48G   1% /run/user/1000
+
+=== Block Devices ===
+NAME                      MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINTS
+loop0                       7:0    0  59.6M  1 loop  /snap/core20/2672
+loop1                       7:1    0  59.6M  1 loop  /snap/core20/2683
+loop2                       7:2    0    81M  1 loop  /snap/lxd/35822
+loop3                       7:3    0    81M  1 loop  /snap/lxd/36562
+loop4                       7:4    0  44.2M  1 loop  /snap/snapd/25205
+loop5                       7:5    0  44.3M  1 loop  /snap/snapd/25585
+nvme1n1                   259:0    0   2.9T  0 disk  
+└─md0                       9:0    0   5.8T  0 raid0 
+nvme2n1                   259:1    0 894.3G  0 disk  
+├─nvme2n1p1               259:4    0     1G  0 part  /boot/efi
+├─nvme2n1p2               259:5    0     2G  0 part  /boot
+└─nvme2n1p3               259:6    0 891.2G  0 part  
+  └─ubuntu--vg-ubuntu--lv 252:0    0 891.2G  0 lvm   /
+nvme3n1                   259:2    0   2.9T  0 disk  
+└─md0                       9:0    0   5.8T  0 raid0 
+nvme0n1                   259:3    0 894.3G  0 disk  
+
+=== Storage Test Directory ===
+
